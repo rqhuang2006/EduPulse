@@ -1,0 +1,8 @@
+{
+  "best_model": "RandomForest",
+  "best_threshold": 0.05,
+  "f1": 0.44970414201183434,
+  "auc": 0.5090283672891908,
+  "accuracy": 0.2900763358778626,
+  "samples": 2506
+}

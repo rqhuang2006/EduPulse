@@ -1,0 +1,2 @@
+model,val_f1,best_val_threshold
+RandomForest,0.8673323823109843,0.05

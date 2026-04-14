@@ -1,0 +1,38 @@
+{
+  "life": {
+    "best_model": "RandomForest",
+    "best_threshold": 0.05,
+    "f1": 0.44970414201183434,
+    "auc": 0.5090283672891908,
+    "accuracy": 0.2900763358778626,
+    "samples": 2506
+  },
+  "sport": {
+    "regression": {
+      "best_model": "RandomForest",
+      "rmse": 8.576117470743394,
+      "mae": 6.356295484747818,
+      "r2": 0.2934559254555026,
+      "samples": 9751
+    },
+    "classification": {
+      "best_model": "RandomForest",
+      "accuracy": 0.5465116279069767,
+      "macro_f1": 0.3519745525579431,
+      "samples": 86,
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "test_label_distribution": {
+        "E": 56,
+        "D": 19,
+        "C": 9,
+        "B": 2
+      }
+    }
+  }
+}

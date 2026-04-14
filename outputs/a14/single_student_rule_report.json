@@ -1,0 +1,51 @@
+[
+  {
+    "student_id": "pjwtqxbj965",
+    "summary": "该学生综合风险为高风险，主要由生活维度驱动。行为上表现为：year_start、club_active_flag、pe_unique_course。从机制上看，问题主要集中在能力。在群体中，该学生属于生活失衡型。建议优先从能力干预入手。",
+    "risk": {
+      "risk_level": "高风险",
+      "total_risk": "1.0",
+      "dominant_dimension": "生活",
+      "dimension_risks": {
+        "life_risk": "1.0",
+        "study_risk": "",
+        "sport_risk": ""
+      }
+    },
+    "behavior": {
+      "pattern_label": "生活失衡型",
+      "pattern_reason": "生活维度风险最高，生活行为特征集中在 club_active_flag。",
+      "top_behaviors": {
+        "life": [
+          "club_active_flag",
+          "lib_visit_count",
+          "semester"
+        ],
+        "study": [
+          "year_start",
+          "year_start",
+          "semester"
+        ],
+        "sport": [
+          "pe_unique_course",
+          "daily_daka_sum",
+          "daily_daka_sum"
+        ]
+      }
+    },
+    "mechanism": {
+      "dominant_map": "A",
+      "dominant_map_label": "能力",
+      "map_scores": {
+        "M_score": "-0.2163027735023465",
+        "A_score": "0.11690033928354565",
+        "P_score": "-0.024163697506205593"
+      }
+    },
+    "intervention": {
+      "intervention_type": "能力",
+      "intervention_text": "建议先修正生活维度的作息与环境行为，采用学习节奏支持、任务拆解与学习资源补足建立稳定习惯。",
+      "priority": "P1"
+    }
+  }
+]
