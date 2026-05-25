@@ -1,0 +1,6 @@
+﻿level,split,features,rows,auc
+L0,random_stratified,8_core,14810,0.8534332348615805
+L1,term_order_holdout,8_core,14810,0.8626212920182825
+L2,term_order_holdout,8_core,17578,0.8484131895469291
+L3,term_order_holdout,current_serving_features_no_routing,17578,0.8931215810309979
+L4,term_order_holdout,current_layered_routed_serving,17578,0.8537577918888164

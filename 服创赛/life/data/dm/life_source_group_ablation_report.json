@@ -1,0 +1,243 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:27",
+  "groups": [
+    {
+      "task_name": "internet-only",
+      "status": "completed",
+      "feature_columns": [
+        "internet_early_sum",
+        "internet_early_mean",
+        "internet_early_trend",
+        "internet_early_volatility",
+        "internet_early_continuity",
+        "internet_early_deviation",
+        "internet_early_cv",
+        "internet_library_interaction",
+        "late_gate_internet_interaction"
+      ],
+      "auc": 0.5,
+      "f1": 0.440367,
+      "precision": 0.282353,
+      "recall": 1.0,
+      "rows": 255,
+      "positive_rate": 0.282353
+    },
+    {
+      "task_name": "gate-only",
+      "status": "completed",
+      "feature_columns": [
+        "gate_early_late_ratio",
+        "gate_early_mean",
+        "gate_early_trend",
+        "gate_early_volatility",
+        "gate_early_continuity",
+        "gate_early_weekend_ratio",
+        "gate_early_hour_mean"
+      ],
+      "auc": 0.505464480874317,
+      "f1": 0.443077,
+      "precision": 0.284585,
+      "recall": 1.0,
+      "rows": 255,
+      "positive_rate": 0.282353
+    },
+    {
+      "task_name": "library-only",
+      "status": "completed",
+      "feature_columns": [
+        "library_early_mean",
+        "library_early_trend",
+        "library_early_volatility",
+        "library_early_continuity",
+        "library_early_weekend_ratio"
+      ],
+      "auc": 0.5930479659987856,
+      "f1": 0.487273,
+      "precision": 0.330049,
+      "recall": 0.930556,
+      "rows": 255,
+      "positive_rate": 0.282353
+    },
+    {
+      "task_name": "club-only",
+      "status": "completed",
+      "feature_columns": [
+        "club_early_mean",
+        "club_early_trend",
+        "club_early_continuity",
+        "club_library_balance"
+      ],
+      "auc": 0.6597601700060717,
+      "f1": 0.497817,
+      "precision": 0.363057,
+      "recall": 0.791667,
+      "rows": 255,
+      "positive_rate": 0.282353
+    },
+    {
+      "task_name": "demographics-only",
+      "status": "completed",
+      "feature_columns": [
+        "XB",
+        "MZMC",
+        "ZZMMMC",
+        "JG",
+        "XSM",
+        "ZYM"
+      ],
+      "auc": 0.8561020036429873,
+      "f1": 0.744828,
+      "precision": 0.739726,
+      "recall": 0.75,
+      "rows": 255,
+      "positive_rate": 0.282353
+    },
+    {
+      "task_name": "cross-source only",
+      "status": "completed",
+      "feature_columns": [
+        "behavior_rhythm_gap",
+        "internet_library_interaction",
+        "late_gate_internet_interaction",
+        "club_library_balance"
+      ],
+      "auc": 0.6572935640558593,
+      "f1": 0.487273,
+      "precision": 0.330049,
+      "recall": 0.930556,
+      "rows": 255,
+      "positive_rate": 0.282353
+    },
+    {
+      "task_name": "drop-nearest-proxy-source-group",
+      "status": "completed",
+      "feature_columns": [
+        "XB",
+        "MZMC",
+        "ZZMMMC",
+        "JG",
+        "XSM",
+        "ZYM",
+        "internet_early_trend",
+        "internet_early_volatility",
+        "internet_early_continuity",
+        "internet_early_deviation",
+        "internet_early_cv",
+        "club_early_trend",
+        "club_early_continuity",
+        "library_early_trend",
+        "library_early_volatility",
+        "library_early_continuity",
+        "library_early_weekend_ratio",
+        "gate_early_trend",
+        "gate_early_volatility",
+        "gate_early_continuity",
+        "gate_early_weekend_ratio",
+        "behavior_rhythm_gap",
+        "internet_library_interaction",
+        "late_gate_internet_interaction",
+        "club_library_balance"
+      ],
+      "auc": 0.8628567091681845,
+      "f1": 0.738255,
+      "precision": 0.714286,
+      "recall": 0.763889,
+      "rows": 255,
+      "positive_rate": 0.282353,
+      "is_honest_candidate": true
+    }
+  ],
+  "instability_matrix": [
+    {
+      "label_version": "instability_future_v1",
+      "feature_bundle": "regularity_only",
+      "status": "completed",
+      "auc": 0.8598208864602308,
+      "f1": 0.738255,
+      "precision": 0.714286,
+      "recall": 0.763889,
+      "rows": 255
+    },
+    {
+      "label_version": "instability_future_v1",
+      "feature_bundle": "regularity+volatility",
+      "status": "completed",
+      "auc": 0.8618700667880995,
+      "f1": 0.743243,
+      "precision": 0.723684,
+      "recall": 0.763889,
+      "rows": 255
+    },
+    {
+      "label_version": "instability_future_v1",
+      "feature_bundle": "regularity+volatility+coupling",
+      "status": "completed",
+      "auc": 0.8633879781420766,
+      "f1": 0.738255,
+      "precision": 0.714286,
+      "recall": 0.763889,
+      "rows": 255
+    },
+    {
+      "label_version": "instability_future_v2",
+      "feature_bundle": "regularity_only",
+      "status": "skipped",
+      "reason": "single_class_split",
+      "train_label_distribution": {
+        "0": 2005
+      },
+      "holdout_label_distribution": {
+        "0": 255
+      }
+    },
+    {
+      "label_version": "instability_future_v2",
+      "feature_bundle": "regularity+volatility",
+      "status": "skipped",
+      "reason": "single_class_split",
+      "train_label_distribution": {
+        "0": 2005
+      },
+      "holdout_label_distribution": {
+        "0": 255
+      }
+    },
+    {
+      "label_version": "instability_future_v2",
+      "feature_bundle": "regularity+volatility+coupling",
+      "status": "skipped",
+      "reason": "single_class_split",
+      "train_label_distribution": {
+        "0": 2005
+      },
+      "holdout_label_distribution": {
+        "0": 255
+      }
+    },
+    {
+      "label_version": "instability_future_v2",
+      "feature_bundle": "regularity+volatility+coupling",
+      "split_version": "purged_temporal_split",
+      "candidate_role": "temporal_generalization_mainline",
+      "status": "completed",
+      "auc": 0.8632350795272142,
+      "f1": 0.741176,
+      "precision": 0.677419,
+      "recall": 0.818182,
+      "rows": 255
+    }
+  ],
+  "best_instability_candidate": {
+    "label_version": "instability_future_v2",
+    "feature_bundle": "regularity+volatility+coupling",
+    "split_version": "purged_temporal_split",
+    "candidate_role": "temporal_generalization_mainline",
+    "status": "completed",
+    "auc": 0.8632350795272142,
+    "f1": 0.741176,
+    "precision": 0.677419,
+    "recall": 0.818182,
+    "rows": 255
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-04-18T21:46:58.951876",
+  "experiment_1_mode_auc": {
+    "overall_valid_auc": 0.8329839643346286,
+    "rows": [
+      {
+        "row_level_study_data_mode": "core_only",
+        "rows": 2806,
+        "positive_rows": 463,
+        "auc": 0.8439582451841752
+      },
+      {
+        "row_level_study_data_mode": "core_plus_behavior",
+        "rows": 687,
+        "positive_rows": 79,
+        "auc": 0.782186875416389
+      },
+      {
+        "row_level_study_data_mode": "degraded_sparse",
+        "rows": 23,
+        "positive_rows": 1,
+        "auc": 0.31818181818181823
+      }
+    ],
+    "note": "AUC computed on current serving holdout split because infer_table has no LABEL."
+  },
+  "experiment_2_ablation": [
+    {
+      "experiment_name": "core_only",
+      "feature_mode": "core_only",
+      "feature_count": 7,
+      "auc": 0.6065835730265261,
+      "f1": 0.5344694035631293,
+      "recall": 0.6353591160220995,
+      "precision": 0.4612299465240642
+    },
+    {
+      "experiment_name": "core_plus_behavior",
+      "feature_mode": "core_plus_behavior",
+      "feature_count": 14,
+      "auc": 0.5956575583253435,
+      "f1": 0.5763000852514919,
+      "recall": 0.6224677716390423,
+      "precision": 0.5365079365079365
+    },
+    {
+      "experiment_name": "core_plus_behavior_plus_temporal",
+      "feature_mode": "core_plus_behavior_plus_temporal",
+      "feature_count": 22,
+      "auc": 0.5848014541387024,
+      "f1": 0.5431309904153354,
+      "recall": 0.6261510128913443,
+      "precision": 0.4795486600846262
+    },
+    {
+      "experiment_name": "core_plus_behavior_plus_temporal_plus_interaction",
+      "feature_mode": "core_plus_behavior_plus_temporal_plus_interaction",
+      "feature_count": 26,
+      "auc": 0.6031979066794504,
+      "f1": 0.5759336099585062,
+      "recall": 0.6390423572744015,
+      "precision": 0.5241691842900302
+    }
+  ],
+  "experiment_3_high_confidence_positive": {
+    "full_positive_count": 5636,
+    "high_conf_positive_count": 2693,
+    "subset_rows": 14635,
+    "criteria": [
+      "low_grade_avg",
+      "low_grade_min",
+      "high_fail_count",
+      "low_exam_score",
+      "low_assignment_score"
+    ],
+    "valid_rows": 3331,
+    "auc": 0.5421864859017812,
+    "f1": 0.6855941114616193,
+    "recall": 0.9106145251396648,
+    "precision": 0.5497470489038786
+  },
+  "metric_clarity": {
+    "current_serving_version_auc_in_registry": 0.852089926589149,
+    "current_deliverable_core_valid_auc": 0.8391384956939032,
+    "interpretation": "0.8391 is the latest layered serving bundle core_model valid AUC; 0.8521 in study_current_serving_version.json is the older published registry snapshot and is stale for direct metric reading."
+  }
+}

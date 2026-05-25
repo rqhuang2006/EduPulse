@@ -1,0 +1,80 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "baseline_version_id": "life_v1_clean",
+  "candidate_version_id": "life_candidate_clean_20260421160228",
+  "comparison": {
+    "candidate_version_id": "life_candidate_clean_20260421160228",
+    "baseline_version_id": "life_v1_clean",
+    "anchor_baseline_version_id": "life_v1_clean",
+    "comparison_mode": "frozen_baseline_compare",
+    "primary_metric": "auc",
+    "candidate_metrics": {
+      "rows": 255,
+      "positive_rate": 0.282353,
+      "auc": 0.8628567091681845,
+      "f1": 0.751773,
+      "precision": 0.768116,
+      "recall": 0.736111,
+      "coverage": 1.0,
+      "degraded_ratio": 0.0,
+      "mean_infer_risk_score": 0.401833,
+      "high_risk_rate": 0.25098,
+      "decision_threshold": 0.55
+    },
+    "baseline_metrics": {
+      "rows": 490,
+      "positive_rate": 0.808163,
+      "auc": 0.9547066408768538,
+      "f1": 0.973451,
+      "precision": 0.974684,
+      "recall": 0.972222,
+      "coverage": 1.0,
+      "degraded_ratio": 0.0,
+      "mean_infer_risk_score": 0.730505,
+      "high_risk_rate": 0.791837
+    },
+    "anchor_metrics": {
+      "rows": 490,
+      "positive_rate": 0.808163,
+      "auc": 0.9547066408768538,
+      "f1": 0.973451,
+      "precision": 0.974684,
+      "recall": 0.972222,
+      "coverage": 1.0,
+      "degraded_ratio": 0.0,
+      "mean_infer_risk_score": 0.730505,
+      "high_risk_rate": 0.791837
+    },
+    "metric_deltas": {
+      "auc_delta": -0.09185,
+      "f1_delta": -0.221678,
+      "precision_delta": -0.206568,
+      "recall_delta": -0.236111
+    },
+    "comparability": {
+      "comparable": false,
+      "severity": "warning",
+      "mismatches": [
+        "feature_contract_hash: candidate='89f765935193bedac884d9f9a0a1a9ec8d4453bb' baseline='121efe120ac3bcd85643012bc3b3228621f34a96'"
+      ],
+      "recommended_action": "reference_only",
+      "comparison_role": "reference_only",
+      "required_keys": [
+        "eval_scope",
+        "sample_universe",
+        "split_strategy",
+        "label_definition",
+        "feature_contract_hash",
+        "task_scope"
+      ],
+      "conclusion": "candidate and baseline are NOT strictly comparable"
+    }
+  },
+  "current_clean_baseline_auc": 0.9547066408768538,
+  "new_candidate_auc": 0.8628567091681845,
+  "auc_delta": -0.09185,
+  "auc_gte_0_8": true,
+  "compare_role": "reference_only",
+  "compare_note": "frozen baseline compare is provided as historical reference only; see life_strict_compare_summary.json for the primary strict comparable result",
+  "conclusion": "candidate does not beat clean baseline"
+}

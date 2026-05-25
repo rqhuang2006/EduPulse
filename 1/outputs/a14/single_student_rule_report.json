@@ -1,0 +1,11 @@
+{
+  "student_id": "pjxyqwbj673",
+  "risk_level": "高风险",
+  "total_risk": 0.7681,
+  "dominant_dimension": "生活",
+  "dominant_MAP": "提示",
+  "pattern_label": "多维叠加高风险型",
+  "pattern_reason": "至少两个维度风险同时偏高，且综合风险进入高位区间。",
+  "profile_text": "该学生综合风险为高风险，主要由生活维度驱动。行为上表现为：暂无显著行为特征。从机制上看，问题主要集中在提示。在群体中，该学生属于多维叠加高风险型。建议优先从提示干预入手。",
+  "intervention_text": "建议采用分阶段干预方案，先解决生活主导问题，再以行为提醒、外部约束与环境触发优化联动其他维度。"
+}

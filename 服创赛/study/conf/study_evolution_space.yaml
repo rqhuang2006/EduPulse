@@ -1,0 +1,51 @@
+domain: study
+feature_groups:
+  - all_features
+  - grade_dominant
+  - attendance_task_dominant
+  - online_activity_dominant
+  - topk_selected
+  - low_missing_robust
+  - high_coverage_only
+candidate_models:
+  - LogisticRegression
+  - LightGBM
+  - XGBoost
+  - RandomForest
+  - CatBoost
+threshold_strategies:
+  - default_0_5
+  - best_f1
+  - recall_priority
+  - precision_floor
+  - risk_stratified
+fusion_strategies:
+  - none
+  - weighted_branch_fusion
+  - voting_fusion
+  - score_blend
+publish_gates:
+  min_valid_auc: 0.80
+  min_valid_recall: 0.60
+  min_valid_f1: 0.55
+  max_degraded_rate: 0.50
+  max_low_coverage_rate: 0.75
+rollback_gates:
+  infer_error_rate_threshold: 0.05
+  degraded_rate_spike_threshold: 0.20
+  explanation_failure_rate_threshold: 0.05
+selection:
+  robustness_weights:
+    auc: 0.35
+    f1: 0.25
+    recall: 0.20
+    coverage: 0.12
+    missing_robustness: 0.08
+  precision_floor: 0.55
+  recall_priority_min_recall: 0.70
+  max_candidates_per_run: 80
+guardrails:
+  no_unbounded_automl: true
+  no_control_decision_model: true
+  do_not_overwrite_formal_model_without_publish: true
+  require_release_manager_for_serving_change: true

@@ -1,0 +1,449 @@
+{
+  "data_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\data\\sport_feature_dataset.csv",
+  "label_version": "future_v3",
+  "feature_bundle": "baseline+deviation+trend",
+  "structure_version": "two_stage",
+  "population_version": "recoverable",
+  "results": [
+    {
+      "candidate": "baseline",
+      "overall": {
+        "auc": 0.8505509045419554,
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "best_threshold": 0.35000000000000003,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "two_stage",
+        "population_version": "recoverable",
+        "state_thresholds": {
+          "borderline": 0.35000000000000003,
+          "low_participation": 0.37000000000000005,
+          "stable": 0.32000000000000006
+        }
+      },
+      "bucket_counts": {
+        "borderline": 2837,
+        "low_participation": 522,
+        "stable": 186
+      },
+      "stable_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "stable",
+        "rows": 184,
+        "positive_count": 28,
+        "positive_rate": 0.15217391304347827,
+        "auc": 0.5762362637362637,
+        "f1": 0.2647058823529412,
+        "precision": 0.16666666666666666,
+        "recall": 0.6428571428571429,
+        "mean_proba": 0.37957970957960124,
+        "mean_threshold": 0.3200000000000001
+      },
+      "borderline_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "borderline",
+        "rows": 1296,
+        "positive_count": 92,
+        "positive_rate": 0.07098765432098765,
+        "auc": 0.8503042394915499,
+        "f1": 0.3510204081632653,
+        "precision": 0.28104575163398693,
+        "recall": 0.4673913043478261,
+        "mean_proba": 0.11615795298121769,
+        "mean_threshold": 0.3475694444444445
+      },
+      "low_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "low_participation",
+        "rows": 372,
+        "positive_count": 0,
+        "positive_rate": 0.0,
+        "auc": null,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mean_proba": 0.024060391099937614,
+        "mean_threshold": 0.3888709677419355
+      },
+      "hardest_subgroup": {
+        "group_type": "__sport_state_bucket",
+        "group": "stable",
+        "rows": 184,
+        "positive_count": 28,
+        "positive_rate": 0.15217391304347827,
+        "auc": 0.5762362637362637,
+        "f1": 0.2647058823529412,
+        "precision": 0.16666666666666666,
+        "recall": 0.6428571428571429,
+        "mean_proba": 0.37957970957960124,
+        "mean_threshold": 0.3200000000000001
+      },
+      "rank_key": [
+        0.850551,
+        0.576236,
+        0.264706
+      ]
+    },
+    {
+      "candidate": "stage1_hybrid_v1",
+      "overall": {
+        "auc": 0.8404397613548884,
+        "f1": 0.3080260303687636,
+        "precision": 0.20821114369501467,
+        "recall": 0.5916666666666667,
+        "best_threshold": 0.26000000000000006,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "two_stage",
+        "population_version": "recoverable",
+        "state_thresholds": {
+          "borderline": 0.26000000000000006,
+          "low_participation": 0.27,
+          "stable": 0.35000000000000003
+        }
+      },
+      "bucket_counts": {
+        "borderline": 2612,
+        "low_participation": 522,
+        "stable": 411
+      },
+      "stable_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "stable",
+        "rows": 298,
+        "positive_count": 36,
+        "positive_rate": 0.12080536912751678,
+        "auc": 0.676420695504665,
+        "f1": 0.2727272727272727,
+        "precision": 0.17796610169491525,
+        "recall": 0.5833333333333334,
+        "mean_proba": 0.3386700749334773,
+        "mean_threshold": 0.3512080536912752
+      },
+      "borderline_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "borderline",
+        "rows": 1182,
+        "positive_count": 84,
+        "positive_rate": 0.07106598984771574,
+        "auc": 0.8383207563535433,
+        "f1": 0.32786885245901637,
+        "precision": 0.22624434389140272,
+        "recall": 0.5952380952380952,
+        "mean_proba": 0.13429427412087405,
+        "mean_threshold": 0.25956852791878177
+      },
+      "low_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "low_participation",
+        "rows": 372,
+        "positive_count": 0,
+        "positive_rate": 0.0,
+        "auc": null,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mean_proba": 0.025304331355228193,
+        "mean_threshold": 0.29935483870967744
+      },
+      "hardest_subgroup": {
+        "group_type": "zf_grade",
+        "group": "B",
+        "rows": 232,
+        "positive_count": 39,
+        "positive_rate": 0.16810344827586207,
+        "auc": 0.5787166201673973,
+        "f1": 0.29411764705882354,
+        "precision": 0.19083969465648856,
+        "recall": 0.6410256410256411,
+        "mean_proba": 0.43448158333094083,
+        "mean_threshold": 0.3254310344827586
+      },
+      "rank_key": [
+        0.84044,
+        0.676421,
+        0.272727
+      ]
+    },
+    {
+      "candidate": "stage1_hybrid_v2",
+      "overall": {
+        "auc": 0.5907621247113164,
+        "f1": 0.2785515320334262,
+        "precision": 0.20920502092050208,
+        "recall": 0.4166666666666667,
+        "best_threshold": 0.17000000000000004,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "two_stage",
+        "population_version": "recoverable",
+        "state_thresholds": {
+          "borderline": 0.17000000000000004,
+          "low_participation": 0.4800000000000001,
+          "stable": 0.5300000000000001
+        }
+      },
+      "bucket_counts": {
+        "borderline": 2194,
+        "low_participation": 957,
+        "stable": 394
+      },
+      "stable_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "stable",
+        "rows": 156,
+        "positive_count": 21,
+        "positive_rate": 0.1346153846153846,
+        "auc": 0.6599647266313933,
+        "f1": 0.18181818181818182,
+        "precision": 0.25,
+        "recall": 0.14285714285714285,
+        "mean_proba": 0.1731895540411746,
+        "mean_threshold": 0.5150000000000002
+      },
+      "borderline_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "borderline",
+        "rows": 1152,
+        "positive_count": 95,
+        "positive_rate": 0.08246527777777778,
+        "auc": 0.8071104914604391,
+        "f1": 0.2893081761006289,
+        "precision": 0.2062780269058296,
+        "recall": 0.4842105263157895,
+        "mean_proba": 0.0993984023643008,
+        "mean_threshold": 0.17083333333333336
+      },
+      "low_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "low_participation",
+        "rows": 544,
+        "positive_count": 4,
+        "positive_rate": 0.007352941176470588,
+        "auc": null,
+        "f1": 0.25,
+        "precision": 0.25,
+        "recall": 0.25,
+        "mean_proba": 0.34747239853174283,
+        "mean_threshold": 0.46375000000000005
+      },
+      "hardest_subgroup": {
+        "group_type": "zf_grade",
+        "group": "B",
+        "rows": 232,
+        "positive_count": 39,
+        "positive_rate": 0.16810344827586207,
+        "auc": 0.6129932243921882,
+        "f1": 0.27941176470588236,
+        "precision": 0.1958762886597938,
+        "recall": 0.48717948717948717,
+        "mean_proba": 0.2079612103819059,
+        "mean_threshold": 0.3559051724137932
+      },
+      "rank_key": [
+        0.590762,
+        0.659965,
+        0.181818
+      ]
+    },
+    {
+      "candidate": "stage1_conservative_v1",
+      "overall": {
+        "auc": 0.8579676674364897,
+        "f1": 0.3244444444444444,
+        "precision": 0.22121212121212122,
+        "recall": 0.6083333333333333,
+        "best_threshold": 0.5200000000000001,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "two_stage",
+        "population_version": "recoverable",
+        "state_thresholds": {
+          "borderline": 0.5200000000000001,
+          "low_participation": 0.18000000000000005,
+          "stable": 0.4800000000000001
+        }
+      },
+      "bucket_counts": {
+        "borderline": 2916,
+        "low_participation": 522,
+        "stable": 107
+      },
+      "stable_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "stable",
+        "rows": 107,
+        "positive_count": 14,
+        "positive_rate": 0.1308411214953271,
+        "auc": 0.6082949308755761,
+        "f1": 0.2857142857142857,
+        "precision": 0.1746031746031746,
+        "recall": 0.7857142857142857,
+        "mean_proba": 0.5388938647295822,
+        "mean_threshold": 0.48000000000000004
+      },
+      "borderline_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "borderline",
+        "rows": 1373,
+        "positive_count": 106,
+        "positive_rate": 0.07720320466132556,
+        "auc": 0.8334425399472831,
+        "f1": 0.33423180592991913,
+        "precision": 0.2339622641509434,
+        "recall": 0.5849056603773585,
+        "mean_proba": 0.41241887051575915,
+        "mean_threshold": 0.5195411507647489
+      },
+      "low_bucket": {
+        "group_type": "__sport_state_bucket",
+        "group": "low_participation",
+        "rows": 372,
+        "positive_count": 0,
+        "positive_rate": 0.0,
+        "auc": null,
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "mean_proba": 0.010536844971750527,
+        "mean_threshold": 0.18279569892473127
+      },
+      "hardest_subgroup": {
+        "group_type": "zf_grade",
+        "group": "B",
+        "rows": 232,
+        "positive_count": 39,
+        "positive_rate": 0.16810344827586207,
+        "auc": 0.6031619503122094,
+        "f1": 0.3147208121827411,
+        "precision": 0.1962025316455696,
+        "recall": 0.7948717948717948,
+        "mean_proba": 0.5954828612115409,
+        "mean_threshold": 0.5031034482758623
+      },
+      "rank_key": [
+        0.857968,
+        0.608295,
+        0.285714
+      ]
+    }
+  ],
+  "best_by_rank": {
+    "candidate": "stage1_conservative_v1",
+    "overall": {
+      "auc": 0.8579676674364897,
+      "f1": 0.3244444444444444,
+      "precision": 0.22121212121212122,
+      "recall": 0.6083333333333333,
+      "best_threshold": 0.5200000000000001,
+      "rows": 3545,
+      "eval_rows": 1852,
+      "positive_count": 120,
+      "evaluated_terms": [
+        20221,
+        20231
+      ],
+      "label_version": "future_v3",
+      "feature_bundle": "baseline+deviation+trend",
+      "structure_version": "two_stage",
+      "population_version": "recoverable",
+      "state_thresholds": {
+        "borderline": 0.5200000000000001,
+        "low_participation": 0.18000000000000005,
+        "stable": 0.4800000000000001
+      }
+    },
+    "bucket_counts": {
+      "borderline": 2916,
+      "low_participation": 522,
+      "stable": 107
+    },
+    "stable_bucket": {
+      "group_type": "__sport_state_bucket",
+      "group": "stable",
+      "rows": 107,
+      "positive_count": 14,
+      "positive_rate": 0.1308411214953271,
+      "auc": 0.6082949308755761,
+      "f1": 0.2857142857142857,
+      "precision": 0.1746031746031746,
+      "recall": 0.7857142857142857,
+      "mean_proba": 0.5388938647295822,
+      "mean_threshold": 0.48000000000000004
+    },
+    "borderline_bucket": {
+      "group_type": "__sport_state_bucket",
+      "group": "borderline",
+      "rows": 1373,
+      "positive_count": 106,
+      "positive_rate": 0.07720320466132556,
+      "auc": 0.8334425399472831,
+      "f1": 0.33423180592991913,
+      "precision": 0.2339622641509434,
+      "recall": 0.5849056603773585,
+      "mean_proba": 0.41241887051575915,
+      "mean_threshold": 0.5195411507647489
+    },
+    "low_bucket": {
+      "group_type": "__sport_state_bucket",
+      "group": "low_participation",
+      "rows": 372,
+      "positive_count": 0,
+      "positive_rate": 0.0,
+      "auc": null,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "mean_proba": 0.010536844971750527,
+      "mean_threshold": 0.18279569892473127
+    },
+    "hardest_subgroup": {
+      "group_type": "zf_grade",
+      "group": "B",
+      "rows": 232,
+      "positive_count": 39,
+      "positive_rate": 0.16810344827586207,
+      "auc": 0.6031619503122094,
+      "f1": 0.3147208121827411,
+      "precision": 0.1962025316455696,
+      "recall": 0.7948717948717948,
+      "mean_proba": 0.5954828612115409,
+      "mean_threshold": 0.5031034482758623
+    },
+    "rank_key": [
+      0.857968,
+      0.608295,
+      0.285714
+    ]
+  }
+}

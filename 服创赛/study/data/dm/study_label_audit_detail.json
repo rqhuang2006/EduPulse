@@ -1,0 +1,77 @@
+{
+  "label_counts": {
+    "0": 11942,
+    "1": 5636
+  },
+  "positive_count": 5636,
+  "negative_count": 11942,
+  "positive_mean_sample": {
+    "FEATURE_COURSE_CREDIT_SUM": 126.1475497159091,
+    "FEATURE_COURSE_SELECTED_COUNT": 16.646661931818183,
+    "FEATURE_GRADE_AVG_SCORE": 80.24466296026252,
+    "FEATURE_GRADE_COURSE_COUNT": 17.531227821149752,
+    "FEATURE_GRADE_CREDIT_SUM": 24.73448367636622,
+    "FEATURE_GRADE_FAIL_COUNT": 2.1541873669268985,
+    "FEATURE_GRADE_MIN_SCORE": 34.60574875798439,
+    "FEATURE_LIBRARY_VISIT_COUNT": 46.84122919334187,
+    "consecutive_decline_grade_avg_score": 0.801277501774308,
+    "consecutive_decline_grade_fail_count": 0.34953867991483323,
+    "consecutive_decline_library_visit_count": 0.10716820440028389,
+    "course_risk_avg_min_gap": 45.63891420227814,
+    "course_risk_bottleneck_ratio": 0.5948153083248107,
+    "course_risk_bottleneck_severity": 45.63891420227814,
+    "course_risk_consecutive_decline": 0.13644428672817602,
+    "course_risk_dispersion": 31.867611211786144,
+    "course_risk_dispersion_coef": 0.7102528680600567,
+    "course_risk_distance_to_60": 20.244662960262513,
+    "course_risk_fail_count": 2.1541873669268985,
+    "course_risk_fail_rate": 0.13400610677180025
+  },
+  "negative_mean_sample": {
+    "FEATURE_COURSE_CREDIT_SUM": 97.0378419197852,
+    "FEATURE_COURSE_SELECTED_COUNT": 14.138362141298876,
+    "FEATURE_GRADE_AVG_SCORE": 87.65869898882714,
+    "FEATURE_GRADE_COURSE_COUNT": 14.245436275330766,
+    "FEATURE_GRADE_CREDIT_SUM": 18.80587422542288,
+    "FEATURE_GRADE_FAIL_COUNT": 0.2968514486685647,
+    "FEATURE_GRADE_MIN_SCORE": 63.15374309160944,
+    "FEATURE_LIBRARY_VISIT_COUNT": 62.21880492091388,
+    "consecutive_decline_grade_avg_score": 1.0920281359906214,
+    "consecutive_decline_grade_fail_count": 0.4151733377993636,
+    "consecutive_decline_library_visit_count": 0.20599564562049907,
+    "course_risk_avg_min_gap": 24.504955897217684,
+    "course_risk_bottleneck_ratio": 0.28496720976626283,
+    "course_risk_bottleneck_severity": 24.504955897217684,
+    "course_risk_consecutive_decline": 0.22090102160442138,
+    "course_risk_dispersion": 17.668471832745766,
+    "course_risk_dispersion_coef": 0.2950221195233164,
+    "course_risk_distance_to_60": 27.658698988827126,
+    "course_risk_fail_count": 0.2968514486685647,
+    "course_risk_fail_rate": 0.026721400869110543
+  },
+  "label_subtype_counts": {
+    "normal": 11942,
+    "single_fail": 5123,
+    "overall_low": 513
+  },
+  "label_subtype_positive_rates": {
+    "normal": {
+      "positive_count": 0,
+      "total_count": 11942,
+      "positive_rate": 0.0
+    },
+    "single_fail": {
+      "positive_count": 5123,
+      "total_count": 5123,
+      "positive_rate": 1.0
+    },
+    "overall_low": {
+      "positive_count": 513,
+      "total_count": 513,
+      "positive_rate": 1.0
+    }
+  },
+  "request_id": "study_train_evolution_request",
+  "generated_at": "2026-04-19T09:23:01",
+  "label_col": "LABEL"
+}

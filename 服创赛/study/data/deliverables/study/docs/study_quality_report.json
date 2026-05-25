@@ -1,0 +1,1262 @@
+{
+  "request_id": "study_train_evolution_request",
+  "domain": "study",
+  "generated_at": "2026-04-19T09:23:01",
+  "summary": [
+    {
+      "request_id": "study_train_evolution_request",
+      "rows": 17578,
+      "field_coverage_warning_count": 1,
+      "primary_key_association_success_rate": 1.0,
+      "unknown_or_unmapped_rows": 0,
+      "category_drift_rows": 0,
+      "join_failure_rows": 12163,
+      "garbage_or_sparse_rows": 14718,
+      "quality_degraded_rows": 14718,
+      "study_data_mode": "core_plus_behavior_enhanced",
+      "study_quality_flag": "core_stable"
+    }
+  ],
+  "field_coverage": [
+    {
+      "field": "XH",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2501
+    },
+    {
+      "field": "TERM_ID",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 9
+    },
+    {
+      "field": "SOURCE_COVERAGE",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 6
+    },
+    {
+      "field": "DATA_QUALITY_FLAG",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "FEATURE_GRADE_COURSE_COUNT",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 32
+    },
+    {
+      "field": "FEATURE_GRADE_AVG_SCORE",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 5700
+    },
+    {
+      "field": "FEATURE_GRADE_MIN_SCORE",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 102
+    },
+    {
+      "field": "FEATURE_GRADE_FAIL_COUNT",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 19
+    },
+    {
+      "field": "FEATURE_GRADE_CREDIT_SUM",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 746
+    },
+    {
+      "field": "FEATURE_COURSE_SELECTED_COUNT",
+      "non_null_rate": 0.9984070997838207,
+      "missing_rate": 0.001592900216179315,
+      "distinct_count": 29
+    },
+    {
+      "field": "FEATURE_COURSE_CREDIT_SUM",
+      "non_null_rate": 0.9984070997838207,
+      "missing_rate": 0.001592900216179315,
+      "distinct_count": 312
+    },
+    {
+      "field": "FEATURE_LIBRARY_VISIT_COUNT",
+      "non_null_rate": 0.1739105700307202,
+      "missing_rate": 0.8260894299692798,
+      "distinct_count": 292
+    },
+    {
+      "field": "consecutive_decline_grade_avg_score",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 7
+    },
+    {
+      "field": "dist_from_worst_grade_avg_score",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 14928
+    },
+    {
+      "field": "recovery_grade_avg_score",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "consecutive_decline_grade_fail_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 6
+    },
+    {
+      "field": "dist_from_worst_grade_fail_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 222
+    },
+    {
+      "field": "recovery_grade_fail_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "dist_from_worst_attendance_abnormal_rate",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "consecutive_decline_library_visit_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 6
+    },
+    {
+      "field": "dist_from_worst_library_visit_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 1926
+    },
+    {
+      "field": "recovery_library_visit_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "cross__feature_grade_avg_score__x__feature_course_selected_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 7769
+    },
+    {
+      "field": "cross__feature_assignment_score_avg__x__feature_exam_score_avg",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2221
+    },
+    {
+      "field": "cross__feature_library_visit_count__x__feature_grade_avg_score",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2992
+    },
+    {
+      "field": "cross__delta_grade_avg_score__x__feature_course_selected_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 14245
+    },
+    {
+      "field": "discordance_attendance_grade",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 5747
+    },
+    {
+      "field": "discordance_effort_result",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 1002
+    },
+    {
+      "field": "workload_stress",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 8493
+    },
+    {
+      "field": "trend_decline_count_grade_avg",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 3
+    },
+    {
+      "field": "trend_below_hist_grade_avg",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "trend_drawdown_grade_avg",
+      "non_null_rate": 0.999943110706565,
+      "missing_rate": 5.688929343497554e-05,
+      "distinct_count": 17501
+    },
+    {
+      "field": "personal_gap_grade_avg",
+      "non_null_rate": 0.8577198771191261,
+      "missing_rate": 0.14228012288087383,
+      "distinct_count": 14930
+    },
+    {
+      "field": "personal_z_grade_avg",
+      "non_null_rate": 0.7154966435316874,
+      "missing_rate": 0.28450335646831265,
+      "distinct_count": 12577
+    },
+    {
+      "field": "trend_decline_count_exam_score",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "trend_below_hist_exam_score",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "trend_decline_count_library_visit",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 3
+    },
+    {
+      "field": "trend_below_hist_library_visit",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "feature_behavior_coverage_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 9
+    },
+    {
+      "field": "feature_temporal_coverage_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 12
+    },
+    {
+      "field": "feature_behavior_missing_ratio",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 9
+    },
+    {
+      "field": "feature_has_complete_recent_windows",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "imbalance_attendance_stable_study_drop",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "course_risk_min_score",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 102
+    },
+    {
+      "field": "course_risk_avg_min_gap",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 7521
+    },
+    {
+      "field": "course_risk_fail_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 19
+    },
+    {
+      "field": "course_risk_distance_to_60",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 5700
+    },
+    {
+      "field": "course_risk_min_distance_to_60",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 102
+    },
+    {
+      "field": "course_risk_near_fail",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "course_risk_marginal_pass_count",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 16
+    },
+    {
+      "field": "course_risk_multi_course_danger",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "course_risk_dispersion",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 9581
+    },
+    {
+      "field": "course_risk_dispersion_coef",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 13797
+    },
+    {
+      "field": "course_risk_score_variance",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 9613
+    },
+    {
+      "field": "course_risk_weakest_gap_to_60",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 102
+    },
+    {
+      "field": "course_risk_weakest_gap_to_70",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 102
+    },
+    {
+      "field": "course_risk_bottleneck_severity",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 7521
+    },
+    {
+      "field": "course_risk_bottleneck_ratio",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 12636
+    },
+    {
+      "field": "course_risk_fail_rate",
+      "non_null_rate": 0.9984070997838207,
+      "missing_rate": 0.001592900216179315,
+      "distinct_count": 268
+    },
+    {
+      "field": "discordance_library_grade",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    },
+    {
+      "field": "course_risk_consecutive_decline",
+      "non_null_rate": 1.0,
+      "missing_rate": 0.0,
+      "distinct_count": 2
+    }
+  ],
+  "primary_key_association": [
+    {
+      "metric": "rows_with_valid_primary_key",
+      "value": 17578
+    },
+    {
+      "metric": "rows_with_duplicate_primary_key",
+      "value": 0
+    },
+    {
+      "metric": "primary_key_association_success_rate",
+      "value": 1.0
+    },
+    {
+      "family": "grade",
+      "feature_columns": [
+        "FEATURE_GRADE_COURSE_COUNT",
+        "FEATURE_GRADE_AVG_SCORE",
+        "FEATURE_GRADE_MIN_SCORE",
+        "FEATURE_GRADE_FAIL_COUNT",
+        "FEATURE_GRADE_CREDIT_SUM",
+        "FEATURE_CET_SCORE_MAX"
+      ],
+      "join_success_rate": 1.0,
+      "missing_rows": 0,
+      "layer_status": "stable_core"
+    },
+    {
+      "family": "course",
+      "feature_columns": [
+        "FEATURE_COURSE_SELECTED_COUNT",
+        "FEATURE_COURSE_CREDIT_SUM",
+        "FEATURE_COURSE_RETAKE_COUNT"
+      ],
+      "join_success_rate": 0.9984070997838207,
+      "missing_rows": 28,
+      "layer_status": "stable_core"
+    },
+    {
+      "family": "attendance",
+      "feature_columns": [
+        "FEATURE_ATTENDANCE_EVENT_COUNT",
+        "FEATURE_ATTENDANCE_ABNORMAL_COUNT",
+        "FEATURE_ATTENDANCE_ABNORMAL_RATE"
+      ],
+      "join_success_rate": 0.00523381499601775,
+      "missing_rows": 17486,
+      "layer_status": "unavailable_behavior"
+    },
+    {
+      "family": "class_task",
+      "feature_columns": [
+        "FEATURE_CLASS_TASK_COUNT",
+        "FEATURE_CLASS_TASK_RATE_AVG",
+        "FEATURE_CLASS_VIDEO_RATE_AVG"
+      ],
+      "join_success_rate": 0.15746956422801228,
+      "missing_rows": 14810,
+      "layer_status": "recoverable_behavior"
+    },
+    {
+      "family": "assignment",
+      "feature_columns": [
+        "FEATURE_ASSIGNMENT_COUNT",
+        "FEATURE_ASSIGNMENT_SCORE_AVG",
+        "FEATURE_ASSIGNMENT_MISSING_COUNT",
+        "FEATURE_ASSIGNMENT_SUBMIT_RATE"
+      ],
+      "join_success_rate": 0.13562407554898168,
+      "missing_rows": 15194,
+      "layer_status": "recoverable_behavior"
+    },
+    {
+      "family": "exam",
+      "feature_columns": [
+        "FEATURE_EXAM_COUNT",
+        "FEATURE_EXAM_SCORE_AVG",
+        "FEATURE_EXAM_MISSING_COUNT"
+      ],
+      "join_success_rate": 0.1306747070201388,
+      "missing_rows": 15281,
+      "layer_status": "recoverable_behavior"
+    },
+    {
+      "family": "library",
+      "feature_columns": [
+        "FEATURE_LIBRARY_VISIT_COUNT"
+      ],
+      "join_success_rate": 0.17391057003072022,
+      "missing_rows": 14521,
+      "layer_status": "recoverable_behavior"
+    },
+    {
+      "family": "online",
+      "feature_columns": [],
+      "join_success_rate": 0.0,
+      "missing_rows": 17578,
+      "layer_status": "unavailable_behavior"
+    }
+  ],
+  "unknown_value_stats": [
+    {
+      "field": "XB",
+      "raw_missing_count": 1,
+      "unknown_or_unmapped_count": 0,
+      "category_drift_count": 0,
+      "examples": []
+    },
+    {
+      "field": "MZMC",
+      "raw_missing_count": 1,
+      "unknown_or_unmapped_count": 0,
+      "category_drift_count": 0,
+      "examples": []
+    },
+    {
+      "field": "ZZMMMC",
+      "raw_missing_count": 10,
+      "unknown_or_unmapped_count": 0,
+      "category_drift_count": 0,
+      "examples": []
+    },
+    {
+      "field": "CSRQ",
+      "raw_missing_count": 3,
+      "unknown_or_unmapped_count": 0,
+      "category_drift_count": 0,
+      "examples": []
+    },
+    {
+      "field": "XSM",
+      "raw_missing_count": 1,
+      "unknown_or_unmapped_count": 0,
+      "category_drift_count": 0,
+      "examples": []
+    },
+    {
+      "field": "ZYM",
+      "raw_missing_count": 1,
+      "unknown_or_unmapped_count": 0,
+      "category_drift_count": 0,
+      "examples": []
+    },
+    {
+      "field": "LABEL_SUBTYPE",
+      "raw_missing_count": 0,
+      "unknown_or_unmapped_count": 0,
+      "category_drift_count": 0,
+      "examples": []
+    },
+    {
+      "field": "DATA_QUALITY_FLAG",
+      "raw_missing_count": 0,
+      "unknown_or_unmapped_count": 0,
+      "category_drift_count": 0,
+      "examples": []
+    }
+  ],
+  "data_mode_stats": [
+    {
+      "study_data_mode": "core_only",
+      "rows": 12137
+    },
+    {
+      "study_data_mode": "core_plus_behavior",
+      "rows": 5413
+    },
+    {
+      "study_data_mode": "degraded_sparse",
+      "rows": 28
+    }
+  ],
+  "row_samples": [
+    {
+      "XH": "pjwrqxbj926",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj973",
+      "TERM_ID": "2023-2024-1",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj972",
+      "TERM_ID": "2023-2024-1",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj969",
+      "TERM_ID": "2022-2023-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj969",
+      "TERM_ID": "2023-2024-1",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxxxxbj910",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj955",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjxuqwbj551",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjxyqxbj761",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbk253",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbj884",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbk778",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbk531",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxpqxbj955",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjxpqxbj911",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbk364",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbk604",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbj903",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbj525",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjwtqxbj979",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjxwzxkj998",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxpqxbj956",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbk047",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbk836",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxuqwbj980",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxsqxbj892",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbj924",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbl751",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxpqxbj997",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxuqwbj546",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjxuqwbj928",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbj391",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj857",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj698",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj507",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbj780",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjxrqxbj983",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbk754",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj485",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbk389",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjwrqxbj890",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjxwzxfj984",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxwzxfj987",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxwzxfj983",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxwzxfj981",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxwzxfj977",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqwbj830",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbk378",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": false,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": false,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "garbage_or_sparse_data",
+      "QUALITY_WARNING": "feature coverage too sparse for reliable inference"
+    },
+    {
+      "XH": "pjxyqxbk198",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    },
+    {
+      "XH": "pjxyqxbj405",
+      "TERM_ID": "2020-2021-2",
+      "PK_VALID": true,
+      "PK_DUPLICATED": false,
+      "LOW_SOURCE_COVERAGE": true,
+      "HIGH_MISSING_RATE": true,
+      "UNKNOWN_VALUE_DETECTED": false,
+      "CATEGORY_DRIFT_DETECTED": false,
+      "JOIN_FAILURE_DETECTED": true,
+      "QUALITY_DEGRADED": true,
+      "ROOT_CAUSE": "join_failure_or_low_coverage",
+      "QUALITY_WARNING": "feature family join likely failed or source coverage too low"
+    }
+  ]
+}

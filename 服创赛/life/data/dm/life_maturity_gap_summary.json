@@ -1,0 +1,9 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "life_maturity_stage": "clean_eval_peer_domain_candidate",
+  "current_clean_baseline_auc": 0.9547066408768538,
+  "new_candidate_auc": 0.8628567091681845,
+  "whether_auc_gte_0_8": true,
+  "blocks": [],
+  "recommendation": "life can be treated as a mature domain agent for harness integration, but it is still not production-releaseable because the clean proxy label remains unverified."
+}

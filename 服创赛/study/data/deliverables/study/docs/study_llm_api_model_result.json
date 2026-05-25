@@ -1,0 +1,85 @@
+{
+  "request_id": "study_llm_api_model_creator",
+  "status": "candidate_only",
+  "api_response_path": "E:\\AAA\\data\\dm\\study_llm_api_response.json",
+  "prediction_path": "E:\\AAA\\data\\dm\\study_llm_api_stacking_valid_predictions.csv",
+  "formal_model_valid_metrics": {
+    "rows": 3516,
+    "accuracy": 0.858646188850967,
+    "f1": 0.5763000852514919,
+    "recall": 0.6224677716390423,
+    "auc": 0.852089926589149
+  },
+  "base_model_holdout_metrics": [
+    {
+      "auc": 0.8462512855616339,
+      "accuracy": 0.7670648464163823,
+      "f1": 0.6701570680628273,
+      "recall": 0.738243123336291,
+      "precision": 0.6135693215339233,
+      "positive_rate": 0.3856655290102389,
+      "threshold": 0.48,
+      "base_name": "lgbm_all",
+      "model_name": "LightGBM",
+      "feature_set": "all_features_plus_llm",
+      "feature_count": 35
+    },
+    {
+      "auc": 0.8449775163673492,
+      "accuracy": 0.765358361774744,
+      "f1": 0.6698679471788715,
+      "recall": 0.7426796805678794,
+      "precision": 0.6100583090379009,
+      "positive_rate": 0.3902161547212742,
+      "threshold": 0.32,
+      "base_name": "xgb_all",
+      "model_name": "XGBoost",
+      "feature_set": "all_features_plus_llm",
+      "feature_count": 35
+    },
+    {
+      "auc": 0.8424918186467627,
+      "accuracy": 0.7716154721274175,
+      "f1": 0.6572769953051644,
+      "recall": 0.6832298136645962,
+      "precision": 0.6332236842105263,
+      "positive_rate": 0.34584755403868034,
+      "threshold": 0.5,
+      "base_name": "rf_grade",
+      "model_name": "RandomForest",
+      "feature_set": "grade_plus_llm",
+      "feature_count": 20
+    },
+    {
+      "auc": 0.7997348465292899,
+      "accuracy": 0.7460182025028441,
+      "f1": 0.6314486174164259,
+      "recall": 0.678793256433008,
+      "precision": 0.5902777777777778,
+      "positive_rate": 0.36860068259385664,
+      "threshold": 0.46,
+      "base_name": "logit_llm",
+      "model_name": "LogisticRegression",
+      "feature_set": "llm_only",
+      "feature_count": 11
+    }
+  ],
+  "llm_api_stacking_holdout_metrics": {
+    "auc": 0.8466501857262825,
+    "accuracy": 0.7795790671217292,
+    "f1": 0.6593406593406593,
+    "recall": 0.6654835847382431,
+    "precision": 0.6533101045296167,
+    "positive_rate": 0.3265073947667804,
+    "threshold": 0.56
+  },
+  "best_base_auc": 0.8462512855616339,
+  "best_base_f1": 0.6701570680628273,
+  "improvement_vs_formal": {
+    "auc_delta": -0.005439740862866471,
+    "f1_delta": 0.08304057408916743,
+    "recall_delta": 0.04301581309920077
+  },
+  "publish_recommendation": "do_not_switch_primary_by_auc",
+  "note": "This is a simulated LLM API-created OOF stacking model. It does not overwrite study_model.pkl or study_model_config.json."
+}

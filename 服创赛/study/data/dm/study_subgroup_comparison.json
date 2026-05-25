@@ -1,0 +1,8 @@
+{
+  "core_model": {
+    "overall_auc": 0.8633345933663998,
+    "overall_count": 17578,
+    "uncertain_band_auc": 0.6431161465618187,
+    "uncertain_band_count": 6161
+  }
+}

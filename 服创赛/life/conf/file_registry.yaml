@@ -1,0 +1,6 @@
+datasets:
+  student_profile: data/raw/数据集及类型/学生基本信息.xlsx
+  internet: data/raw/数据集及类型/上网统计.xlsx
+  club: data/raw/数据集及类型/社团活动.xlsx
+  library: data/raw/数据集及类型/图书馆打卡记录.xlsx
+  gate: data/raw/数据集及类型/门禁数据.xlsx

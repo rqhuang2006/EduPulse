@@ -1,0 +1,21 @@
+# Run Record Schema
+
+- `run_id`: unique harness run id
+- `pipeline_name`: pipeline spec name
+- `domain`: domain name
+- `stage_results[]`: ordered action results
+- `stage_results[].metrics`: structured metrics per action
+- `stage_results[].artifacts[]`: output artifact refs
+- `stage_results[].validations[]`: validator outputs with reason codes
+- `final_decision`: policy decision, reason codes, summary, details
+- `started_at` / `finished_at`
+- `status`
+- `metadata.eval_scope`
+- `metadata.data_mode`
+- `metadata.feature_contract_hash`
+- `metadata.label_version`
+- `metadata.threshold_regime`
+- `metadata.sample_count`
+- `metadata.same_caliber`
+- `metadata.baseline_info`
+- `metadata.candidate_info`

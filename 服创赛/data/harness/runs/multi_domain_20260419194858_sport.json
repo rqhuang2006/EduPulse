@@ -1,0 +1,67 @@
+{
+  "run_id": "multi_domain_20260419194858_sport",
+  "pipeline_name": "harness_sport",
+  "domain": "sport",
+  "stage_results": [
+    {
+      "action_name": "stub",
+      "status": "success",
+      "metrics": {},
+      "artifacts": [],
+      "validations": [],
+      "diagnostics": {
+        "domain": "sport",
+        "note": "Stub agent - no execution performed"
+      },
+      "message": "sport agent is not yet implemented"
+    }
+  ],
+  "final_decision": {
+    "decision": "dry_run_only",
+    "reason_codes": [
+      "agent_not_implemented"
+    ],
+    "summary": "sport agent is a stub - no decision made",
+    "details": {},
+    "execution_mode": "",
+    "decision_stage_reached": "contract_chain_gate",
+    "gate_name": "stub",
+    "collected_warnings": []
+  },
+  "started_at": "2026-04-19T19:48:58",
+  "finished_at": "2026-04-19T19:50:29",
+  "status": "success",
+  "metadata": {
+    "started_at": "2026-04-19T19:48:58",
+    "domain_name": "sport",
+    "system_status": "stub",
+    "domain_context": {
+      "domain_name": "sport"
+    },
+    "domain_audit": {
+      "stub_reason": "agent_not_implemented"
+    },
+    "metric_context": {},
+    "baseline_info": {},
+    "candidate_info": {}
+  },
+  "eval_scope": "",
+  "task_scope": "",
+  "feature_contract_hash": "",
+  "label_definition": "",
+  "baseline_version_id": "",
+  "anchor_baseline_version_id": "",
+  "comparison_mode": "",
+  "policy_decision": "dry_run_only",
+  "execution_mode": "",
+  "decision_stage_reached": "contract_chain_gate",
+  "system_status": "stub",
+  "collected_warnings": [],
+  "domain_context": {
+    "domain_name": "sport"
+  },
+  "domain_audit": {
+    "stub_reason": "agent_not_implemented"
+  },
+  "metric_context": {}
+}

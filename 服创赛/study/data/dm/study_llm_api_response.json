@@ -1,0 +1,55 @@
+{
+  "api_type": "simulated_llm_model_creator",
+  "created_at": "2026-04-17T10:06:55",
+  "objective": "Create a stronger study risk model from existing train table without using a control-decision model.",
+  "feature_blueprint": {
+    "base_feature_groups": [
+      "all_formal_model_features",
+      "grade_course_features",
+      "engagement_and_missingness_features",
+      "llm_domain_synthesized_features"
+    ],
+    "generated_features": [
+      "FEATURE_LLM_GRADE_RISK_INDEX",
+      "FEATURE_LLM_COURSE_PRESSURE_INDEX",
+      "FEATURE_LLM_ATTENDANCE_RISK_INDEX",
+      "FEATURE_LLM_ASSIGNMENT_EXAM_GAP_INDEX",
+      "FEATURE_LLM_CLASS_ENGAGEMENT_GAP_INDEX",
+      "FEATURE_LLM_L456_SIGNAL_ABSENCE",
+      "FEATURE_LLM_SCORE_VOLATILITY_INDEX",
+      "FEATURE_LLM_COVERAGE_ADJUSTED_RISK",
+      "FEATURE_LLM_GRADE_PRESSURE_CROSS",
+      "FEATURE_LLM_ATTENDANCE_GRADE_CROSS",
+      "FEATURE_LLM_EXAM_GRADE_CROSS"
+    ],
+    "guardrail": "Do not use LABEL, NEXT_TERM_ID, LABEL_REASON, or post-label fields as features."
+  },
+  "model_blueprint": {
+    "method": "OOF stacking",
+    "base_models": [
+      {
+        "name": "lgbm_all",
+        "model": "LightGBM",
+        "features": "all_features_plus_llm"
+      },
+      {
+        "name": "xgb_all",
+        "model": "XGBoost",
+        "features": "all_features_plus_llm"
+      },
+      {
+        "name": "rf_grade",
+        "model": "RandomForest",
+        "features": "grade_plus_llm"
+      },
+      {
+        "name": "logit_llm",
+        "model": "LogisticRegression",
+        "features": "llm_only"
+      }
+    ],
+    "meta_model": "LogisticRegression over OOF base scores",
+    "validation": "stratified holdout plus 5-fold OOF on development split",
+    "publish_policy": "candidate_only"
+  }
+}

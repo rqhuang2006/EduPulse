@@ -1,0 +1,90 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "circularity_detected": false,
+  "predictive_validity": "clean_proxy_with_time_decoupling_but_still_unverified",
+  "not_releaseable_for_prod": true,
+  "runs": [
+    {
+      "run_name": "clean_baseline",
+      "feature_columns": [
+        "internet_early_sum",
+        "internet_early_mean",
+        "library_early_mean",
+        "club_early_mean",
+        "gate_early_late_ratio",
+        "gate_early_mean",
+        "XB",
+        "MZMC",
+        "ZZMMMC",
+        "JG",
+        "XSM",
+        "ZYM"
+      ],
+      "label_source_features": [
+        "late_internet_mean",
+        "late_gate_ratio",
+        "late_library_mean",
+        "late_club_mean"
+      ],
+      "overlap_features": [],
+      "auc": 0.8598967820279296,
+      "f1": 0.746479,
+      "precision": 0.757143,
+      "recall": 0.736111,
+      "positive_rate": 0.282353,
+      "conclusion": "clean baseline uses fixed early-window aggregates only"
+    },
+    {
+      "run_name": "clean_candidate",
+      "feature_columns": [
+        "internet_early_sum",
+        "internet_early_mean",
+        "library_early_mean",
+        "club_early_mean",
+        "gate_early_late_ratio",
+        "gate_early_mean",
+        "XB",
+        "MZMC",
+        "ZZMMMC",
+        "JG",
+        "XSM",
+        "ZYM",
+        "internet_early_trend",
+        "internet_early_volatility",
+        "internet_early_continuity",
+        "internet_early_deviation",
+        "internet_early_cv",
+        "club_early_trend",
+        "club_early_continuity",
+        "library_early_trend",
+        "library_early_volatility",
+        "library_early_continuity",
+        "library_early_weekend_ratio",
+        "gate_early_trend",
+        "gate_early_volatility",
+        "gate_early_continuity",
+        "gate_early_weekend_ratio",
+        "gate_early_hour_mean",
+        "behavior_rhythm_gap",
+        "internet_library_interaction",
+        "late_gate_internet_interaction",
+        "club_library_balance"
+      ],
+      "label_source_features": [
+        "late_internet_mean",
+        "late_gate_ratio",
+        "late_library_mean",
+        "late_club_mean"
+      ],
+      "overlap_features": [],
+      "auc": 0.8634638737097754,
+      "f1": 0.748299,
+      "precision": 0.733333,
+      "recall": 0.763889,
+      "positive_rate": 0.282353,
+      "conclusion": "clean candidate adds trend, volatility, rhythm, continuity, interaction, and deviation features"
+    }
+  ],
+  "conclusion": "clean eval uses time-decoupled windows; no direct label-source overlap remains in main candidate"
+}

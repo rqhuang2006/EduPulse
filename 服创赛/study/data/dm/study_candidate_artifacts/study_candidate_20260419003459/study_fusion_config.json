@@ -1,0 +1,21 @@
+{
+  "fusion_strategy": "weighted_branch_fusion",
+  "status": "candidate_only",
+  "branches": [
+    {
+      "feature_group": "grade_dominant",
+      "model_name": "LightGBM",
+      "weight": 0.3333339433840455
+    },
+    {
+      "feature_group": "low_missing_robust",
+      "model_name": "LightGBM",
+      "weight": 0.3333339433840455
+    },
+    {
+      "feature_group": "topk_selected",
+      "model_name": "LightGBM",
+      "weight": 0.33333211323190914
+    }
+  ]
+}

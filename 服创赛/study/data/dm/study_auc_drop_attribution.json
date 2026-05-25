@@ -1,0 +1,224 @@
+{
+  "experiment_name": "study_auc_drop_attribution",
+  "generated_at": "2026-04-19T09:04:52",
+  "label_definition": "LABEL",
+  "reference": {
+    "historical_core_only_random_auc": 0.852089926589149
+  },
+  "levels": {
+    "L0": {
+      "split": "random_stratified",
+      "features": "8_core",
+      "population_summary": {
+        "rows": 14810,
+        "positive_rows": 4520,
+        "negative_rows": 10290
+      },
+      "auc": 0.8534332348615805,
+      "model_name": "LightGBMClassifier",
+      "model_params": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 5,
+        "lambda_l1": 0.1,
+        "lambda_l2": 0.1,
+        "scale_pos_weight": 1.0,
+        "random_state": 42,
+        "verbose": -1
+      },
+      "feature_count": 8,
+      "valid_rows": 2962,
+      "delta_vs_L0": 0.0,
+      "delta_vs_prev": null
+    },
+    "L1": {
+      "split": "term_order_holdout",
+      "features": "8_core",
+      "population_summary": {
+        "rows": 14810,
+        "positive_rows": 4520,
+        "negative_rows": 10290
+      },
+      "auc": 0.8626212920182825,
+      "model_name": "LightGBMClassifier",
+      "model_params": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 5,
+        "lambda_l1": 0.1,
+        "lambda_l2": 0.1,
+        "scale_pos_weight": 1.0,
+        "random_state": 42,
+        "verbose": -1
+      },
+      "feature_count": 8,
+      "valid_rows": 2962,
+      "delta_vs_L0": 0.009188057156702012,
+      "delta_vs_prev": 0.009188057156702012
+    },
+    "L2": {
+      "split": "term_order_holdout",
+      "features": "8_core",
+      "population_summary": {
+        "rows": 17578,
+        "positive_rows": 5636,
+        "negative_rows": 11942,
+        "mode_counts": {
+          "core_only": 12137,
+          "core_plus_behavior": 5413,
+          "degraded_sparse": 28
+        }
+      },
+      "auc": 0.8484131895469291,
+      "model_name": "LightGBMClassifier",
+      "model_params": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 5,
+        "lambda_l1": 0.1,
+        "lambda_l2": 0.1,
+        "scale_pos_weight": 1.0,
+        "random_state": 42,
+        "verbose": -1
+      },
+      "feature_count": 8,
+      "valid_rows": 3516,
+      "delta_vs_L0": -0.005020045314651389,
+      "delta_vs_prev": -0.014208102471353401
+    },
+    "L3": {
+      "split": "term_order_holdout",
+      "features": "current_serving_features_no_routing",
+      "population_summary": {
+        "rows": 17578,
+        "positive_rows": 5636,
+        "negative_rows": 11942,
+        "mode_counts": {
+          "core_only": 12137,
+          "core_plus_behavior": 5413,
+          "degraded_sparse": 28
+        }
+      },
+      "auc": 0.8931215810309979,
+      "model_name": "LightGBMClassifier",
+      "model_params": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 5,
+        "lambda_l1": 0.1,
+        "lambda_l2": 0.1,
+        "scale_pos_weight": 1.0,
+        "random_state": 42,
+        "verbose": -1
+      },
+      "feature_count": 57,
+      "valid_rows": 3516,
+      "delta_vs_L0": 0.03968834616941741,
+      "delta_vs_prev": 0.0447083914840688
+    },
+    "L4": {
+      "split": "term_order_holdout",
+      "features": "current_layered_routed_serving",
+      "population_summary": {
+        "rows": 17578,
+        "positive_rows": 5636,
+        "negative_rows": 11942,
+        "mode_counts": {
+          "core_only": 12137,
+          "core_plus_behavior": 5413,
+          "degraded_sparse": 28
+        }
+      },
+      "auc": 0.8537577918888164,
+      "core_model_name": "LightGBMClassifier",
+      "core_model_params": {
+        "n_estimators": 100,
+        "max_depth": 4,
+        "num_leaves": 15,
+        "min_child_samples": 20,
+        "learning_rate": 0.05,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 5,
+        "lambda_l1": 0.1,
+        "lambda_l2": 0.1,
+        "scale_pos_weight": 1.0,
+        "random_state": 42,
+        "verbose": -1
+      },
+      "base_auc_before_routing": 0.848233239734653,
+      "behavior_model_trained": true,
+      "subgroup_model_trained": true,
+      "behavior_metrics": {
+        "train_rows": 2607,
+        "valid_rows": 652,
+        "valid_auc": 0.5620580199292832,
+        "feature_count": 45,
+        "uncertain_training_only": true
+      },
+      "subgroup_metrics": {
+        "train_rows": 2581,
+        "valid_rows": 646,
+        "valid_auc": 0.6675898829431437,
+        "feature_count": 29,
+        "subtype": "single_fail",
+        "uncertain_training_only": true
+      },
+      "confidence_zone_counts": {
+        "high_conf_negative": 2574,
+        "high_conf_positive": 490,
+        "middle_correction": 452
+      },
+      "routing_reason_counts": {
+        "base_only_confident": 3048,
+        "middle_zone_behavior_plus_single_fail_expert": 445,
+        "degraded_sparse_base_only": 23
+      },
+      "valid_mode_counts": {
+        "core_only": 2806,
+        "core_plus_behavior": 687,
+        "degraded_sparse": 23
+      },
+      "delta_vs_L0": 0.0003245570272358833,
+      "delta_vs_prev": -0.03936378914218153
+    }
+  },
+  "interpretation_deltas": [
+    {
+      "question": "split_difficulty_effect",
+      "answer": 0.009188057156702012
+    },
+    {
+      "question": "population_expansion_effect",
+      "answer": -0.014208102471353401
+    },
+    {
+      "question": "feature_expansion_effect",
+      "answer": 0.0447083914840688
+    },
+    {
+      "question": "routing_effect",
+      "answer": -0.03936378914218153
+    }
+  ]
+}

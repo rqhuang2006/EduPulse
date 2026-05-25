@@ -1,0 +1,34 @@
+{
+  "summary_metrics": {
+    "rows": 255,
+    "positive_rate": 0.282353,
+    "auc": 0.8632350795272142,
+    "f1": 0.741176,
+    "precision": 0.677419,
+    "recall": 0.818182,
+    "coverage": 1.0,
+    "degraded_ratio": 0.0,
+    "mean_infer_risk_score": 0.401833,
+    "high_risk_rate": 0.25098,
+    "experiment_name": "temporal_generalization_mainline"
+  },
+  "baseline_metrics": {
+    "rows": 490,
+    "positive_rate": 0.808163,
+    "auc": 0.9547066408768538,
+    "f1": 0.973451,
+    "precision": 0.974684,
+    "recall": 0.972222,
+    "coverage": 1.0,
+    "degraded_ratio": 0.0,
+    "mean_infer_risk_score": 0.730505,
+    "high_risk_rate": 0.791837
+  },
+  "warnings": [
+    "label_source = future_window_proxy",
+    "predictive_validity = clean_proxy_with_time_decoupling_but_still_unverified",
+    "not_releaseable_for_prod = true",
+    "sport-related datasets intentionally excluded from life domain",
+    "proxy_stress_test_skipped_3_experiments_due_to_single_class"
+  ]
+}

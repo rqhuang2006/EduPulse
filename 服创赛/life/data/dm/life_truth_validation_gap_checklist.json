@@ -1,0 +1,33 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "current_label_type": "proxy",
+  "external_truth_available": false,
+  "checklist": [
+    {
+      "item": "external_truth_label",
+      "status": "missing",
+      "description": "Need an externally validated business target (e.g. official university risk flag, counselor assessment) that is not derived from the same behavioral dataset",
+      "priority": "critical"
+    },
+    {
+      "item": "temporal_stability_auc_gte_0_8",
+      "status": "met",
+      "description": "Temporal generalization AUC should remain >= 0.8 on held-out time periods",
+      "priority": "high"
+    },
+    {
+      "item": "cross_domain_consistency",
+      "status": "pending",
+      "description": "Life risk scores should correlate meaningfully with study domain risk indicators for same students",
+      "priority": "medium"
+    },
+    {
+      "item": "prospective_validation",
+      "status": "missing",
+      "description": "Model should be tested on a future cohort not used in any label construction or feature engineering",
+      "priority": "high"
+    }
+  ],
+  "conclusion": "life domain is mature for harness integration as a predictive proxy model, but remains not_releaseable_for_prod until external truth validation is available."
+}

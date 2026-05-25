@@ -1,0 +1,4 @@
+schema_version: life_agent_policy_v1
+decision_defaults:
+  execution_mode: dry_run
+  release_target: demo

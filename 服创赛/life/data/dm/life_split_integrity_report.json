@@ -1,0 +1,12 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:00:52",
+  "split_strategy": "student_hash_three_bucket (train/valid/holdout)",
+  "unique_students_train": 2005,
+  "unique_students_valid": 240,
+  "unique_students_holdout": 255,
+  "cross_split_student_overlap_count": 0,
+  "row_overlap_count": 0,
+  "window_neighbor_leakage_detected": false,
+  "conclusion": "student-isolated split passed"
+}

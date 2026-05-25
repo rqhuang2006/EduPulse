@@ -1,0 +1,77 @@
+{
+  "counts": {
+    "core": 11,
+    "behavior": 2,
+    "temporal": 35,
+    "interaction": 8
+  },
+  "columns": {
+    "core": [
+      "FEATURE_GRADE_COURSE_COUNT",
+      "FEATURE_GRADE_AVG_SCORE",
+      "FEATURE_GRADE_MIN_SCORE",
+      "FEATURE_GRADE_FAIL_COUNT",
+      "FEATURE_GRADE_CREDIT_SUM",
+      "FEATURE_COURSE_SELECTED_COUNT",
+      "FEATURE_COURSE_CREDIT_SUM",
+      "personal_gap_grade_avg",
+      "feature_behavior_coverage_count",
+      "feature_temporal_coverage_count",
+      "feature_behavior_missing_ratio"
+    ],
+    "behavior": [
+      "FEATURE_LIBRARY_VISIT_COUNT",
+      "imbalance_attendance_stable_study_drop"
+    ],
+    "temporal": [
+      "consecutive_decline_grade_avg_score",
+      "dist_from_worst_grade_avg_score",
+      "recovery_grade_avg_score",
+      "consecutive_decline_grade_fail_count",
+      "dist_from_worst_grade_fail_count",
+      "recovery_grade_fail_count",
+      "dist_from_worst_attendance_abnormal_rate",
+      "consecutive_decline_library_visit_count",
+      "dist_from_worst_library_visit_count",
+      "recovery_library_visit_count",
+      "trend_decline_count_grade_avg",
+      "trend_below_hist_grade_avg",
+      "trend_drawdown_grade_avg",
+      "trend_decline_count_exam_score",
+      "trend_below_hist_exam_score",
+      "trend_decline_count_library_visit",
+      "trend_below_hist_library_visit",
+      "feature_has_complete_recent_windows",
+      "course_risk_min_score",
+      "course_risk_avg_min_gap",
+      "course_risk_fail_count",
+      "course_risk_distance_to_60",
+      "course_risk_min_distance_to_60",
+      "course_risk_near_fail",
+      "course_risk_marginal_pass_count",
+      "course_risk_multi_course_danger",
+      "course_risk_dispersion",
+      "course_risk_dispersion_coef",
+      "course_risk_score_variance",
+      "course_risk_weakest_gap_to_60",
+      "course_risk_weakest_gap_to_70",
+      "course_risk_bottleneck_severity",
+      "course_risk_bottleneck_ratio",
+      "course_risk_fail_rate",
+      "course_risk_consecutive_decline"
+    ],
+    "interaction": [
+      "cross__feature_grade_avg_score__x__feature_course_selected_count",
+      "cross__feature_assignment_score_avg__x__feature_exam_score_avg",
+      "cross__feature_library_visit_count__x__feature_grade_avg_score",
+      "cross__delta_grade_avg_score__x__feature_course_selected_count",
+      "discordance_attendance_grade",
+      "discordance_effort_result",
+      "workload_stress",
+      "discordance_library_grade"
+    ]
+  },
+  "study_data_mode": "core_plus_behavior_enhanced",
+  "generated_at": "2026-04-19T09:23:38",
+  "scope": "layered_train"
+}

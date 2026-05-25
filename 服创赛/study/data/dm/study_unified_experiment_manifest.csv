@@ -1,0 +1,10 @@
+exp_id,exp_name,population,split,feature_count,feature_hash,engineering_order,model_class,holdout_auc,holdout_f1,holdout_recall,holdout_precision,train_ids_count,holdout_ids_count,status,notes
+A,Strong Baseline Rebuild,core_only,"train_test_split(test_size=0.2, random_state=42, stratify=LABEL)",8.0,d7517139,after_split,LightGBMClassifier,,,,,,,completed,Reproduced 0.85 AUC baseline
+C-R0_single_model,Routing R0_single_model,core_plus_behavior,"train_test_split(test_size=0.2, random_state=42)",129.0,,after_split,LightGBMClassifier,0.8402932250484046,,,,14062.0,3516.0,completed,routing_damage=None
+C-R1_core_only,Routing R1_core_only,core_plus_behavior,"train_test_split(test_size=0.2, random_state=42)",7.0,,after_split,LightGBMClassifier,0.8359391220407939,,,,14062.0,3516.0,completed,routing_damage=None
+C-R2_core_plus_behavior,Routing R2_core_plus_behavior,core_plus_behavior,"train_test_split(test_size=0.2, random_state=42)",100.0,,after_split,LightGBMClassifier,0.8383135808420953,,,,14062.0,3516.0,completed,routing_damage=None
+C-R3_subgroup_routing,Routing R3_subgroup_routing,core_plus_behavior,"train_test_split(test_size=0.2, random_state=42)",,,after_split,LightGBMClassifier,0.8347052800045164,,,,14062.0,3516.0,completed,routing_damage=0.0031406888196158222
+C-R4_behavior_delta,Routing R4_behavior_delta,core_plus_behavior,"train_test_split(test_size=0.2, random_state=42)",,,after_split,LightGBMClassifier,0.8324227465204874,,,,14062.0,3516.0,completed,routing_damage=0.0008581553355868632
+D-candidate,Evolution Candidate,study_layered_enhanced_serving,term_order_holdout,,,unknown,RandomForest,0.8418693263972741,0.6672019269369731,0.7373558118899733,0.6092375366568915,,,completed,candidate vs baseline AUC delta
+D-frozen_baseline,Frozen Baseline,study_layered_enhanced_serving,term_order_holdout,,,unknown,RandomForest,,,,,,,completed,Frozen snapshot baseline
+E-retrained,Retrained (post-leakage-fix),"['grade', 'course']",term_order_holdout,56.0,aaafae9c,after_split,CatBoostClassifier,0.8644761106558164,0.5517241379310345,0.7366482504604052,,,,completed,Leakage-fixed model

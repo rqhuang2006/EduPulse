@@ -1,0 +1,15 @@
+models:
+  regression:
+    - RandomForest
+    - LightGBM
+    - XGBoost
+  classification:
+    - RandomForest
+    - LightGBM
+    - XGBoost
+threshold_strategies:
+  - minmax_inverted
+risk_mapping:
+  source_field: pred_zf_score
+  target_field: pred_fail_proba
+  fallback_value: 0.5

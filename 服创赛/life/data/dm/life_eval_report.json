@@ -1,0 +1,63 @@
+{
+  "domain": "life",
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "overall_metrics": {
+    "rows": 255,
+    "positive_rate": 0.282353,
+    "auc": 0.8632350795272142,
+    "f1": 0.741176,
+    "precision": 0.677419,
+    "recall": 0.818182,
+    "coverage": 1.0,
+    "degraded_ratio": 0.0,
+    "mean_infer_risk_score": 0.401833,
+    "high_risk_rate": 0.25098,
+    "experiment_name": "temporal_generalization_mainline"
+  },
+  "baseline_metrics": {
+    "rows": 490,
+    "positive_rate": 0.808163,
+    "auc": 0.9547066408768538,
+    "f1": 0.973451,
+    "precision": 0.974684,
+    "recall": 0.972222,
+    "coverage": 1.0,
+    "degraded_ratio": 0.0,
+    "mean_infer_risk_score": 0.730505,
+    "high_risk_rate": 0.791837
+  },
+  "subgroup_metrics_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_subgroup_metrics.csv",
+  "confidence_zone_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_confidence_zone_report.csv",
+  "label_audit_detail_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_label_audit_detail.json",
+  "selected_features_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_selected_features_report.csv",
+  "feature_layer_summary_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_feature_layer_summary.json",
+  "temporal_integrity_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_temporal_integrity_report.json",
+  "split_integrity_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_split_integrity_report.json",
+  "proxy_stress_test_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_proxy_stress_test_report.json",
+  "feature_ablation_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_feature_ablation_report.json",
+  "temporal_generalization_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\dm\\life_temporal_generalization_report.json",
+  "warnings": [
+    "label_source = future_window_proxy",
+    "predictive_validity = clean_proxy_with_time_decoupling_but_still_unverified",
+    "not_releaseable_for_prod = true",
+    "sport-related datasets intentionally excluded from life domain",
+    "proxy_stress_test_skipped_3_experiments_due_to_single_class"
+  ],
+  "schema_validation": {
+    "report_name": "life_eval_report",
+    "required_fields": [
+      "domain",
+      "request_id",
+      "overall_metrics",
+      "baseline_metrics",
+      "warnings",
+      "temporal_integrity_report_path",
+      "split_integrity_report_path",
+      "proxy_stress_test_report_path",
+      "temporal_generalization_report_path"
+    ],
+    "missing_fields": [],
+    "schema_ok": true
+  }
+}

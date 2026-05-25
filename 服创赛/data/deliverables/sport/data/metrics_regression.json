@@ -1,0 +1,8 @@
+{
+  "best_model": "XGBoost",
+  "rmse": 1.1499374764472303,
+  "mae": 0.7595232763955759,
+  "r2": 0.987297000762544,
+  "samples": 9751,
+  "model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\data\\regression\\best_sport_regression_model.joblib"
+}

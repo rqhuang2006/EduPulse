@@ -1,0 +1,41 @@
+# Local/runtime artifacts excluded from the lightweight GitHub upload
+runtime/
+.tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Dependency bundles
+**/.deps3/
+**/.wheels/
+wheelhouse/
+node_modules/
+**/streamlit_runtime/
+
+# Raw/sensitive data and heavyweight artifacts
+**/??????/
+**/data/raw/
+**/raw/
+**/candidate_artifacts/
+**/registry/
+**/models/
+*.xlsx
+*.xls
+*.xlsm
+*.joblib
+*.pkl
+*.dll
+*.whl
+*.zip
+*.7z
+*.rar
+*.pyd
+
+# Generated bulky outputs
+**/outputs/models/
+**/outputs/**/models/
+**/data/harness/frontend_bundle/
+**/study/data/harness/runs/
+**/output/shap/individual/

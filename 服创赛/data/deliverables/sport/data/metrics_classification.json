@@ -1,0 +1,20 @@
+{
+  "best_model": "RandomForest",
+  "accuracy": 0.8604651162790697,
+  "macro_f1": 0.7605442176870749,
+  "samples": 86,
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "test_label_distribution": {
+    "E": 56,
+    "D": 19,
+    "C": 9,
+    "B": 2
+  },
+  "model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\data\\classification\\best_sport_classification_model.joblib"
+}

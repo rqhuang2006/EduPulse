@@ -1,0 +1,367 @@
+{
+  "regression": {
+    "best_model": "XGBoost",
+    "rmse": 1.1499374764472303,
+    "mae": 0.7595232763955759,
+    "r2": 0.987297000762544,
+    "samples": 9751,
+    "model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\data\\regression\\best_sport_regression_model.joblib"
+  },
+  "classification": {
+    "best_model": "RandomForest",
+    "accuracy": 0.8604651162790697,
+    "macro_f1": 0.7605442176870749,
+    "samples": 86,
+    "labels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "test_label_distribution": {
+      "E": 56,
+      "D": 19,
+      "C": 9,
+      "B": 2
+    },
+    "model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\data\\classification\\best_sport_classification_model.joblib"
+  },
+  "mainline_experiments": {
+    "selected": {
+      "auc": 0.7311070004474746,
+      "rows": 7311,
+      "eval_rows": 4932,
+      "positive_count": 1463,
+      "evaluated_terms": [
+        20211,
+        20221,
+        20231
+      ],
+      "label_version": "future_v1",
+      "feature_bundle": "baseline+deviation+trend",
+      "structure_version": "single_stage",
+      "population_version": "all"
+    },
+    "best_candidate": {
+      "auc": 0.8493191878367975,
+      "rows": 3545,
+      "eval_rows": 1852,
+      "positive_count": 120,
+      "evaluated_terms": [
+        20221,
+        20231
+      ],
+      "label_version": "future_v3",
+      "feature_bundle": "baseline+deviation+trend",
+      "structure_version": "single_stage",
+      "population_version": "recoverable"
+    },
+    "best_normal_candidate": {
+      "auc": 0.8493191878367975,
+      "rows": 3545,
+      "eval_rows": 1852,
+      "positive_count": 120,
+      "evaluated_terms": [
+        20221,
+        20231
+      ],
+      "label_version": "future_v3",
+      "feature_bundle": "baseline+deviation+trend",
+      "structure_version": "single_stage",
+      "population_version": "recoverable"
+    },
+    "trusted_mainline": {
+      "auc": 0.8493191878367975,
+      "rows": 3545,
+      "eval_rows": 1852,
+      "positive_count": 120,
+      "evaluated_terms": [
+        20221,
+        20231
+      ],
+      "label_version": "future_v3",
+      "feature_bundle": "baseline+deviation+trend",
+      "structure_version": "single_stage",
+      "population_version": "recoverable"
+    },
+    "mainline_frozen": true,
+    "matrix": [
+      {
+        "auc": 0.7258788760207339,
+        "rows": 7311,
+        "eval_rows": 4932,
+        "positive_count": 1463,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline_only",
+        "structure_version": "single_stage",
+        "population_version": "all"
+      },
+      {
+        "auc": 0.7298829994245805,
+        "rows": 7163,
+        "eval_rows": 4789,
+        "positive_count": 1386,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline_only",
+        "structure_version": "single_stage",
+        "population_version": "active_courses"
+      },
+      {
+        "auc": 0.6393079021137964,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 670,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline_only",
+        "structure_version": "single_stage",
+        "population_version": "recoverable"
+      },
+      {
+        "auc": 0.7557174205988516,
+        "rows": 7311,
+        "eval_rows": 4932,
+        "positive_count": 1463,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline+deviation",
+        "structure_version": "single_stage",
+        "population_version": "all"
+      },
+      {
+        "auc": 0.7498658979705115,
+        "rows": 7163,
+        "eval_rows": 4789,
+        "positive_count": 1386,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline+deviation",
+        "structure_version": "single_stage",
+        "population_version": "active_courses"
+      },
+      {
+        "auc": 0.64256509331515,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 670,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline+deviation",
+        "structure_version": "single_stage",
+        "population_version": "recoverable"
+      },
+      {
+        "auc": 0.7311070004474746,
+        "rows": 7311,
+        "eval_rows": 4932,
+        "positive_count": 1463,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "single_stage",
+        "population_version": "all"
+      },
+      {
+        "auc": 0.7293504076489679,
+        "rows": 7163,
+        "eval_rows": 4789,
+        "positive_count": 1386,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "single_stage",
+        "population_version": "active_courses"
+      },
+      {
+        "auc": 0.6510777331616031,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 670,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v1",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "single_stage",
+        "population_version": "recoverable"
+      },
+      {
+        "auc": 0.71111311870195,
+        "rows": 7311,
+        "eval_rows": 4932,
+        "positive_count": 314,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline_only",
+        "structure_version": "single_stage",
+        "population_version": "all"
+      },
+      {
+        "auc": 0.6936786753348352,
+        "rows": 7163,
+        "eval_rows": 4789,
+        "positive_count": 313,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline_only",
+        "structure_version": "single_stage",
+        "population_version": "active_courses"
+      },
+      {
+        "auc": 0.8081673402617399,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline_only",
+        "structure_version": "single_stage",
+        "population_version": "recoverable"
+      },
+      {
+        "auc": 0.7283149156030266,
+        "rows": 7311,
+        "eval_rows": 4932,
+        "positive_count": 314,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation",
+        "structure_version": "single_stage",
+        "population_version": "all"
+      },
+      {
+        "auc": 0.7332561021222166,
+        "rows": 7163,
+        "eval_rows": 4789,
+        "positive_count": 313,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation",
+        "structure_version": "single_stage",
+        "population_version": "active_courses"
+      },
+      {
+        "auc": 0.8488163972286374,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation",
+        "structure_version": "single_stage",
+        "population_version": "recoverable"
+      },
+      {
+        "auc": 0.6992511303042925,
+        "rows": 7311,
+        "eval_rows": 4932,
+        "positive_count": 314,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "single_stage",
+        "population_version": "all"
+      },
+      {
+        "auc": 0.7143747840809487,
+        "rows": 7163,
+        "eval_rows": 4789,
+        "positive_count": 313,
+        "evaluated_terms": [
+          20211,
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "single_stage",
+        "population_version": "active_courses"
+      },
+      {
+        "auc": 0.8493191878367975,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "single_stage",
+        "population_version": "recoverable"
+      }
+    ],
+    "ablation_summary": {
+      "trend_drop_auc": 0.000502790608160053,
+      "by_bundle": {
+        "baseline_only": 0.8081673402617399,
+        "baseline+deviation": 0.8488163972286374,
+        "baseline+deviation+trend": 0.8493191878367975
+      }
+    },
+    "tautology_risk": "low",
+    "suspicious_high_auc": false,
+    "future_window_prediction": true
+  }
+}

@@ -1,0 +1,3 @@
+model,val_r2
+RandomForest,0.4328042933656375
+LightGBM,0.4078311641696033

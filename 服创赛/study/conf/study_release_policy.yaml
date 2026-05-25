@@ -1,0 +1,74 @@
+domain: study
+release:
+  require_human_approval_default: true
+  dry_run_default: true
+  keep_recent_stable_versions: 3
+  allow_candidate_publish_without_artifact_copy: true
+  never_delete_history: true
+promotion_gates:
+  min_valid_auc: 0.80
+  min_valid_recall: 0.60
+  min_valid_f1: 0.55
+  max_degraded_rate: 0.50
+  max_low_coverage_rate: 0.75
+model_selection_v1:
+  require_same_label_definition: true
+  require_same_eval_split: true
+  require_same_task_scope: true
+  require_same_layered_mode: true
+  require_train_success: true
+  require_infer_success: true
+  require_non_fallback_primary: true
+  require_output_contract_complete: true
+  require_explanation_available: true
+  require_publish_dry_run: true
+  require_rollback_dry_run: true
+  min_auc: 0.80
+  min_recall: 0.60
+  min_f1: 0.50
+  max_degraded_sparse_ratio: 0.10
+  max_degraded_ratio: 0.10
+  scoring_weights:
+    auc: 0.35
+    recall: 0.30
+    f1: 0.20
+    data_stability: 0.10
+    deployability: 0.05
+  epsilon_auc_regression: 0.003
+  local_gain_any_of:
+    - single_fail_auc
+    - core_plus_behavior_auc
+    - degraded_ratio
+    - f1
+    - recall
+  serving_priority:
+    - data_mode_adaptation
+    - recall
+    - f1
+    - auc
+    - degraded_ratio
+    - chain_readiness
+candidate_selection:
+  max_auc_regression_vs_baseline: 0.02
+  min_f1_gain_vs_baseline: 0.01
+  min_recall_gain_vs_baseline: 0.02
+decision_rules:
+  promote_to_candidate_when:
+    - candidate passes all promotion_gates
+    - candidate_auc is not lower than baseline_auc minus model_selection_v1.epsilon_auc_regression
+    - and at least one local gain in single_fail_auc or core_plus_behavior_auc or degraded_ratio or f1 or recall is positive
+  keep_baseline_when:
+    - candidate passes promotion_gates
+    - but global auc stability or local-gain conditions are not satisfied
+  block_publish_when:
+    - candidate fails any promotion_gates
+    - or degraded/low coverage metrics exceed hard limits
+rollback_gates:
+  infer_error_rate_threshold: 0.05
+  degraded_rate_spike_threshold: 0.20
+  explanation_failure_rate_threshold: 0.05
+serving:
+  bootstrap_version_id: study_v1
+  bootstrap_model_name: LightGBMClassifier
+  bootstrap_feature_version: study_feature_v1
+  bootstrap_status: published

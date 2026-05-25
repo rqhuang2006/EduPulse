@@ -1,0 +1,116 @@
+{
+  "run_type": "multi_domain",
+  "domain_results": {
+    "study": {
+      "domain_name": "study",
+      "status": "running",
+      "message": "Harness run accepted and executing in background.",
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "HarnessOrchestrator",
+        "execution_path": "http_handler -> background_thread -> adapter.run_domain_pipeline",
+        "domain_pipeline_called": false,
+        "request_domain": "study"
+      }
+    },
+    "life": {
+      "domain_name": "life",
+      "status": "running",
+      "message": "Harness run accepted and executing in background.",
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "HarnessOrchestrator",
+        "execution_path": "http_handler -> background_thread -> adapter.run_domain_pipeline",
+        "domain_pipeline_called": false,
+        "request_domain": "life"
+      }
+    },
+    "sport": {
+      "domain_name": "sport",
+      "status": "running",
+      "message": "Harness run accepted and executing in background.",
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "HarnessOrchestrator",
+        "execution_path": "http_handler -> background_thread -> adapter.run_domain_pipeline",
+        "domain_pipeline_called": false,
+        "request_domain": "sport"
+      }
+    }
+  },
+  "fusion_inputs": [],
+  "final_decision": {
+    "decision": "running",
+    "summary": "Harness run is executing in background.",
+    "system_status": "running",
+    "decision_vocabulary": {},
+    "stub_domains": [],
+    "ready_domains": [],
+    "domains": {
+      "study": {
+        "status": "running",
+        "decision": "",
+        "decision_semantics": "run_in_progress",
+        "comparable": false,
+        "mainline_task_type": "",
+        "mainline_validity": false,
+        "blocking_reason": "run_in_progress",
+        "trusted_mainline": {},
+        "mainline_frozen": false,
+        "next_optimization_target": ""
+      },
+      "life": {
+        "status": "running",
+        "decision": "",
+        "decision_semantics": "run_in_progress",
+        "comparable": false,
+        "mainline_task_type": "",
+        "mainline_validity": false,
+        "blocking_reason": "run_in_progress",
+        "trusted_mainline": {},
+        "mainline_frozen": false,
+        "next_optimization_target": ""
+      },
+      "sport": {
+        "status": "running",
+        "decision": "",
+        "decision_semantics": "run_in_progress",
+        "comparable": false,
+        "mainline_task_type": "",
+        "mainline_validity": false,
+        "blocking_reason": "run_in_progress",
+        "trusted_mainline": {},
+        "mainline_frozen": false,
+        "next_optimization_target": ""
+      }
+    },
+    "domain_decisions": {
+      "study": "",
+      "life": "",
+      "sport": ""
+    }
+  },
+  "warnings": [],
+  "validations": [],
+  "status": "running",
+  "system_status": "running",
+  "domain_timings": {},
+  "domain_start_order": [],
+  "domain_end_order": [],
+  "adapter_names": {},
+  "domain_statuses": {
+    "study": "running",
+    "life": "running",
+    "sport": "running"
+  },
+  "slowest_domain": null,
+  "request_id": "frontend_run_20260421153725",
+  "accepted_at": "2026-04-21T15:37:25",
+  "agent_trace": {
+    "invoked_via_harness": true,
+    "adapter_name": "HarnessHTTPServer",
+    "execution_path": "http_handler -> background_thread",
+    "domain_pipeline_called": false,
+    "request_domain": "study"
+  }
+}

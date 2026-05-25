@@ -1,0 +1,51 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "domain": "study",
+  "mode": "review",
+  "status": "completed_with_hold",
+  "fallback_used": false,
+  "warnings": [],
+  "state_history": [
+    {
+      "timestamp": "2026-04-21T15:59:24",
+      "request_id": "frontend_run_20260421155924",
+      "state": "received",
+      "status": "success",
+      "detail": "StudyAgent request received."
+    },
+    {
+      "timestamp": "2026-04-21T15:59:35",
+      "request_id": "frontend_run_20260421155924",
+      "state": "completed",
+      "status": "completed_with_hold",
+      "detail": "StudyAgent run finished via Harness v1."
+    }
+  ],
+  "decisions": [
+    {
+      "timestamp": "2026-04-21T15:59:35",
+      "request_id": "frontend_run_20260421155924",
+      "decision": "harness_v1",
+      "status": "completed_with_hold",
+      "reason": "Harness v1 pipeline executed through StudyAgent shell.",
+      "metrics": {
+        "run_record_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\harness\\runs\\study_harness_v1_9ea8d5bead67.json",
+        "decision": "keep_baseline"
+      }
+    },
+    {
+      "timestamp": "2026-04-21T15:59:35",
+      "request_id": "frontend_run_20260421155924",
+      "decision": "final_output",
+      "status": "completed_with_hold",
+      "reason": "Standard result object exported for harness consumption.",
+      "metrics": {
+        "result_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_agent_result.json"
+      }
+    }
+  ],
+  "policy_snapshot": {},
+  "search_space_snapshot": {},
+  "result_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_agent_result.json",
+  "deliverable_result_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\deliverables\\study\\docs\\study_agent_result.json"
+}

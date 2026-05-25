@@ -1,0 +1,12 @@
+version: life_feature_v1
+feature_groups:
+  minimal_activity:
+    description: student-level aggregates from life-only behavior datasets
+    columns:
+      - internet_hours
+      - internet_months
+      - club_activity_count
+      - library_visit_count
+      - gate_event_count
+      - late_gate_ratio
+      - late_gate_ratio

@@ -1,0 +1,34 @@
+{
+  "request_id": "study_agent_llm_fusion_request",
+  "fusion_strategy": "weighted_branch_fusion",
+  "status": "candidate_only",
+  "branches": [
+    {
+      "feature_group": "grade_dominant",
+      "model_name": "RandomForest",
+      "weight": 0.3350456934136549
+    },
+    {
+      "feature_group": "grade_dominant",
+      "model_name": "XGBoost",
+      "weight": 0.33399072930223567
+    },
+    {
+      "feature_group": "llm_synthesized",
+      "model_name": "LightGBM",
+      "weight": 0.3309635772841094
+    }
+  ],
+  "validation_metrics": {
+    "precision": 0.6206106870229008,
+    "recall": 0.7213842058562555,
+    "f1": 0.6672137874435782,
+    "positive_rate": 0.3725824800910125,
+    "auc": 0.8429824584209717,
+    "threshold": 0.45,
+    "rows": 3516,
+    "branch_count": 3,
+    "selection_reason": "maximized validation F1"
+  },
+  "note": "First-version domain branch fusion config; formal study model artifacts are not overwritten."
+}

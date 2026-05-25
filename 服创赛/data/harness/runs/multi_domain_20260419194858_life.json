@@ -1,0 +1,108 @@
+{
+  "run_id": "multi_domain_20260419194858_life",
+  "pipeline_name": "harness_life",
+  "domain": "life",
+  "stage_results": [],
+  "final_decision": {
+    "decision": "promotion_recommended",
+    "reason_codes": [],
+    "summary": "life domain pipeline completed",
+    "details": {},
+    "execution_mode": "dry_run",
+    "decision_stage_reached": "active_baseline_comparison",
+    "gate_name": "",
+    "collected_warnings": []
+  },
+  "started_at": "2026-04-19T19:48:58",
+  "finished_at": "2026-04-19T19:50:29",
+  "status": "success",
+  "metadata": {
+    "started_at": "2026-04-19T19:48:58",
+    "domain_name": "life",
+    "system_status": "multi_domain_ready",
+    "domain_context": {
+      "domain": "life",
+      "label_strategy": "quantile_threshold_35pct",
+      "source_datasets": [
+        "student_profile",
+        "internet",
+        "running",
+        "exercise",
+        "club",
+        "library",
+        "pe_course",
+        "fitness",
+        "gate"
+      ],
+      "infer_support": true
+    },
+    "domain_audit": {
+      "bootstrap_mode": false,
+      "label_threshold_quantile": 0.35,
+      "degraded_conditions": [],
+      "field_mapping_notes": [
+        "student_id unified from XH/XSBH/USERNUM/cardld/IDSERTAL",
+        "life domain fields kept under domain_context/domain_audit"
+      ]
+    },
+    "metric_context": {
+      "eval_scope": "student_holdout_hash_split",
+      "task_scope": "life_student_engagement_risk",
+      "feature_contract_hash": "30f750c69c1ade7f68b79536568219b158bc024f",
+      "label_definition": "life_label",
+      "baseline_version_id": "life_v1",
+      "anchor_baseline_version_id": "life_v1",
+      "comparison_mode": "life_bootstrap_auc_v1",
+      "sample_count": 490
+    },
+    "baseline_info": {},
+    "candidate_info": {}
+  },
+  "eval_scope": "",
+  "task_scope": "",
+  "feature_contract_hash": "",
+  "label_definition": "",
+  "baseline_version_id": "",
+  "anchor_baseline_version_id": "",
+  "comparison_mode": "",
+  "policy_decision": "promotion_recommended",
+  "execution_mode": "dry_run",
+  "decision_stage_reached": "active_baseline_comparison",
+  "system_status": "multi_domain_ready",
+  "collected_warnings": [],
+  "domain_context": {
+    "domain": "life",
+    "label_strategy": "quantile_threshold_35pct",
+    "source_datasets": [
+      "student_profile",
+      "internet",
+      "running",
+      "exercise",
+      "club",
+      "library",
+      "pe_course",
+      "fitness",
+      "gate"
+    ],
+    "infer_support": true
+  },
+  "domain_audit": {
+    "bootstrap_mode": false,
+    "label_threshold_quantile": 0.35,
+    "degraded_conditions": [],
+    "field_mapping_notes": [
+      "student_id unified from XH/XSBH/USERNUM/cardld/IDSERTAL",
+      "life domain fields kept under domain_context/domain_audit"
+    ]
+  },
+  "metric_context": {
+    "eval_scope": "student_holdout_hash_split",
+    "task_scope": "life_student_engagement_risk",
+    "feature_contract_hash": "30f750c69c1ade7f68b79536568219b158bc024f",
+    "label_definition": "life_label",
+    "baseline_version_id": "life_v1",
+    "anchor_baseline_version_id": "life_v1",
+    "comparison_mode": "life_bootstrap_auc_v1",
+    "sample_count": 490
+  }
+}

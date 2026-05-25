@@ -1,0 +1,16 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "study_and_life_are_peer_domains": true,
+  "life_mature_for_harness_integration": true,
+  "life_not_releaseable_for_prod": true,
+  "life_strengths": [
+    "frozen baseline and candidate snapshot contract are present",
+    "strict comparable honest evaluation is available",
+    "multi-domain adapter integration is available"
+  ],
+  "life_gaps_vs_study": [
+    "proxy label authenticity remains weaker than study's established release semantics",
+    "same-caliber governance is simpler than study and not yet policy-rich"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "R0_single_model": {
+    "auc": 0.8402932250484046,
+    "features": 129
+  },
+  "R1_core_only": {
+    "auc": 0.8359391220407939,
+    "features": 7
+  },
+  "R2_core_plus_behavior": {
+    "auc": 0.8383135808420953,
+    "features": 100
+  },
+  "R3_subgroup_routing": {
+    "core_auc": 0.8315645911849006,
+    "subgroup_auc": 0.8347052800045164,
+    "routed_auc": 0.8347052800045164,
+    "routing_damage": 0.0031406888196158222
+  },
+  "R4_behavior_delta": {
+    "core_auc": 0.8315645911849006,
+    "behavior_auc": 0.5682076215154874,
+    "corrected_auc": 0.8324227465204874,
+    "behavior_damage": 0.0008581553355868632
+  }
+}

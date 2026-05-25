@@ -1,0 +1,101 @@
+{
+  "domain": "study",
+  "current_version_id": "study_candidate_20260418220843",
+  "status": "published",
+  "updated_at": "2026-04-21T15:59:35",
+  "selection_policy": "model_selection_v1",
+  "default_publish_decision": "keep_baseline_unless_global_auc_stable_and_local_gain_confirmed",
+  "serving_model_type": "study_core_model",
+  "architecture_version": "study_layered_v2",
+  "serving_version": {
+    "version_id": "study_candidate_20260418220843",
+    "request_id": "study_train_evolution_request",
+    "model_name": "RandomForest",
+    "feature_group": "topk_selected",
+    "threshold_strategy": "best_f1",
+    "fusion_strategy": "weighted_branch_fusion",
+    "metrics": {
+      "auc": 0.8418693263972741,
+      "f1": 0.6672019269369731,
+      "recall": 0.7373558118899733,
+      "precision": 0.6092375366568915,
+      "coverage": 0.9995448856525202,
+      "degraded_proxy": 0.00029582432586187094,
+      "robustness_score": 0.8088200942654948
+    },
+    "architecture_version": "study_layered_v2",
+    "serving_model_type": "study_core_model",
+    "task_scope": "study_layered_enhanced_serving",
+    "label_definition": "LABEL",
+    "eval_split": "term_order_holdout",
+    "chain_validation": {
+      "infer_success": true,
+      "fallback_used": false,
+      "output_contract_complete": true,
+      "explanation_available": true,
+      "publish_dry_run": true,
+      "rollback_dry_run": true,
+      "data_mode_validation": {
+        "core_only_ratio": 0.7818979266347688,
+        "core_plus_behavior_ratio": 0.20334928229665072,
+        "degraded_sparse_ratio": 0.014752791068580542
+      }
+    },
+    "created_at": "2026-04-18T22:08:43",
+    "promoted_at": "2026-04-18T22:27:43",
+    "rolled_back_at": null,
+    "status": "published",
+    "publish_eligible": true,
+    "comparison_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_evolution_comparison.csv",
+    "selection_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_evolution_selection.json",
+    "selection_policy": "model_selection_v1",
+    "default_publish_decision": "keep_baseline_unless_global_auc_stable_and_local_gain_confirmed",
+    "frozen_snapshot": {
+      "snapshot_dir": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843",
+      "metrics": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\metrics.json",
+      "eval_report": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\eval_report.json",
+      "subgroup_metrics": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\subgroup_metrics.csv",
+      "confidence_zone_report": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\confidence_zone_report.csv",
+      "prediction_summary": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\prediction_summary.json",
+      "model_config": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\model_config.json",
+      "feature_config": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\feature_config.json",
+      "contract_context": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\contract_context.json",
+      "domain_audit": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\registry\\study\\study_candidate_20260418220843\\domain_audit.json"
+    },
+    "baseline_role": "active_baseline",
+    "frozen_snapshot_relative": {
+      "snapshot_dir": "data\\registry\\study\\study_candidate_20260418220843",
+      "metrics": "data\\registry\\study\\study_candidate_20260418220843\\metrics.json",
+      "eval_report": "data\\registry\\study\\study_candidate_20260418220843\\eval_report.json",
+      "subgroup_metrics": "data\\registry\\study\\study_candidate_20260418220843\\subgroup_metrics.csv",
+      "confidence_zone_report": "data\\registry\\study\\study_candidate_20260418220843\\confidence_zone_report.csv",
+      "prediction_summary": "data\\registry\\study\\study_candidate_20260418220843\\prediction_summary.json",
+      "model_config": "data\\registry\\study\\study_candidate_20260418220843\\model_config.json",
+      "feature_config": "data\\registry\\study\\study_candidate_20260418220843\\feature_config.json",
+      "contract_context": "data\\registry\\study\\study_candidate_20260418220843\\contract_context.json",
+      "domain_audit": "data\\registry\\study\\study_candidate_20260418220843\\domain_audit.json"
+    },
+    "comparison_path_relative": "data\\dm\\study_evolution_comparison.csv",
+    "selection_path_relative": "data\\dm\\study_evolution_selection.json"
+  },
+  "active_baseline_version_id": "study_candidate_20260418220843",
+  "anchor_baseline_version_id": "study_v1",
+  "task_scope": "study_layered_enhanced_serving",
+  "serving_version_relative": {
+    "artifact_paths_relative": {},
+    "frozen_snapshot_relative": {
+      "snapshot_dir": "data\\registry\\study\\study_candidate_20260418220843",
+      "metrics": "data\\registry\\study\\study_candidate_20260418220843\\metrics.json",
+      "eval_report": "data\\registry\\study\\study_candidate_20260418220843\\eval_report.json",
+      "subgroup_metrics": "data\\registry\\study\\study_candidate_20260418220843\\subgroup_metrics.csv",
+      "confidence_zone_report": "data\\registry\\study\\study_candidate_20260418220843\\confidence_zone_report.csv",
+      "prediction_summary": "data\\registry\\study\\study_candidate_20260418220843\\prediction_summary.json",
+      "model_config": "data\\registry\\study\\study_candidate_20260418220843\\model_config.json",
+      "feature_config": "data\\registry\\study\\study_candidate_20260418220843\\feature_config.json",
+      "contract_context": "data\\registry\\study\\study_candidate_20260418220843\\contract_context.json",
+      "domain_audit": "data\\registry\\study\\study_candidate_20260418220843\\domain_audit.json"
+    },
+    "comparison_path_relative": "data\\dm\\study_evolution_comparison.csv",
+    "selection_path_relative": "data\\dm\\study_evolution_selection.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "request_id": "study_agent_llm_fusion_request",
+  "selected_primary_model": "RandomForest",
+  "selected_challenger_model": "RandomForest",
+  "selected_fallback_model": "LogisticRegression",
+  "selected_feature_group": "grade_dominant",
+  "selected_threshold_strategy": "best_f1",
+  "selected_threshold": 0.4,
+  "selection_reason": "Selected by highest robustness_score; fallback prefers LogisticRegression when available. Formal model artifacts are not overwritten.",
+  "comparison_summary": {
+    "candidate_rows": 72,
+    "best_auc": 0.8454477282932755,
+    "best_f1": 0.6748224151539068,
+    "best_recall": 1.0,
+    "candidate_failures": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "active_baseline_version_id": "life_v1_clean",
+  "active_baseline_snapshot_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\registry\\life\\life_v1_clean",
+  "candidate_version_id": "life_candidate_clean_20260421160228",
+  "candidate_snapshot_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421160228",
+  "baseline_compare_available": true,
+  "baseline_overwritten_in_current_run": false,
+  "bootstrap_mode": false,
+  "baseline_created_in_current_run": false,
+  "baseline_snapshot_complete": true,
+  "candidate_snapshot_complete": true,
+  "conclusion": "clean frozen baseline is available and candidate comparison is meaningful"
+}

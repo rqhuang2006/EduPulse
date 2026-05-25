@@ -1,0 +1,86 @@
+{
+  "bundle_dir": "E:\\AAA\\data\\deliverables\\study",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_file_data/study_train_table.csv",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\data\\study_train_table.csv"
+    },
+    {
+      "check": "required_file_data/study_infer_table.csv",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\data\\study_infer_table.csv"
+    },
+    {
+      "check": "required_file_data/study_prediction_output.csv",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\data\\study_prediction_output.csv"
+    },
+    {
+      "check": "required_file_data/study_explanation_output.csv",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\data\\study_explanation_output.csv"
+    },
+    {
+      "check": "required_file_docs/study_feature_dictionary.xlsx",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\docs\\study_feature_dictionary.xlsx"
+    },
+    {
+      "check": "required_file_docs/study_quality_report.xlsx",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\docs\\study_quality_report.xlsx"
+    },
+    {
+      "check": "required_file_model/study_model.pkl",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\model\\study_model.pkl"
+    },
+    {
+      "check": "required_file_model/study_model_config.json",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\model\\study_model_config.json"
+    },
+    {
+      "check": "required_file_model/study_model_metrics.json",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\model\\study_model_metrics.json"
+    },
+    {
+      "check": "required_file_./README.md",
+      "status": "PASS",
+      "detail": "E:\\AAA\\data\\deliverables\\study\\README.md"
+    },
+    {
+      "check": "train_unique_xh_term",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "infer_unique_xh_term",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "train_infer_feature_columns_match",
+      "status": "PASS",
+      "detail": "train_only=[]; infer_only=[]"
+    },
+    {
+      "check": "prediction_explanation_alignment",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "explanation_required_columns",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "feature_dictionary_complete",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "selected_model": "LogisticRegression",
+  "candidate_version_id": "life_candidate_clean_20260421160228",
+  "baseline_version_id": "life_v1_clean",
+  "summary_metrics": {
+    "rows": 255,
+    "positive_rate": 0.282353,
+    "auc": 0.8632350795272142,
+    "f1": 0.741176,
+    "precision": 0.677419,
+    "recall": 0.818182,
+    "coverage": 1.0,
+    "degraded_ratio": 0.0,
+    "mean_infer_risk_score": 0.401833,
+    "high_risk_rate": 0.25098,
+    "experiment_name": "temporal_generalization_mainline"
+  },
+  "reason_codes": [
+    "clean_eval_enabled",
+    "frozen_baseline_compare_available"
+  ]
+}

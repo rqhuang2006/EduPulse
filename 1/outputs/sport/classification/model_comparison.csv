@@ -1,0 +1,3 @@
+model,val_macro_f1
+RandomForest,0.528894620307345
+LightGBM,0.507702955358827

@@ -1,0 +1,32 @@
+{
+  "request_id": "sport_train_request_controlled_candidate",
+  "domain": "sport",
+  "term_id": "all",
+  "run_mode": "train",
+  "label_version": "future_v3",
+  "feature_bundle": "baseline+deviation+trend",
+  "structure_version": "two_stage_conservative",
+  "population_version": "recoverable",
+  "mainline_selection_mode": "controlled_candidate",
+  "input_paths": {
+    "feature_dataset": "data/deliverables/sport/data/sport_feature_dataset.csv",
+    "prediction_output": "data/deliverables/sport/data/sport_prediction_output.csv",
+    "prediction_test_output": "data/deliverables/sport/data/sport_prediction_test_output.csv",
+    "quality_report": "data/deliverables/sport/docs/sport_quality_report.json",
+    "validation_report": "data/deliverables/sport/docs/sport_validation_report.json",
+    "model_regression": "data/deliverables/sport/model/sport_regression_model.joblib",
+    "model_classification": "data/deliverables/sport/model/sport_classification_model.joblib",
+    "model_config": "data/deliverables/sport/model/sport_model_config.json",
+    "metrics": "data/deliverables/sport/docs/sport_metrics.json"
+  },
+  "feature_version": "sport_feature_v1",
+  "model_version": "sport_v1",
+  "enable_fallback": true,
+  "enable_quality_check": true,
+  "enable_explanation": false,
+  "candidate_models": ["RandomForest", "LightGBM", "XGBoost"],
+  "threshold_strategies": ["minmax_inverted"],
+  "llm_enable": false,
+  "fallback_to_mock": true,
+  "llm_required": false
+}

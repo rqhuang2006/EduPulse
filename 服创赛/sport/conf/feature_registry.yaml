@@ -1,0 +1,5 @@
+version: sport_feature_v1
+feature_groups:
+  stub:
+    description: "Sport domain features — not yet defined"
+    columns: []

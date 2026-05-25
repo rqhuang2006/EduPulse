@@ -1,0 +1,2 @@
+model,val_macro_f1
+RandomForest,0.7063650319413743

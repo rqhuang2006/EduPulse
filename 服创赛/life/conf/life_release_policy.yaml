@@ -1,0 +1,6 @@
+schema_version: life_release_policy_v1
+baseline_comparison:
+  primary_metric: auc
+  comparison_mode: bootstrap_no_frozen_baseline
+  allow_equal_to_baseline: false
+  require_frozen_baseline: true

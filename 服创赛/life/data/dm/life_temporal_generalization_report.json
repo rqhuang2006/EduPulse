@@ -1,0 +1,15 @@
+{
+  "train_period": "2020-09->2024-03",
+  "test_period": "2022-07->2026-01",
+  "sample_count_train": 2005,
+  "sample_count_test": 255,
+  "auc": 0.8632350795272142,
+  "f1": 0.741176,
+  "precision": 0.677419,
+  "recall": 0.818182,
+  "compared_with_clean_holdout_auc": 0.8634638737097754,
+  "generalization_gap": 0.000229,
+  "conclusion": "temporal extrapolation is reasonably stable",
+  "status": "completed",
+  "temporal_auc": 0.8632350795272142
+}

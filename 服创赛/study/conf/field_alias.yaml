@@ -1,0 +1,113 @@
+standard_fields:
+  XH:
+  - XH
+  - 学号
+  - XSBH
+  - XHHGH
+  - SID
+  - LOGIN_NAME
+  - CREATER_LOGIN_NAME
+  - cardld
+  - CARDID
+  - REVIEW_LOGIN_NAME
+  - KXH
+  - CLASSID
+  - CLASS_ID
+  TERM_ID:
+  - TERM_ID
+  - 学期
+  - XQ_ID
+  COURSE_STD:
+  - COURSE_STD
+  - KCH
+  - COURSE_CODE
+  - COURSE_ID
+  - JWCOURSE_ID
+  - TDKCH
+  COURSE_NAME:
+  - COURSE_NAME
+  - KCM
+  - 课程名
+  - 课程名称
+  - YWKCM
+  - KCMB
+  CREDIT:
+  - CREDIT
+  - XF
+  - 学分
+  - JXFSDM
+  - XFLBDM
+  COURSE_TYPE:
+  - COURSE_TYPE
+  - KCSXDM
+  - KCLB
+  - KCFLDM
+  EVENT_TIME:
+  - EVENT_TIME
+  - KSSJ
+  - XKRQ
+  - ATTEND_TIME
+  - INSERT_TIME
+  - ANSWER_TIME
+  - REVIEW_TIME
+  - UPDATE_TIME
+  - CREATER_TIME
+  - CREATE_TIME
+  - TEACH_TIME
+  - visittime
+  - RQ
+  - HJSJ
+  - YDRQ
+  - SPRQ
+  - CZRQ
+  - TSTAMP
+  SCORE:
+  - SCORE
+  - KCCJ
+  - 总分
+  - TOTAL_SCORE
+  - BFB
+  - CJF
+  - ZCJ
+  - JDCJ
+  STATUS:
+  - STATUS
+  - ACTIVE_STATE
+  - STATE
+  - SFZX
+  - SFCX
+  - CXBKBZ
+  - COURSE_STATUS
+  - CLAZZ_STATUS
+  SOURCE_FILE:
+  - SOURCE_FILE
+term_fields:
+  academic_year:
+  - XN
+  - KKXN
+  - ZXJXJHH
+  - CPXN
+  - SCHOOL_YEAR
+  - PDXN
+  - GRADE
+  - NJ
+  - XZNJ
+  semester:
+  - XQ
+  - KKXQ
+  - CPXQ
+  - PDXQ
+  date:
+  - EVENT_TIME
+  - KSSJ
+  - XKRQ
+  - ATTEND_TIME
+  - INSERT_TIME
+  - ANSWER_TIME
+  - REVIEW_TIME
+  - CREATE_TIME
+  - TEACH_TIME
+  - visittime
+  - RQ
+  - HJSJ
+  - YDRQ

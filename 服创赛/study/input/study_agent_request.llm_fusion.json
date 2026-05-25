@@ -1,0 +1,55 @@
+{
+  "request_id": "study_agent_llm_fusion_request",
+  "domain": "study",
+  "term_id": "all",
+  "run_mode": "train",
+  "input_paths": {
+    "train_table": "data/deliverables/study/data/study_train_table.csv",
+    "infer_table": "data/deliverables/study/data/study_infer_table.csv",
+    "prediction_output": "data/deliverables/study/data/study_prediction_output.csv",
+    "explanation_output": "data/deliverables/study/data/study_explanation_output.csv",
+    "quality_report": "data/deliverables/study/docs/study_quality_report.xlsx",
+    "validation_report": "data/deliverables/study/docs/study_validation_report.json",
+    "feature_dictionary": "data/deliverables/study/docs/study_feature_dictionary.xlsx",
+    "model_file": "data/deliverables/study/model/study_model.pkl",
+    "model_config": "data/deliverables/study/model/study_model_config.json"
+  },
+  "feature_version": "study_feature_v1",
+  "model_version": "study_v1",
+  "enable_fallback": true,
+  "enable_explanation": true,
+  "enable_model_search": true,
+  "candidate_feature_groups": [
+    "all_features",
+    "grade_dominant",
+    "attendance_task_dominant",
+    "online_activity_dominant",
+    "topk_selected",
+    "llm_synthesized"
+  ],
+  "candidate_models": [
+    "LogisticRegression",
+    "LightGBM",
+    "XGBoost",
+    "RandomForest"
+  ],
+  "threshold_strategy": [
+    "default_0_5",
+    "best_f1",
+    "recall_priority"
+  ],
+  "enable_llm_feature_synthesis": true,
+  "enable_branch_fusion": true,
+  "publish_selected_model": false,
+  "llm_enable": true,
+  "llm_provider": "qwen",
+  "llm_model": "qwen-plus",
+  "llm_task_type": "model_review",
+  "llm_temperature": 0.2,
+  "llm_max_tokens": 1200,
+  "llm_timeout_seconds": 60,
+  "llm_use_for_explanation": false,
+  "llm_use_for_model_review": true,
+  "fallback_to_mock": true,
+  "llm_required": false
+}

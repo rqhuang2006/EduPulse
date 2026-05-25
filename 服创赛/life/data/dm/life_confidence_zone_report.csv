@@ -1,0 +1,4 @@
+﻿confidence_zone,rows,positive_rate,avg_risk_score
+low_conf,150,0.08,0.172299
+mid_conf,42,0.190476,0.461818
+high_conf,63,0.825397,0.910628

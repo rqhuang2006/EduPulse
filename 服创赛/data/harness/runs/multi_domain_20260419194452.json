@@ -1,0 +1,379 @@
+{
+  "run_id": "multi_domain_20260419194452",
+  "pipeline_name": "harness_multi_domain",
+  "domain": "multi_domain",
+  "stage_results": [
+    {
+      "action_name": "stub",
+      "status": "success",
+      "metrics": {},
+      "artifacts": [],
+      "validations": [],
+      "diagnostics": {
+        "domain": "sport",
+        "note": "Stub agent - no execution performed"
+      },
+      "message": "sport agent is not yet implemented"
+    }
+  ],
+  "final_decision": {
+    "decision": "dry_run_only",
+    "reason_codes": [
+      "partial_domain_ready"
+    ],
+    "summary": "Partial domain output is available.",
+    "details": {},
+    "execution_mode": "dry_run",
+    "decision_stage_reached": "approval_release_stage",
+    "gate_name": "partial_domain_ready",
+    "collected_warnings": []
+  },
+  "started_at": "2026-04-19T19:44:52",
+  "finished_at": "2026-04-19T19:46:27",
+  "status": "success",
+  "metadata": {
+    "started_at": "2026-04-19T19:44:52",
+    "domain_results": {
+      "life": {
+        "run_id": "multi_domain_20260419194452_life",
+        "status": "success",
+        "decision": "promotion_recommended",
+        "execution_mode": "dry_run",
+        "system_status": "multi_domain_ready",
+        "domain_context": {
+          "domain": "life",
+          "label_strategy": "quantile_threshold_35pct",
+          "source_datasets": [
+            "student_profile",
+            "internet",
+            "running",
+            "exercise",
+            "club",
+            "library",
+            "pe_course",
+            "fitness",
+            "gate"
+          ],
+          "infer_support": true
+        },
+        "domain_audit": {
+          "bootstrap_mode": false,
+          "label_threshold_quantile": 0.35,
+          "degraded_conditions": [],
+          "field_mapping_notes": [
+            "student_id unified from XH/XSBH/USERNUM/cardld/IDSERTAL",
+            "life domain fields kept under domain_context/domain_audit"
+          ]
+        },
+        "metric_context": {
+          "eval_scope": "student_holdout_hash_split",
+          "task_scope": "life_student_engagement_risk",
+          "feature_contract_hash": "30f750c69c1ade7f68b79536568219b158bc024f",
+          "label_definition": "life_label",
+          "baseline_version_id": "life_v1",
+          "anchor_baseline_version_id": "life_v1",
+          "comparison_mode": "life_bootstrap_auc_v1",
+          "sample_count": 490
+        }
+      },
+      "sport": {
+        "run_id": "multi_domain_20260419194452_sport",
+        "status": "success",
+        "decision": "dry_run_only",
+        "execution_mode": "",
+        "system_status": "stub",
+        "domain_context": {
+          "domain_name": "sport"
+        },
+        "domain_audit": {
+          "stub_reason": "agent_not_implemented"
+        },
+        "metric_context": {}
+      }
+    },
+    "domains_executed": [
+      "life",
+      "sport"
+    ],
+    "system_status": "partial_domain_ready",
+    "domain_context": {
+      "ready_domains": [
+        "life"
+      ],
+      "stub_domains": [
+        "sport"
+      ],
+      "invalid_fusion_domains": []
+    },
+    "domain_audit": {
+      "fusion_validation": {
+        "life": {
+          "ok": true,
+          "errors": [],
+          "warnings": [],
+          "normalized_payload": {
+            "domain_name": "life",
+            "candidate_version_id": "life_candidate_20260419194627",
+            "risk_score": 0.9990045899463584,
+            "risk_level": "low",
+            "confidence": 0.998,
+            "top_features": [
+              {
+                "feature": "internet_hours",
+                "weight_rank": 1
+              },
+              {
+                "feature": "internet_months",
+                "weight_rank": 2
+              },
+              {
+                "feature": "running_count",
+                "weight_rank": 3
+              },
+              {
+                "feature": "running_state_mean",
+                "weight_rank": 4
+              },
+              {
+                "feature": "exercise_count",
+                "weight_rank": 5
+              }
+            ],
+            "explanations": [
+              {
+                "summary": "life domain v0 uses activity, library, internet, fitness, and gate patterns as student-level signals"
+              }
+            ],
+            "metric_context": {
+              "eval_scope": "student_holdout_hash_split",
+              "task_scope": "life_student_engagement_risk",
+              "feature_contract_hash": "30f750c69c1ade7f68b79536568219b158bc024f",
+              "label_definition": "life_label",
+              "baseline_version_id": "life_v1",
+              "anchor_baseline_version_id": "life_v1",
+              "comparison_mode": "life_bootstrap_auc_v1",
+              "sample_count": 490
+            },
+            "validation_summary": {
+              "snapshot_contract_complete": true,
+              "bootstrap_mode": false,
+              "reason_codes": [
+                "auc_not_worse_than_baseline"
+              ]
+            },
+            "warning_summary": [],
+            "artifact_ref": {
+              "prediction_output": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\data\\prediction_output.csv",
+              "eval_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_eval_report.json",
+              "model_config": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\model\\model_config.json"
+            },
+            "raw_payload": {
+              "domain_context": {
+                "domain": "life",
+                "label_strategy": "quantile_threshold_35pct",
+                "source_datasets": [
+                  "student_profile",
+                  "internet",
+                  "running",
+                  "exercise",
+                  "club",
+                  "library",
+                  "pe_course",
+                  "fitness",
+                  "gate"
+                ],
+                "infer_support": true
+              },
+              "domain_audit": {
+                "bootstrap_mode": false,
+                "label_threshold_quantile": 0.35,
+                "degraded_conditions": [],
+                "field_mapping_notes": [
+                  "student_id unified from XH/XSBH/USERNUM/cardld/IDSERTAL",
+                  "life domain fields kept under domain_context/domain_audit"
+                ]
+              }
+            }
+          },
+          "is_stub": false
+        },
+        "sport": {
+          "ok": true,
+          "errors": [],
+          "warnings": [],
+          "normalized_payload": {
+            "domain_name": "sport",
+            "candidate_version_id": null,
+            "risk_score": null,
+            "risk_level": "stub",
+            "confidence": null,
+            "top_features": [],
+            "explanations": [],
+            "metric_context": {
+              "note": "SportAgent not yet implemented"
+            },
+            "validation_summary": {},
+            "warning_summary": [
+              "SportAgent is a stub"
+            ],
+            "artifact_ref": {},
+            "raw_payload": {}
+          },
+          "is_stub": true
+        }
+      },
+      "partial_output_allowed": true
+    },
+    "metric_context": {
+      "ready_domain_count": 1,
+      "stub_domain_count": 1,
+      "requested_domain_count": 2
+    },
+    "multi_domain": true
+  },
+  "eval_scope": "",
+  "task_scope": "",
+  "feature_contract_hash": "",
+  "label_definition": "",
+  "baseline_version_id": "",
+  "anchor_baseline_version_id": "",
+  "comparison_mode": "",
+  "policy_decision": "",
+  "execution_mode": "",
+  "decision_stage_reached": "",
+  "system_status": "partial_domain_ready",
+  "collected_warnings": [],
+  "domain_context": {
+    "ready_domains": [
+      "life"
+    ],
+    "stub_domains": [
+      "sport"
+    ],
+    "invalid_fusion_domains": []
+  },
+  "domain_audit": {
+    "fusion_validation": {
+      "life": {
+        "ok": true,
+        "errors": [],
+        "warnings": [],
+        "normalized_payload": {
+          "domain_name": "life",
+          "candidate_version_id": "life_candidate_20260419194627",
+          "risk_score": 0.9990045899463584,
+          "risk_level": "low",
+          "confidence": 0.998,
+          "top_features": [
+            {
+              "feature": "internet_hours",
+              "weight_rank": 1
+            },
+            {
+              "feature": "internet_months",
+              "weight_rank": 2
+            },
+            {
+              "feature": "running_count",
+              "weight_rank": 3
+            },
+            {
+              "feature": "running_state_mean",
+              "weight_rank": 4
+            },
+            {
+              "feature": "exercise_count",
+              "weight_rank": 5
+            }
+          ],
+          "explanations": [
+            {
+              "summary": "life domain v0 uses activity, library, internet, fitness, and gate patterns as student-level signals"
+            }
+          ],
+          "metric_context": {
+            "eval_scope": "student_holdout_hash_split",
+            "task_scope": "life_student_engagement_risk",
+            "feature_contract_hash": "30f750c69c1ade7f68b79536568219b158bc024f",
+            "label_definition": "life_label",
+            "baseline_version_id": "life_v1",
+            "anchor_baseline_version_id": "life_v1",
+            "comparison_mode": "life_bootstrap_auc_v1",
+            "sample_count": 490
+          },
+          "validation_summary": {
+            "snapshot_contract_complete": true,
+            "bootstrap_mode": false,
+            "reason_codes": [
+              "auc_not_worse_than_baseline"
+            ]
+          },
+          "warning_summary": [],
+          "artifact_ref": {
+            "prediction_output": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\data\\prediction_output.csv",
+            "eval_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_eval_report.json",
+            "model_config": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\model\\model_config.json"
+          },
+          "raw_payload": {
+            "domain_context": {
+              "domain": "life",
+              "label_strategy": "quantile_threshold_35pct",
+              "source_datasets": [
+                "student_profile",
+                "internet",
+                "running",
+                "exercise",
+                "club",
+                "library",
+                "pe_course",
+                "fitness",
+                "gate"
+              ],
+              "infer_support": true
+            },
+            "domain_audit": {
+              "bootstrap_mode": false,
+              "label_threshold_quantile": 0.35,
+              "degraded_conditions": [],
+              "field_mapping_notes": [
+                "student_id unified from XH/XSBH/USERNUM/cardld/IDSERTAL",
+                "life domain fields kept under domain_context/domain_audit"
+              ]
+            }
+          }
+        },
+        "is_stub": false
+      },
+      "sport": {
+        "ok": true,
+        "errors": [],
+        "warnings": [],
+        "normalized_payload": {
+          "domain_name": "sport",
+          "candidate_version_id": null,
+          "risk_score": null,
+          "risk_level": "stub",
+          "confidence": null,
+          "top_features": [],
+          "explanations": [],
+          "metric_context": {
+            "note": "SportAgent not yet implemented"
+          },
+          "validation_summary": {},
+          "warning_summary": [
+            "SportAgent is a stub"
+          ],
+          "artifact_ref": {},
+          "raw_payload": {}
+        },
+        "is_stub": true
+      }
+    },
+    "partial_output_allowed": true
+  },
+  "metric_context": {
+    "ready_domain_count": 1,
+    "stub_domain_count": 1,
+    "requested_domain_count": 2
+  }
+}

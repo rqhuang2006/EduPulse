@@ -1,0 +1,42 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "same_sample_universe": true,
+  "same_holdout_split": true,
+  "same_caliber": true,
+  "same_caliber_detail": {
+    "same_caliber": true,
+    "required_keys": [
+      "task_scope",
+      "label_definition",
+      "eval_scope"
+    ],
+    "mismatches": [],
+    "conclusion": "candidate and baseline are comparable"
+  },
+  "comparability": {
+    "comparable": true,
+    "severity": "info",
+    "mismatches": [],
+    "recommended_action": "strict_rebuild",
+    "comparison_role": "primary",
+    "required_keys": [
+      "eval_scope",
+      "sample_universe",
+      "split_strategy",
+      "label_definition",
+      "feature_contract_hash",
+      "task_scope"
+    ],
+    "conclusion": "candidate and baseline are strictly comparable"
+  },
+  "eval_scope": "student_hash_holdout_fixed_windows_same_sample_universe",
+  "baseline_rows": 255,
+  "candidate_rows": 255,
+  "baseline_auc": 0.8598967820279296,
+  "candidate_auc": 0.8628567091681845,
+  "candidate_eval_variant": "drop-nearest-proxy-source-group",
+  "auc_delta": 0.00296,
+  "compare_role": "primary",
+  "conclusion": "baseline and candidate are strictly comparable on the same current holdout universe (PRIMARY compare口径)"
+}

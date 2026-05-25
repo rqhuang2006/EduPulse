@@ -1,0 +1,80 @@
+{
+  "request_id": "study_infer_serving_request",
+  "domain": "study",
+  "mode": "infer",
+  "status": "success",
+  "fallback_used": false,
+  "model_version": "study_v1",
+  "feature_version": "study_feature_v1",
+  "study_data_mode": "core_only",
+  "study_quality_flag": "core_stable",
+  "prediction_output_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\data\\study_prediction_output.csv",
+  "explanation_output_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\data\\study_explanation_output.csv",
+  "quality_report_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\study_quality_report.json",
+  "validation_report_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\docs\\study_validation_report.json",
+  "available_layers": [
+    "grade",
+    "course"
+  ],
+  "recoverable_behavior_layers": [
+    "library"
+  ],
+  "unavailable_behavior_layers": [
+    "attendance",
+    "class_task",
+    "assignment",
+    "exam",
+    "online"
+  ],
+  "summary_metrics": {
+    "request_rows": 2508,
+    "feature_columns": 24,
+    "model_feature_columns": 23,
+    "low_coverage_rate": 0.7954545454545454,
+    "source_coverage_mean": 0.27427232854864436,
+    "l456_nonnull_rate": 0.001594896331738437,
+    "primary_key_association_success_rate": 1.0,
+    "unknown_or_unmapped_rows": 0,
+    "category_drift_rows": 0,
+    "join_failure_rows": 1995,
+    "garbage_or_sparse_rows": 2418,
+    "quality_degraded_rows": 2418,
+    "study_data_mode": "core_only",
+    "study_quality_flag": "core_stable",
+    "core_plus_behavior_ratio": 0.20334928229665072,
+    "degraded_sparse_ratio": 0.014752791068580542,
+    "prediction_rows": 2508,
+    "success_count": 2471,
+    "degraded_count": 37,
+    "failed_count": 0,
+    "degraded_ratio": 0.014752791068580542,
+    "status_counts": {
+      "success": 2471,
+      "degraded": 37
+    },
+    "model_name": "LightGBMClassifier",
+    "model_source": "layered_core_behavior",
+    "core_only_count": 1961,
+    "core_plus_behavior_count": 510,
+    "degraded_sparse_count": 37,
+    "publish_candidate_allowed": false,
+    "explanation_rows": 2508,
+    "aligned_prediction_rows": 2508,
+    "model_used_for_explanation": "LightGBMClassifier",
+    "auc": 0.8391384956939032,
+    "f1": 0.5344694035631293,
+    "recall": 0.6353591160220995
+  },
+  "warnings": [
+    "L4/L5/L6 behavior coverage is low: 0.16%"
+  ],
+  "serving_monitor": {
+    "status": "not_triggered",
+    "action": "rollback_monitor",
+    "metrics": {
+      "degraded_rate": 0.014752791068580542,
+      "error_rate": 0.0,
+      "explanation_failure_rate": 0.0
+    }
+  }
+}

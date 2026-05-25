@@ -1,0 +1,94 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "domain": "study",
+  "mode": "review",
+  "status": "completed_with_hold",
+  "fallback_used": false,
+  "model_version": "study_v1",
+  "feature_version": "study_feature_v1",
+  "study_data_mode": "mixed_overall_with_subgroups",
+  "row_level_study_data_mode": "mixed_overall_with_subgroups",
+  "study_quality_flag": "core_stable",
+  "prediction_output_path": "",
+  "explanation_output_path": "",
+  "quality_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_quality_report.json",
+  "validation_report_path": "",
+  "eval_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_eval_report.json",
+  "subgroup_metrics_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_subgroup_metrics.csv",
+  "confidence_zone_report_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_confidence_zone_report.csv",
+  "feature_layer_summary_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_infer_feature_layer_summary.json",
+  "selected_features_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_selected_features.csv",
+  "label_audit_detail_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_label_audit_detail.json",
+  "positive_label_profile_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_positive_label_profile.csv",
+  "available_layers": [
+    "behavior"
+  ],
+  "recoverable_behavior_layers": [],
+  "unavailable_behavior_layers": [],
+  "summary_metrics": {
+    "harness_final_decision": "keep_baseline",
+    "harness_reason_codes": [
+      "baseline_auc_regression"
+    ],
+    "harness_execution_mode": "dry_run",
+    "harness_policy_decision": "keep_baseline",
+    "harness_stage_count": 5,
+    "auc": 0.8324450440706692,
+    "f1": 0.540837336993823,
+    "recall": 0.7255985267034991,
+    "eval_scope": "publish_gate_metric",
+    "task_scope": "study_layered_enhanced_serving",
+    "study_data_mode": "mixed_overall_with_subgroups",
+    "row_level_study_data_mode": "mixed_overall_with_subgroups"
+  },
+  "warnings": [],
+  "harness_v1": {
+    "run_id": "study_harness_v1_9ea8d5bead67",
+    "pipeline_name": "study_harness_v1",
+    "run_record_path": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\harness\\runs\\study_harness_v1_9ea8d5bead67.json",
+    "final_decision": "keep_baseline",
+    "policy_decision": "keep_baseline",
+    "decision_reason_codes": [
+      "baseline_auc_regression"
+    ],
+    "decision_stage_reached": "floor_gate",
+    "gate_name": "error_validation",
+    "execution_mode": "dry_run",
+    "collected_warnings": [],
+    "eval_scope": "publish_gate_metric",
+    "task_scope": "study_layered_enhanced_serving",
+    "study_data_mode": "mixed_overall_with_subgroups",
+    "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+    "label_definition": "LABEL",
+    "baseline_version_id": "study_candidate_20260418220843",
+    "anchor_baseline_version_id": "study_v1",
+    "comparison_mode": "study_best_model_v1",
+    "candidate_metrics": {
+      "auc": 0.8324450440706692,
+      "f1": 0.540837336993823,
+      "recall": 0.7255985267034991
+    },
+    "baseline_metrics": {
+      "auc": 0.8418693263972741,
+      "f1": 0.6672019269369731,
+      "recall": 0.7373558118899733,
+      "precision": 0.6092375366568915,
+      "coverage": 0.9995448856525202,
+      "degraded_proxy": 0.00029582432586187094,
+      "robustness_score": 0.8088200942654948
+    },
+    "metric_context": {
+      "eval_scope": "publish_gate_metric",
+      "task_scope": "study_layered_enhanced_serving",
+      "study_data_mode": "mixed_overall_with_subgroups",
+      "row_level_study_data_mode": "mixed_overall_with_subgroups",
+      "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+      "label_definition": "LABEL",
+      "baseline_version_id": "study_candidate_20260418220843",
+      "anchor_baseline_version_id": "study_v1",
+      "comparison_mode": "study_best_model_v1",
+      "decision_stage_reached": "floor_gate"
+    },
+    "execution_status": "success"
+  }
+}

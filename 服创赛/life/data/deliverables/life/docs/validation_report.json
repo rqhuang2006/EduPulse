@@ -1,0 +1,20 @@
+{
+  "domain": "life",
+  "validation_status": "passed",
+  "checks": {
+    "train_rows_positive": true,
+    "infer_rows_positive": true,
+    "candidate_snapshot_complete": true,
+    "baseline_snapshot_complete": true,
+    "life_clean_eval": true,
+    "temporal_integrity_ok": true,
+    "split_integrity_ok": true
+  },
+  "warnings": [
+    "label_source = future_window_proxy",
+    "predictive_validity = clean_proxy_with_time_decoupling_but_still_unverified",
+    "not_releaseable_for_prod = true",
+    "sport-related datasets intentionally excluded from life domain",
+    "proxy_stress_test_skipped_3_experiments_due_to_single_class"
+  ]
+}

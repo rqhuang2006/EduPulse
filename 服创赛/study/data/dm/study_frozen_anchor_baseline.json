@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-04-19T08:30:27",
+  "model_version": "study_v1",
+  "overall_metrics": {
+    "rows": 6352,
+    "auc": 0.6106107338996103,
+    "f1": 0.22662625320587548,
+    "recall": 0.8950276243093923,
+    "precision": 0.12973838761345435,
+    "coverage": 1.0,
+    "degraded_ratio": 0.0
+  }
+}

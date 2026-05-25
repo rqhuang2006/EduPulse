@@ -1,0 +1,91 @@
+{
+  "request_id": "study_publish_dry_run_request",
+  "domain": "study",
+  "mode": "publish",
+  "status": "success",
+  "fallback_used": false,
+  "model_version": "study_v1",
+  "feature_version": "study_feature_v1",
+  "study_data_mode": "core_only",
+  "study_quality_flag": "core_stable",
+  "prediction_output_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\data\\study_prediction_output.csv",
+  "explanation_output_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\data\\study_explanation_output.csv",
+  "quality_report_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\study_quality_report.json",
+  "validation_report_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\docs\\study_validation_report.json",
+  "available_layers": [],
+  "recoverable_behavior_layers": [],
+  "unavailable_behavior_layers": [],
+  "summary_metrics": {
+    "release_action_status": "dry_run",
+    "auc": 0.8391384956939032,
+    "f1": 0.5344694035631293,
+    "recall": 0.6353591160220995
+  },
+  "warnings": [],
+  "release_action": {
+    "request_id": "study_publish_dry_run_request",
+    "action": "publish",
+    "candidate_version_id": "study_candidate_20260417123931",
+    "dry_run": true,
+    "require_approval": true,
+    "publish_eligible": true,
+    "policy_decision": "promote_candidate",
+    "status": "dry_run",
+    "reasons": [
+      "candidate beats baseline policy thresholds and may enter publish candidate flow"
+    ],
+    "baseline_comparison": {
+      "baseline_version_id": "study_v1",
+      "baseline_model_name": "LightGBMClassifier",
+      "candidate_version_id": "study_candidate_20260417123931",
+      "candidate_model_name": "RandomForest",
+      "baseline_metrics": {
+        "rows": 3516,
+        "accuracy": 0.858646188850967,
+        "f1": 0.5763000852514919,
+        "recall": 0.6224677716390423,
+        "auc": 0.852089926589149
+      },
+      "candidate_metrics": {
+        "auc": 0.8425999005349496,
+        "f1": 0.6701807228915663,
+        "recall": 0.7897071872227152,
+        "precision": 0.5820797907128843,
+        "coverage": 0.9994026624189327,
+        "degraded_proxy": 0.00038826942769373265,
+        "robustness_score": 0.8202577023670689
+      },
+      "metric_deltas": {
+        "auc_delta": -0.009490026054199352,
+        "f1_delta": 0.09388063764007437,
+        "recall_delta": 0.16723941558367283,
+        "coverage_delta": 0.9994026624189327
+      }
+    },
+    "candidate": {
+      "version_id": "study_candidate_20260417123931",
+      "request_id": "study_train_evolution_request",
+      "model_name": "RandomForest",
+      "feature_group": "low_missing_robust",
+      "threshold_strategy": "best_f1",
+      "fusion_strategy": "weighted_branch_fusion",
+      "metrics": {
+        "auc": 0.8425999005349496,
+        "f1": 0.6701807228915663,
+        "recall": 0.7897071872227152,
+        "precision": 0.5820797907128843,
+        "coverage": 0.9994026624189327,
+        "degraded_proxy": 0.00038826942769373265,
+        "robustness_score": 0.8202577023670689
+      },
+      "created_at": "2026-04-17T12:39:31",
+      "promoted_at": null,
+      "rolled_back_at": null,
+      "status": "candidate",
+      "publish_eligible": true,
+      "comparison_path": "E:\\AAA\\data\\dm\\study_evolution_comparison.csv",
+      "selection_path": "E:\\AAA\\data\\dm\\study_evolution_selection.json"
+    },
+    "created_at": "2026-04-18T17:05:44"
+  }
+}

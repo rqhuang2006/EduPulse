@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-04-20T00:42:23",
+  "standalone_run_ok": true,
+  "harness_single_domain_ok": true,
+  "multi_domain_ok": true,
+  "adapter_invoked": true,
+  "orchestrator_invoked": true,
+  "sport_stub_tolerated": true,
+  "evidence_files": {
+    "standalone_result": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_agent_result.json",
+    "single_domain_orchestrator_result": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\harness\\runs\\single_domain_life.json",
+    "multi_domain_orchestrator_result": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\harness\\runs\\multi_domain_study_life_sport.json"
+  },
+  "single_domain_evidence": {
+    "life_agent_trace": {
+      "invoked_via_harness": true,
+      "adapter_name": "LifeAgentAdapter",
+      "execution_path": "orchestrator -> adapter.run_domain_pipeline -> life_agent",
+      "domain_pipeline_called": true,
+      "request_domain": "life"
+    },
+    "life_final_decision": "dry_run_only",
+    "single_domain_status": "success"
+  },
+  "multi_domain_evidence": {
+    "top_level_status": "partial_domain_ready",
+    "study_status": "completed_with_hold",
+    "life_status": "success",
+    "sport_status": "not_implemented",
+    "sport_stub_summary": {
+      "decision": "dry_run_only",
+      "summary": "sport agent is not implemented yet"
+    }
+  },
+  "final_conclusion": {
+    "standalone": "life standalone script runs successfully",
+    "single_domain_harness": "life is invoked through LifeAgentAdapter and run_domain_pipeline in harness single-domain mode",
+    "multi_domain_harness": "life participates in multi-domain orchestration together with study and sport; sport stub does not block the whole pipeline"
+  }
+}

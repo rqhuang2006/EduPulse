@@ -1,0 +1,22 @@
+{
+  "request_id": "life_review_request_v1",
+  "domain": "life",
+  "term_id": "all",
+  "run_mode": "review",
+  "execution_engine": "harness_v1",
+  "feature_version": "life_feature_v1",
+  "model_version": "life_v1",
+  "enable_fallback": true,
+  "enable_explanation": false,
+  "domain_boundary": "life_only",
+  "input_paths": {
+    "train_table": "data/deliverables/life/data/train_table.csv",
+    "infer_table": "data/deliverables/life/data/infer_table.csv",
+    "prediction_output": "data/deliverables/life/data/prediction_output.csv",
+    "quality_report": "data/deliverables/life/docs/quality_report.json",
+    "validation_report": "data/deliverables/life/docs/validation_report.json",
+    "feature_dictionary": "data/deliverables/life/docs/feature_dictionary.csv",
+    "model_file": "data/deliverables/life/model/model.pkl",
+    "model_config": "data/deliverables/life/model/model_config.json"
+  }
+}

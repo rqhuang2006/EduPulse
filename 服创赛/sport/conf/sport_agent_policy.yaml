@@ -1,0 +1,29 @@
+domain: sport
+status_values:
+  - success
+  - degraded
+  - failed
+thresholds:
+  min_rows: 30
+  max_missing_ratio: 0.6
+  default_risk_on_empty: 0.5
+degraded_conditions:
+  - feature dataset row count below thresholds.min_rows
+  - regression model file missing and fallback is used
+  - missing ratio above thresholds.max_missing_ratio
+continue_output_when:
+  degraded_predictions_exist: true
+  quality_warning_only: true
+fallback_rules:
+  enable_when_requested: true
+  trigger_when:
+    - model artifact missing
+    - prediction generation error
+failed_conditions:
+  - required request field is missing
+  - domain is not sport
+  - run_mode is not train or infer
+  - no sport data could be built
+decision_log:
+  include_summary_metrics: true
+  include_warning_reasons: true

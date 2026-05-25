@@ -1,0 +1,28 @@
+{
+  "request_id": "study_publish_compete_request",
+  "domain": "study",
+  "term_id": "all",
+  "run_mode": "publish",
+
+  "input_paths": {
+    "train_table": "data/dm/study_train_table.csv",
+    "infer_table": "data/dm/study_infer_table.csv",
+    "prediction_output": "data/dm/study_prediction_output.csv",
+    "explanation_output": "data/dm/study_explanation_output.csv",
+    "quality_report": "data/dm/study_quality_report.json",
+    "validation_report": "data/dm/study_validation_report.json",
+    "feature_dictionary": "data/dm/study_feature_dictionary.xlsx",
+    "model_file": "data/dm/study_model.pkl",
+    "model_config": "data/dm/study_model_config.json"
+  },
+
+  "feature_version": "study_feature_v1",
+  "model_version": "study_v1",
+
+  "enable_fallback": true,
+  "enable_explanation": true,
+
+  "candidate_version_id": "study_candidate_20260418174320",
+  "dry_run": true,
+  "require_approval": true
+}

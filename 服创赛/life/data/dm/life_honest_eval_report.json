@@ -1,0 +1,87 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "main_report_variant": "drop-nearest-proxy-source-group",
+  "auc": 0.8632350795272142,
+  "f1": 0.741176,
+  "precision": 0.677419,
+  "recall": 0.818182,
+  "eval_scope": "student_hash_holdout_fixed_windows_same_sample_universe",
+  "split_strategy": "student_hash_three_bucket (train/valid/holdout)",
+  "label_source_features": [
+    "late_internet_mean",
+    "late_gate_ratio",
+    "late_library_mean",
+    "late_club_mean"
+  ],
+  "training_feature_columns": [
+    "XB",
+    "MZMC",
+    "ZZMMMC",
+    "JG",
+    "XSM",
+    "ZYM",
+    "internet_early_trend",
+    "internet_early_volatility",
+    "internet_early_continuity",
+    "internet_early_deviation",
+    "internet_early_cv",
+    "club_early_trend",
+    "club_early_continuity",
+    "library_early_trend",
+    "library_early_volatility",
+    "library_early_continuity",
+    "library_early_weekend_ratio",
+    "gate_early_trend",
+    "gate_early_volatility",
+    "gate_early_continuity",
+    "gate_early_weekend_ratio",
+    "behavior_rhythm_gap",
+    "internet_library_interaction",
+    "late_gate_internet_interaction",
+    "club_library_balance"
+  ],
+  "label_feature_overlap": [],
+  "same_dataset_overlap": [
+    "club_early_continuity",
+    "club_early_trend",
+    "club_library_balance",
+    "gate_early_continuity",
+    "gate_early_trend",
+    "gate_early_volatility",
+    "gate_early_weekend_ratio",
+    "internet_early_continuity",
+    "internet_early_cv",
+    "internet_early_deviation",
+    "internet_early_trend",
+    "internet_early_volatility",
+    "internet_library_interaction",
+    "late_gate_internet_interaction",
+    "library_early_continuity",
+    "library_early_trend",
+    "library_early_volatility",
+    "library_early_weekend_ratio"
+  ],
+  "primary_metric": {
+    "recommended_primary_auc": 0.8632350795272142,
+    "recommended_primary_source": "temporal_generalization",
+    "best_case_auc": 0.8632350795272142,
+    "robust_auc": 0.8632350795272142,
+    "gap": 0.0
+  },
+  "label_validity": {
+    "label_type": "proxy",
+    "proxy_reconstruction_risk": "medium",
+    "external_truth_available": false,
+    "production_readiness_level": "not_releaseable_for_prod"
+  },
+  "why_more_honest": [
+    "uses the same current holdout universe for strict baseline vs candidate comparison",
+    "drops the nearest proxy-source magnitude features from the main reported feature set",
+    "keeps explicit temporal integrity and split integrity reports on disk"
+  ],
+  "remaining_limits": [
+    "label is still a future-window proxy rather than an externally validated business target",
+    "same-dataset behavioral families are still present through temporal shape and rhythm features"
+  ]
+}

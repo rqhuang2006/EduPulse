@@ -1,0 +1,12 @@
+{
+  "request_id": "sport_stub_request_v1",
+  "domain": "sport",
+  "term_id": "all",
+  "run_mode": "review",
+  "execution_engine": "harness_v1",
+  "feature_version": "sport_feature_v1",
+  "model_version": "sport_v1",
+  "enable_fallback": true,
+  "enable_explanation": false,
+  "input_paths": {}
+}

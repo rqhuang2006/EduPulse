@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-04-20T00:34:17",
+  "domain": "life",
+  "candidate_version_id": "life_candidate_20260420003412",
+  "checks": {
+    "file_registry_boundary_ok": true,
+    "result_boundary_ok": true,
+    "feature_config_boundary_ok": true,
+    "domain_audit_boundary_ok": true,
+    "feature_columns_boundary_ok": true
+  },
+  "violations": {},
+  "summary": {
+    "boundary_ok": true,
+    "statement": "sport-related datasets intentionally excluded from life domain"
+  }
+}

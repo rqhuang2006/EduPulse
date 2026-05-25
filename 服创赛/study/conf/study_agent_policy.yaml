@@ -1,0 +1,47 @@
+domain: study
+status_values:
+  - success
+  - degraded
+  - failed
+thresholds:
+  min_source_coverage: 0.3
+  degraded_ratio_warning: 0.5
+  low_coverage_warning: 0.5
+  l456_min_nonnull_rate: 0.2
+degraded_conditions:
+  - DATA_QUALITY_FLAG equals LOW_COVERAGE
+  - SOURCE_COVERAGE is below thresholds.min_source_coverage
+  - prediction STATUS equals degraded
+  - fallback scoring is used
+  - explanation generation fails but prediction output is still valid
+continue_output_when:
+  low_source_coverage: true
+  degraded_predictions_exist: true
+  explanation_failed: true
+fallback_rules:
+  enable_when_requested: true
+  trigger_when:
+    - primary model execution error
+    - primary model artifact missing but fallback artifact is available
+  current_agent_behavior: reuse existing prediction output and expose FALLBACK_USED/status decisions
+failed_conditions:
+  - required request field is missing
+  - domain is not study
+  - run_mode is not train or infer
+  - required input path does not exist
+  - prediction output has no rows for the request
+  - DOMAIN_SCORE is missing or cannot be parsed as numeric
+  - model config cannot be loaded
+explanation_policy:
+  enable_when_requested: true
+  allow_prediction_output_if_explanation_fails: true
+  degraded_reason: explanation generation failed; prediction output remains available
+decision_log:
+  include_summary_metrics: true
+  include_warning_reasons: true
+  include_policy_snapshot: true
+llm_error_handling:
+  fallback_to_mock_on_llm_failure: true
+  fail_if_llm_required: false
+  mark_llm_degraded_on_error: true
+  allow_main_outputs_when_llm_fails: true

@@ -1,0 +1,22 @@
+domain: study
+model_version: study_v1
+feature_version: study_feature_v1
+label_name: LABEL
+id_columns:
+  - XH
+  - TERM_ID
+feature_prefix: FEATURE_
+primary_model: LightGBMClassifier
+fallback_model: LogisticRegression
+random_state: 42
+test_size: 0.2
+label:
+  risk_score_threshold: 60
+  use_next_term: true
+prediction:
+  default_status: success
+  min_feature_coverage: 0.3
+  status_rules:
+    success: primary model scored successfully and source coverage is acceptable
+    degraded: fallback scoring was used or source coverage is below minimum
+    failed: scoring could not produce a numeric domain score

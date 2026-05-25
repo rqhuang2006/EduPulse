@@ -1,0 +1,39 @@
+domain: study
+purpose: controlled train-mode model enhancement for StudyAgent
+feature_groups:
+  - all_features
+  - grade_dominant
+  - attendance_task_dominant
+  - online_activity_dominant
+  - topk_selected
+  - llm_synthesized
+  - interaction_risk
+  - low_missing_robust
+
+candidate_models:
+  - LogisticRegression
+  - RandomForest
+  - ExtraTrees
+  - LightGBM
+  - XGBoost
+
+threshold_strategies:
+  - default_0_5
+  - best_f1
+  - recall_floor_0_7
+fusion_strategies:
+  - none
+  - weighted_branch_fusion
+  - voting_fusion
+  - score_blend
+selection:
+  primary_metric: robustness_score
+  tie_breakers:
+    - auc
+    - f1
+  fallback_preference: LogisticRegression
+guardrails:
+  no_open_automl: true
+  do_not_train_control_decision_model: true
+  do_not_overwrite_formal_model_by_default: true
+  formal_publish_requires_explicit_approval: true

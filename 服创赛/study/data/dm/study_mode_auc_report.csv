@@ -1,0 +1,4 @@
+﻿row_level_study_data_mode,rows,positive_rows,auc
+core_only,2806,463,0.8439582451841752
+core_plus_behavior,687,79,0.782186875416389
+degraded_sparse,23,1,0.31818181818181823

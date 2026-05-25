@@ -1,0 +1,22 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "baseline_version_id": "life_v1_clean",
+  "eval_split": "hash_mod_5_holdout",
+  "label_definition": "future_window_proxy_from_late_life_behavior",
+  "feature_contract_hash": "121efe120ac3bcd85643012bc3b3228621f34a96",
+  "sample_scope": "students_with_life_window_coverage",
+  "current_clean_baseline_auc": 0.9547066408768538,
+  "current_clean_baseline_metrics": {
+    "rows": 490,
+    "positive_rate": 0.808163,
+    "auc": 0.9547066408768538,
+    "f1": 0.973451,
+    "precision": 0.974684,
+    "recall": 0.972222,
+    "coverage": 1.0,
+    "degraded_ratio": 0.0,
+    "mean_infer_risk_score": 0.730505,
+    "high_risk_rate": 0.791837
+  },
+  "snapshot_complete": true
+}

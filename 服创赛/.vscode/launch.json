@@ -1,0 +1,65 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Study: Pipeline Profile",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/study/main.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "args": [
+        "--stage",
+        "profile"
+      ]
+    },
+    {
+      "name": "Study: Pipeline All",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/study/main.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "args": [
+        "--stage",
+        "all"
+      ]
+    },
+    {
+      "name": "Study: Harness Review",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/study/src/study_agent.py",
+      "cwd": "${workspaceFolder}/study",
+      "console": "integratedTerminal",
+      "args": [
+        "--request",
+        "input/study_agent_request.harness_v1.review.json"
+      ]
+    },
+    {
+      "name": "Study: Harness Train",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/study/src/study_agent.py",
+      "cwd": "${workspaceFolder}/study",
+      "console": "integratedTerminal",
+      "args": [
+        "--request",
+        "input/study_agent_request.harness_v1.train.json"
+      ]
+    },
+    {
+      "name": "Study: Agent Publish",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/study/src/study_agent.py",
+      "cwd": "${workspaceFolder}/study",
+      "console": "integratedTerminal",
+      "args": [
+        "--request",
+        "input/study_agent_request.publish.json"
+      ]
+    }
+  ]
+}

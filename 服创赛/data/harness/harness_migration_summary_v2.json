@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-04-21T16:02:28",
+  "moved_to_harness": [
+    "result normalization via harness.domain_support.result_normalizer",
+    "baseline snapshot loading/freezing via harness.domain_support.baseline_store",
+    "candidate vs baseline comparator via harness.domain_support.comparator",
+    "same-caliber compare guard via harness.domain_support.comparator.same_caliber_compare_guard",
+    "evaluation comparability checker via harness.domain_support.comparator.check_comparability",
+    "snapshot completeness validator via harness.validators.snapshot_validator",
+    "split integrity validator via harness.validators.split_integrity_validator",
+    "temporal integrity validator via harness.validators.temporal_integrity_validator"
+  ],
+  "kept_in_study": [
+    "study release policy thresholds and local-gain semantics",
+    "study-specific same-caliber interpretation",
+    "study-specific feature engineering and publish/rollback behavior"
+  ],
+  "kept_in_life": [
+    "life-specific proxy label semantics and future window construction",
+    "life-specific proxy stress test task definitions"
+  ],
+  "rationale": {
+    "moved_to_harness": "These pieces are contract-level concerns shared by peer domains.",
+    "kept_in_study": "These pieces still encode study-only business rules and should not be generalized yet.",
+    "kept_in_life": "These pieces encode life-domain proxy label semantics that are not yet generalizable."
+  }
+}

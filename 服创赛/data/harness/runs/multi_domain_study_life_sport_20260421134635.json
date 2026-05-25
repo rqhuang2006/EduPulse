@@ -1,0 +1,138 @@
+{
+  "run_type": "multi_domain",
+  "domain_results": {
+    "study": {
+      "domain_name": "study",
+      "status": "failed",
+      "exception_type": "ImportError",
+      "exception_message": "\n\nIMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!\n\nImporting the numpy C-extensions failed. This error can happen for\nmany reasons, often due to issues with your setup or how NumPy was\ninstalled.\nThe following compiled module files exist, but seem incompatible\nwith with either python 'cpython-313' or the platform 'win32':\n\n  * _multiarray_umath.cp314-win_amd64.lib\n  * _multiarray_umath.cp314-win_amd64.pyd\n\nWe have compiled some common reasons and troubleshooting tips at:\n\n    https://numpy.org/devdocs/user/troubleshooting-importerror.html\n\nPlease note and check the following:\n\n  * The Python version is: Python 3.13 from \"D:\\py\\python.exe\"\n  * The NumPy version is: \"2.4.4\"\n\nand make sure that they are the versions you expect.\n\nPlease carefully study the information and documentation linked above.\nThis is unlikely to be a NumPy issue but will be caused by a bad install\nor environment on your machine.\n\nOriginal error was: No module named 'numpy._core._multiarray_umath'\n",
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "StudyAgentAdapter",
+        "execution_path": "orchestrator -> adapter.run_domain_pipeline",
+        "domain_pipeline_called": true,
+        "request_domain": "study"
+      }
+    },
+    "life": {
+      "domain_name": "life",
+      "status": "failed",
+      "exception_type": "ImportError",
+      "exception_message": "\n\nIMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!\n\nImporting the numpy C-extensions failed. This error can happen for\nmany reasons, often due to issues with your setup or how NumPy was\ninstalled.\nThe following compiled module files exist, but seem incompatible\nwith with either python 'cpython-313' or the platform 'win32':\n\n  * _multiarray_umath.cp314-win_amd64.lib\n  * _multiarray_umath.cp314-win_amd64.pyd\n\nWe have compiled some common reasons and troubleshooting tips at:\n\n    https://numpy.org/devdocs/user/troubleshooting-importerror.html\n\nPlease note and check the following:\n\n  * The Python version is: Python 3.13 from \"D:\\py\\python.exe\"\n  * The NumPy version is: \"2.4.4\"\n\nand make sure that they are the versions you expect.\n\nPlease carefully study the information and documentation linked above.\nThis is unlikely to be a NumPy issue but will be caused by a bad install\nor environment on your machine.\n\nOriginal error was: No module named 'numpy._core._multiarray_umath'\n",
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "LifeAgentAdapter",
+        "execution_path": "orchestrator -> adapter.run_domain_pipeline",
+        "domain_pipeline_called": true,
+        "request_domain": "life"
+      }
+    },
+    "sport": {
+      "domain_name": "sport",
+      "status": "failed",
+      "exception_type": "ImportError",
+      "exception_message": "Unable to import required dependency numpy. Please see the traceback for details.",
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "SportAgentAdapter",
+        "execution_path": "orchestrator -> adapter.run_domain_pipeline",
+        "domain_pipeline_called": true,
+        "request_domain": "sport"
+      }
+    }
+  },
+  "fusion_inputs": [],
+  "final_decision": {
+    "decision": "dry_run_only",
+    "summary": "At least one domain failed or was held.",
+    "system_status": "completed_with_hold",
+    "decision_vocabulary": {
+      "promote_candidate": "trusted mainline beats baseline enough to replace the current baseline",
+      "keep_baseline": "trusted mainline is valid and comparable, but the current serving choice remains baseline",
+      "eligible_for_comparison": "trusted mainline passes authenticity gates and can enter cross-domain comparison",
+      "hold_for_review": "candidate exists but authenticity or validity gates failed and review is required"
+    },
+    "stub_domains": [],
+    "ready_domains": [],
+    "domains": {
+      "study": {
+        "status": "failed",
+        "decision": null,
+        "decision_semantics": "trusted_but_baseline_kept",
+        "comparable": false,
+        "mainline_task_type": "same_window_classification",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "trusted_mainline": {},
+        "mainline_frozen": false,
+        "next_optimization_target": ""
+      },
+      "life": {
+        "status": "failed",
+        "decision": null,
+        "decision_semantics": "trusted_but_baseline_kept",
+        "comparable": false,
+        "mainline_task_type": "same_window_classification",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "trusted_mainline": {},
+        "mainline_frozen": false,
+        "next_optimization_target": ""
+      },
+      "sport": {
+        "status": "failed",
+        "decision": null,
+        "decision_semantics": "needs_review_or_followup",
+        "comparable": false,
+        "mainline_task_type": "same_window_classification",
+        "mainline_validity": false,
+        "blocking_reason": "non_future_window_candidate",
+        "trusted_mainline": {},
+        "mainline_frozen": false,
+        "next_optimization_target": ""
+      }
+    },
+    "domain_decisions": {
+      "study": {},
+      "life": {},
+      "sport": {}
+    }
+  },
+  "warnings": [],
+  "validations": [],
+  "status": "success",
+  "system_status": "completed_with_hold",
+  "domain_timings": {
+    "study": 0.2401113510131836,
+    "life": 0.03564143180847168,
+    "sport": 0.01973891258239746
+  },
+  "domain_start_order": [
+    "study",
+    "life",
+    "sport"
+  ],
+  "domain_end_order": [
+    "study",
+    "life",
+    "sport"
+  ],
+  "adapter_names": {
+    "study": "StudyAgentAdapter",
+    "life": "LifeAgentAdapter",
+    "sport": "SportAgentAdapter"
+  },
+  "domain_statuses": {
+    "study": "failed",
+    "life": "failed",
+    "sport": "failed"
+  },
+  "slowest_domain": "study",
+  "agent_trace": {
+    "invoked_via_harness": true,
+    "adapter_name": "HarnessOrchestrator",
+    "execution_path": "orchestrator -> adapter.run_domain_pipeline",
+    "domain_pipeline_called": true,
+    "request_domain": "study"
+  }
+}

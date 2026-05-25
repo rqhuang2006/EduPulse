@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-04-18T23:48:53",
+  "data_rows": 17578,
+  "experiments": {
+    "single_fail_specialist": {
+      "status": "completed",
+      "baseline_mixed": {
+        "auc": 0.841410915874927,
+        "rows": 3510,
+        "positive_count": 1126,
+        "negative_count": -4636
+      },
+      "single_fail_specialist": {
+        "auc": 0.844434290124266,
+        "rows": 3408,
+        "positive_count": 1024,
+        "negative_count": -4432
+      },
+      "overall_low_specialist": {
+        "auc": 0.9701297045663902,
+        "rows": 2486,
+        "positive_count": 102,
+        "negative_count": -2588
+      },
+      "conclusion": "single_fail specialist AUC improvement vs baseline"
+    },
+    "course_risk_features": {
+      "status": "completed",
+      "results": {
+        "core_only": {
+          "auc": 0.8440036651273974,
+          "rows": 3516,
+          "positive_count": 1127,
+          "negative_count": -4643
+        },
+        "core_plus_course_risk": {
+          "auc": 0.84483452142937,
+          "rows": 3516,
+          "positive_count": 1127,
+          "negative_count": -4643
+        }
+      },
+      "feature_counts": {
+        "core": 8,
+        "course_risk": 6,
+        "temporal": 0
+      }
+    },
+    "enhanced_separate_model": {
+      "status": "completed",
+      "results": {
+        "unified_model": {
+          "auc": 0.8440036651273974,
+          "rows": 3516,
+          "positive_count": 1127,
+          "negative_count": -4643
+        },
+        "core_only_model": {
+          "auc": 0.8526928154321147,
+          "rows": 2962,
+          "positive_count": 904,
+          "negative_count": -3866
+        },
+        "enhanced_model": {
+          "auc": 0.7861216858818908,
+          "rows": 554,
+          "positive_count": 223,
+          "negative_count": -777
+        }
+      },
+      "sample_counts": {
+        "core_only": 14810,
+        "core_plus_behavior": 2768
+      }
+    }
+  }
+}

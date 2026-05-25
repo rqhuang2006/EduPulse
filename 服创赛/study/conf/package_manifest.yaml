@@ -1,0 +1,22 @@
+bundle_name: study
+bundle_root: data/deliverables/study
+required:
+  data:
+    - study_train_table.csv
+    - study_infer_table.csv
+    - study_prediction_output.csv
+    - study_explanation_output.csv
+  docs:
+    - study_feature_dictionary.xlsx
+    - study_quality_report.xlsx
+    - study_validation_report.xlsx
+    - raw_inventory.xlsx
+    - raw_field_mapping.xlsx
+    - ods_cleaning_log.csv
+  model:
+    - study_model.pkl
+    - study_model_config.json
+    - study_model_metrics.json
+  root:
+    - README.md
+

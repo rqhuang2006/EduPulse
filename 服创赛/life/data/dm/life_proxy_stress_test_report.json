@@ -1,0 +1,99 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:00:57",
+  "tasks": [
+    {
+      "experiment_name": "internet_only_proxy",
+      "status": "skipped",
+      "reason": "train split has single-class distribution: {1: 2005}; test split has single-class distribution: {1: 255}",
+      "train_rows": 2005,
+      "test_rows": 255,
+      "train_label_distribution": {
+        "1": 2005
+      },
+      "test_label_distribution": {
+        "1": 255
+      }
+    },
+    {
+      "experiment_name": "club_only_proxy",
+      "status": "skipped",
+      "reason": "train split has single-class distribution: {1: 2005}; test split has single-class distribution: {1: 255}",
+      "train_rows": 2005,
+      "test_rows": 255,
+      "train_label_distribution": {
+        "1": 2005
+      },
+      "test_label_distribution": {
+        "1": 255
+      }
+    },
+    {
+      "task_name": "library_only_proxy",
+      "label_rule_summary": "bottom-ranked late library visits",
+      "auc": 0.9950980392156863,
+      "f1": 0.997543,
+      "precision": 1.0,
+      "recall": 0.995098,
+      "feature_overlap_with_label_rule": [
+        "library_early_mean",
+        "library_early_trend",
+        "library_early_volatility",
+        "library_early_continuity",
+        "library_early_weekend_ratio"
+      ],
+      "semantic_reconstruction_risk": "medium",
+      "conclusion": "task is learnable but source-near ablation still matters"
+    },
+    {
+      "experiment_name": "gate_only_proxy",
+      "status": "skipped",
+      "reason": "train split has single-class distribution: {1: 2005}; test split has single-class distribution: {1: 255}",
+      "train_rows": 2005,
+      "test_rows": 255,
+      "train_label_distribution": {
+        "1": 2005
+      },
+      "test_label_distribution": {
+        "1": 255
+      }
+    },
+    {
+      "task_name": "combined_proxy",
+      "label_rule_summary": "weighted combined late life proxy",
+      "auc": 0.8634638737097754,
+      "f1": 0.751678,
+      "precision": 0.727273,
+      "recall": 0.777778,
+      "feature_overlap_with_label_rule": [
+        "internet_early_sum",
+        "internet_early_mean",
+        "library_early_mean",
+        "club_early_mean",
+        "gate_early_late_ratio",
+        "gate_early_mean",
+        "internet_early_trend",
+        "internet_early_volatility",
+        "internet_early_continuity",
+        "internet_early_deviation",
+        "internet_early_cv",
+        "club_early_trend",
+        "club_early_continuity",
+        "library_early_trend",
+        "library_early_volatility",
+        "library_early_continuity",
+        "library_early_weekend_ratio",
+        "gate_early_trend",
+        "gate_early_volatility",
+        "gate_early_continuity",
+        "gate_early_weekend_ratio",
+        "gate_early_hour_mean",
+        "internet_library_interaction",
+        "late_gate_internet_interaction",
+        "club_library_balance"
+      ],
+      "semantic_reconstruction_risk": "medium",
+      "conclusion": "task is learnable but source-near ablation still matters"
+    }
+  ]
+}

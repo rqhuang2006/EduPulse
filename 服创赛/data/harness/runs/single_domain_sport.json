@@ -1,0 +1,763 @@
+{
+  "run_type": "single_domain",
+  "domain_name": "sport",
+  "domain_result": {
+    "domain_name": "sport",
+    "status": "completed",
+    "final_decision": "keep_baseline",
+    "policy_decision": "keep_baseline",
+    "decision": "keep_baseline",
+    "comparable": true,
+    "execution_mode": "review",
+    "decision_stage_reached": "active_baseline_comparison",
+    "metrics": {
+      "auc": 0.8505509045419554,
+      "f1": 0.3193717277486911,
+      "precision": 0.23282442748091603,
+      "recall": 0.5083333333333333,
+      "rows": 3545,
+      "eval_rows": 1852,
+      "positive_count": 120,
+      "future_window_auc": 0.8505509045419554
+    },
+    "metric_context": {
+      "domain": "sport",
+      "status": "completed",
+      "decision": "keep_baseline",
+      "comparable": true,
+      "metrics": {
+        "auc": 0.8505509045419554,
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "future_window_auc": 0.8505509045419554
+      },
+      "artifacts": {
+        "baseline_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "candidate_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "candidate_classification_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_classification_model.joblib"
+      },
+      "task_type": "future_window_prediction",
+      "mainline_validity": true,
+      "blocking_reason": "",
+      "next_optimization_target": "improve_future_window_auc",
+      "tautology_risk": "low",
+      "suspicious_high_auc": false,
+      "baseline_version_id": "sport_baseline_v1",
+      "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+      "hardest_subgroup": {
+        "group_type": "__sport_state_bucket",
+        "group": "stable",
+        "rows": 184,
+        "positive_count": 28,
+        "positive_rate": 0.15217391304347827,
+        "auc": 0.5762362637362637,
+        "f1": 0.2647058823529412,
+        "precision": 0.16666666666666666,
+        "recall": 0.6428571428571429,
+        "mean_proba": 0.37957970957960124,
+        "mean_threshold": 0.3200000000000001
+      },
+      "trusted_mainline": {
+        "auc": 0.8505509045419554,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "two_stage",
+        "population_version": "recoverable",
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "best_threshold": 0.35000000000000003,
+        "state_thresholds": {
+          "borderline": 0.35000000000000003,
+          "low_participation": 0.37000000000000005,
+          "stable": 0.32000000000000006
+        },
+        "ablation_summary": {
+          "trend_drop_auc": 0.001503560431100781,
+          "by_bundle": {
+            "baseline_only": 0.7920996920708238,
+            "baseline+deviation": 0.8490473441108546,
+            "baseline+deviation+trend": 0.8505509045419554
+          }
+        }
+      },
+      "mainline_frozen": true,
+      "agent_protocol": {
+        "domain": "sport",
+        "protocol_version": "agent_protocol_v1",
+        "diagnosis": {
+          "task_type": "future_window_prediction",
+          "failure_types": [
+            "none"
+          ],
+          "label_versions": [
+            "zf_grade",
+            "zf_label_v2",
+            "zf_label_v3",
+            "sport_label_future_v1",
+            "sport_label_future_v2",
+            "sport_label_future_v3"
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "future_window": "1-2 terms",
+          "trend_bundle_enabled": true,
+          "tautology_risk": "low",
+          "trust_flags": {
+            "suspicious_high_auc": false
+          }
+        },
+        "proposal": {
+          "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "task_reconstruction": {
+            "switch_label_version": "future_v3",
+            "switch_time_window": "short_window_1_2_terms",
+            "switch_target_population": "recoverable",
+            "switch_structure_version": "two_stage"
+          },
+          "next_optimization_target": "improve_future_window_auc"
+        },
+        "comparison": {
+          "baseline_auc": null,
+          "candidate_auc": 0.8505509045419554,
+          "delta_auc": null,
+          "future_window_auc": 0.8505509045419554,
+          "is_future_window": true,
+          "same_source_risk": "low",
+          "subgroup_stable": true,
+          "temporal_holdout_stable": true,
+          "more_real_than_baseline": true,
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "recommendation": {
+          "decision": "keep_baseline",
+          "comparable": true,
+          "best_mainline_candidate": {
+            "auc": 0.8505509045419554,
+            "rows": 3545,
+            "eval_rows": 1852,
+            "positive_count": 120,
+            "evaluated_terms": [
+              20221,
+              20231
+            ],
+            "label_version": "future_v3",
+            "feature_bundle": "baseline+deviation+trend",
+            "structure_version": "two_stage",
+            "population_version": "recoverable",
+            "f1": 0.3193717277486911,
+            "precision": 0.23282442748091603,
+            "recall": 0.5083333333333333,
+            "best_threshold": 0.35000000000000003,
+            "state_thresholds": {
+              "borderline": 0.35000000000000003,
+              "low_participation": 0.37000000000000005,
+              "stable": 0.32000000000000006
+            },
+            "ablation_summary": {
+              "trend_drop_auc": 0.001503560431100781,
+              "by_bundle": {
+                "baseline_only": 0.7920996920708238,
+                "baseline+deviation": 0.8490473441108546,
+                "baseline+deviation+trend": 0.8505509045419554
+              }
+            }
+          },
+          "high_score_but_untrusted": false,
+          "real_but_weak": false,
+          "next_priority_route": "target_population_and_future_transition_search",
+          "blocking_reason": ""
+        }
+      }
+    },
+    "domain_context": {},
+    "domain_audit": {},
+    "validation_summary": [],
+    "warning_summary": [],
+    "artifact_ref": null,
+    "harness_v1": {
+      "domain": "sport",
+      "status": "completed",
+      "decision": "keep_baseline",
+      "comparable": true,
+      "metrics": {
+        "auc": 0.8505509045419554,
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "future_window_auc": 0.8505509045419554
+      },
+      "artifacts": {
+        "baseline_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "candidate_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "candidate_classification_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_classification_model.joblib"
+      },
+      "task_type": "future_window_prediction",
+      "mainline_validity": true,
+      "blocking_reason": "",
+      "next_optimization_target": "improve_future_window_auc",
+      "tautology_risk": "low",
+      "suspicious_high_auc": false,
+      "baseline_version_id": "sport_baseline_v1",
+      "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+      "hardest_subgroup": {
+        "group_type": "__sport_state_bucket",
+        "group": "stable",
+        "rows": 184,
+        "positive_count": 28,
+        "positive_rate": 0.15217391304347827,
+        "auc": 0.5762362637362637,
+        "f1": 0.2647058823529412,
+        "precision": 0.16666666666666666,
+        "recall": 0.6428571428571429,
+        "mean_proba": 0.37957970957960124,
+        "mean_threshold": 0.3200000000000001
+      },
+      "trusted_mainline": {
+        "auc": 0.8505509045419554,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "two_stage",
+        "population_version": "recoverable",
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "best_threshold": 0.35000000000000003,
+        "state_thresholds": {
+          "borderline": 0.35000000000000003,
+          "low_participation": 0.37000000000000005,
+          "stable": 0.32000000000000006
+        },
+        "ablation_summary": {
+          "trend_drop_auc": 0.001503560431100781,
+          "by_bundle": {
+            "baseline_only": 0.7920996920708238,
+            "baseline+deviation": 0.8490473441108546,
+            "baseline+deviation+trend": 0.8505509045419554
+          }
+        }
+      },
+      "mainline_frozen": true,
+      "agent_protocol": {
+        "domain": "sport",
+        "protocol_version": "agent_protocol_v1",
+        "diagnosis": {
+          "task_type": "future_window_prediction",
+          "failure_types": [
+            "none"
+          ],
+          "label_versions": [
+            "zf_grade",
+            "zf_label_v2",
+            "zf_label_v3",
+            "sport_label_future_v1",
+            "sport_label_future_v2",
+            "sport_label_future_v3"
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "future_window": "1-2 terms",
+          "trend_bundle_enabled": true,
+          "tautology_risk": "low",
+          "trust_flags": {
+            "suspicious_high_auc": false
+          }
+        },
+        "proposal": {
+          "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "task_reconstruction": {
+            "switch_label_version": "future_v3",
+            "switch_time_window": "short_window_1_2_terms",
+            "switch_target_population": "recoverable",
+            "switch_structure_version": "two_stage"
+          },
+          "next_optimization_target": "improve_future_window_auc"
+        },
+        "comparison": {
+          "baseline_auc": null,
+          "candidate_auc": 0.8505509045419554,
+          "delta_auc": null,
+          "future_window_auc": 0.8505509045419554,
+          "is_future_window": true,
+          "same_source_risk": "low",
+          "subgroup_stable": true,
+          "temporal_holdout_stable": true,
+          "more_real_than_baseline": true,
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "recommendation": {
+          "decision": "keep_baseline",
+          "comparable": true,
+          "best_mainline_candidate": {
+            "auc": 0.8505509045419554,
+            "rows": 3545,
+            "eval_rows": 1852,
+            "positive_count": 120,
+            "evaluated_terms": [
+              20221,
+              20231
+            ],
+            "label_version": "future_v3",
+            "feature_bundle": "baseline+deviation+trend",
+            "structure_version": "two_stage",
+            "population_version": "recoverable",
+            "f1": 0.3193717277486911,
+            "precision": 0.23282442748091603,
+            "recall": 0.5083333333333333,
+            "best_threshold": 0.35000000000000003,
+            "state_thresholds": {
+              "borderline": 0.35000000000000003,
+              "low_participation": 0.37000000000000005,
+              "stable": 0.32000000000000006
+            },
+            "ablation_summary": {
+              "trend_drop_auc": 0.001503560431100781,
+              "by_bundle": {
+                "baseline_only": 0.7920996920708238,
+                "baseline+deviation": 0.8490473441108546,
+                "baseline+deviation+trend": 0.8505509045419554
+              }
+            }
+          },
+          "high_score_but_untrusted": false,
+          "real_but_weak": false,
+          "next_priority_route": "target_population_and_future_transition_search",
+          "blocking_reason": ""
+        }
+      }
+    },
+    "agent_trace": {
+      "invoked_via_harness": true,
+      "adapter_name": "SportAgentAdapter",
+      "execution_path": "orchestrator -> adapter.run_domain_pipeline -> sport_agent",
+      "domain_pipeline_called": true,
+      "request_domain": "sport"
+    },
+    "raw_result": {
+      "domain": "sport",
+      "status": "success",
+      "final_decision": "keep_baseline",
+      "policy_decision": "keep_baseline",
+      "execution_mode": "review",
+      "reason_codes": [],
+      "decision_stage_reached": "active_baseline_comparison",
+      "summary_metrics": {
+        "auc": 0.8505509045419554,
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "future_window_auc": 0.8505509045419554
+      },
+      "metric_context": {},
+      "domain_context": {},
+      "domain_audit": {},
+      "warnings": [],
+      "deliverables": {},
+      "harness_v1": {
+        "domain": "sport",
+        "status": "completed",
+        "decision": "keep_baseline",
+        "comparable": true,
+        "metrics": {
+          "auc": 0.8505509045419554,
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "future_window_auc": 0.8505509045419554
+        },
+        "artifacts": {
+          "baseline_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "candidate_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "candidate_classification_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_classification_model.joblib"
+        },
+        "task_type": "future_window_prediction",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "next_optimization_target": "improve_future_window_auc",
+        "tautology_risk": "low",
+        "suspicious_high_auc": false,
+        "baseline_version_id": "sport_baseline_v1",
+        "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "hardest_subgroup": {
+          "group_type": "__sport_state_bucket",
+          "group": "stable",
+          "rows": 184,
+          "positive_count": 28,
+          "positive_rate": 0.15217391304347827,
+          "auc": 0.5762362637362637,
+          "f1": 0.2647058823529412,
+          "precision": 0.16666666666666666,
+          "recall": 0.6428571428571429,
+          "mean_proba": 0.37957970957960124,
+          "mean_threshold": 0.3200000000000001
+        },
+        "trusted_mainline": {
+          "auc": 0.8505509045419554,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "evaluated_terms": [
+            20221,
+            20231
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "best_threshold": 0.35000000000000003,
+          "state_thresholds": {
+            "borderline": 0.35000000000000003,
+            "low_participation": 0.37000000000000005,
+            "stable": 0.32000000000000006
+          },
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "mainline_frozen": true,
+        "agent_protocol": {
+          "domain": "sport",
+          "protocol_version": "agent_protocol_v1",
+          "diagnosis": {
+            "task_type": "future_window_prediction",
+            "failure_types": [
+              "none"
+            ],
+            "label_versions": [
+              "zf_grade",
+              "zf_label_v2",
+              "zf_label_v3",
+              "sport_label_future_v1",
+              "sport_label_future_v2",
+              "sport_label_future_v3"
+            ],
+            "label_version": "future_v3",
+            "feature_bundle": "baseline+deviation+trend",
+            "structure_version": "two_stage",
+            "population_version": "recoverable",
+            "future_window": "1-2 terms",
+            "trend_bundle_enabled": true,
+            "tautology_risk": "low",
+            "trust_flags": {
+              "suspicious_high_auc": false
+            }
+          },
+          "proposal": {
+            "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+            "task_reconstruction": {
+              "switch_label_version": "future_v3",
+              "switch_time_window": "short_window_1_2_terms",
+              "switch_target_population": "recoverable",
+              "switch_structure_version": "two_stage"
+            },
+            "next_optimization_target": "improve_future_window_auc"
+          },
+          "comparison": {
+            "baseline_auc": null,
+            "candidate_auc": 0.8505509045419554,
+            "delta_auc": null,
+            "future_window_auc": 0.8505509045419554,
+            "is_future_window": true,
+            "same_source_risk": "low",
+            "subgroup_stable": true,
+            "temporal_holdout_stable": true,
+            "more_real_than_baseline": true,
+            "ablation_summary": {
+              "trend_drop_auc": 0.001503560431100781,
+              "by_bundle": {
+                "baseline_only": 0.7920996920708238,
+                "baseline+deviation": 0.8490473441108546,
+                "baseline+deviation+trend": 0.8505509045419554
+              }
+            }
+          },
+          "recommendation": {
+            "decision": "keep_baseline",
+            "comparable": true,
+            "best_mainline_candidate": {
+              "auc": 0.8505509045419554,
+              "rows": 3545,
+              "eval_rows": 1852,
+              "positive_count": 120,
+              "evaluated_terms": [
+                20221,
+                20231
+              ],
+              "label_version": "future_v3",
+              "feature_bundle": "baseline+deviation+trend",
+              "structure_version": "two_stage",
+              "population_version": "recoverable",
+              "f1": 0.3193717277486911,
+              "precision": 0.23282442748091603,
+              "recall": 0.5083333333333333,
+              "best_threshold": 0.35000000000000003,
+              "state_thresholds": {
+                "borderline": 0.35000000000000003,
+                "low_participation": 0.37000000000000005,
+                "stable": 0.32000000000000006
+              },
+              "ablation_summary": {
+                "trend_drop_auc": 0.001503560431100781,
+                "by_bundle": {
+                  "baseline_only": 0.7920996920708238,
+                  "baseline+deviation": 0.8490473441108546,
+                  "baseline+deviation+trend": 0.8505509045419554
+                }
+              }
+            },
+            "high_score_but_untrusted": false,
+            "real_but_weak": false,
+            "next_priority_route": "target_population_and_future_transition_search",
+            "blocking_reason": ""
+          }
+        }
+      },
+      "fusion_input": {}
+    }
+  },
+  "fusion_input": {
+    "domain_name": "sport",
+    "risk_score": null,
+    "risk_level": "completed",
+    "confidence": null,
+    "top_features": [],
+    "explanations": [],
+    "artifact_ref": null,
+    "metric_context": {
+      "domain": "sport",
+      "status": "completed",
+      "decision": "keep_baseline",
+      "comparable": true,
+      "metrics": {
+        "auc": 0.8505509045419554,
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "future_window_auc": 0.8505509045419554
+      },
+      "artifacts": {
+        "baseline_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "candidate_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "candidate_classification_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_classification_model.joblib"
+      },
+      "task_type": "future_window_prediction",
+      "mainline_validity": true,
+      "blocking_reason": "",
+      "next_optimization_target": "improve_future_window_auc",
+      "tautology_risk": "low",
+      "suspicious_high_auc": false,
+      "baseline_version_id": "sport_baseline_v1",
+      "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+      "hardest_subgroup": {
+        "group_type": "__sport_state_bucket",
+        "group": "stable",
+        "rows": 184,
+        "positive_count": 28,
+        "positive_rate": 0.15217391304347827,
+        "auc": 0.5762362637362637,
+        "f1": 0.2647058823529412,
+        "precision": 0.16666666666666666,
+        "recall": 0.6428571428571429,
+        "mean_proba": 0.37957970957960124,
+        "mean_threshold": 0.3200000000000001
+      },
+      "trusted_mainline": {
+        "auc": 0.8505509045419554,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "evaluated_terms": [
+          20221,
+          20231
+        ],
+        "label_version": "future_v3",
+        "feature_bundle": "baseline+deviation+trend",
+        "structure_version": "two_stage",
+        "population_version": "recoverable",
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "best_threshold": 0.35000000000000003,
+        "state_thresholds": {
+          "borderline": 0.35000000000000003,
+          "low_participation": 0.37000000000000005,
+          "stable": 0.32000000000000006
+        },
+        "ablation_summary": {
+          "trend_drop_auc": 0.001503560431100781,
+          "by_bundle": {
+            "baseline_only": 0.7920996920708238,
+            "baseline+deviation": 0.8490473441108546,
+            "baseline+deviation+trend": 0.8505509045419554
+          }
+        }
+      },
+      "mainline_frozen": true,
+      "agent_protocol": {
+        "domain": "sport",
+        "protocol_version": "agent_protocol_v1",
+        "diagnosis": {
+          "task_type": "future_window_prediction",
+          "failure_types": [
+            "none"
+          ],
+          "label_versions": [
+            "zf_grade",
+            "zf_label_v2",
+            "zf_label_v3",
+            "sport_label_future_v1",
+            "sport_label_future_v2",
+            "sport_label_future_v3"
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "future_window": "1-2 terms",
+          "trend_bundle_enabled": true,
+          "tautology_risk": "low",
+          "trust_flags": {
+            "suspicious_high_auc": false
+          }
+        },
+        "proposal": {
+          "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "task_reconstruction": {
+            "switch_label_version": "future_v3",
+            "switch_time_window": "short_window_1_2_terms",
+            "switch_target_population": "recoverable",
+            "switch_structure_version": "two_stage"
+          },
+          "next_optimization_target": "improve_future_window_auc"
+        },
+        "comparison": {
+          "baseline_auc": null,
+          "candidate_auc": 0.8505509045419554,
+          "delta_auc": null,
+          "future_window_auc": 0.8505509045419554,
+          "is_future_window": true,
+          "same_source_risk": "low",
+          "subgroup_stable": true,
+          "temporal_holdout_stable": true,
+          "more_real_than_baseline": true,
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "recommendation": {
+          "decision": "keep_baseline",
+          "comparable": true,
+          "best_mainline_candidate": {
+            "auc": 0.8505509045419554,
+            "rows": 3545,
+            "eval_rows": 1852,
+            "positive_count": 120,
+            "evaluated_terms": [
+              20221,
+              20231
+            ],
+            "label_version": "future_v3",
+            "feature_bundle": "baseline+deviation+trend",
+            "structure_version": "two_stage",
+            "population_version": "recoverable",
+            "f1": 0.3193717277486911,
+            "precision": 0.23282442748091603,
+            "recall": 0.5083333333333333,
+            "best_threshold": 0.35000000000000003,
+            "state_thresholds": {
+              "borderline": 0.35000000000000003,
+              "low_participation": 0.37000000000000005,
+              "stable": 0.32000000000000006
+            },
+            "ablation_summary": {
+              "trend_drop_auc": 0.001503560431100781,
+              "by_bundle": {
+                "baseline_only": 0.7920996920708238,
+                "baseline+deviation": 0.8490473441108546,
+                "baseline+deviation+trend": 0.8505509045419554
+              }
+            }
+          },
+          "high_score_but_untrusted": false,
+          "real_but_weak": false,
+          "next_priority_route": "target_population_and_future_transition_search",
+          "blocking_reason": ""
+        }
+      }
+    },
+    "validation_summary": [],
+    "warning_summary": []
+  },
+  "final_decision": "keep_baseline",
+  "status": "completed",
+  "warnings": [],
+  "validations": [],
+  "agent_trace": {
+    "invoked_via_harness": true,
+    "adapter_name": "SportAgentAdapter",
+    "execution_path": "orchestrator -> adapter.run_domain_pipeline -> sport_agent",
+    "domain_pipeline_called": true,
+    "request_domain": "sport"
+  }
+}

@@ -1,0 +1,110 @@
+datasets:
+  class_session:
+    raw_file: 上课信息统计表.xlsx
+    ods_file: ods_class_session.parquet
+    domain: study
+    subject: l3_attendance
+    description: 上课信息统计与课堂抬头率等课堂表现
+  cet_score:
+    raw_file: 四六级成绩.xlsx
+    ods_file: ods_cet_score.parquet
+    domain: study
+    subject: l1_grade
+    description: 四六级成绩
+  library_visit:
+    raw_file: 图书馆打卡记录.xlsx
+    ods_file: ods_library_visit.parquet
+    domain: study
+    subject: l7_online_activity
+    description: 图书馆进出记录，可作为学习活跃度补充
+  scholarship:
+    raw_file: 奖学金获奖.xlsx
+    ods_file: ods_scholarship.parquet
+    domain: study
+    subject: supplement
+    description: 奖学金获奖记录
+  assignment:
+    raw_file: 学生作业提交记录.xlsx
+    ods_file: ods_assignment.parquet
+    domain: study
+    subject: l5_assignment
+    description: 作业提交与评分记录
+  student_info:
+    raw_file: 学生基本信息.xlsx
+    ods_file: ods_student_info.parquet
+    domain: study
+    subject: l0_base
+    description: 学生基础画像
+  grade:
+    raw_file: 学生成绩.xlsx
+    ods_file: ods_grade.parquet
+    domain: study
+    subject: l1_grade
+    description: 校内课程成绩
+  signin:
+    raw_file: 学生签到记录.xlsx
+    ods_file: ods_signin.parquet
+    domain: study
+    subject: l3_attendance
+    description: 学生签到明细
+  course_selection:
+    raw_file: 学生选课信息.xlsx
+    ods_file: ods_course_selection.parquet
+    domain: study
+    subject: l2_course_load
+    description: 学生选课记录
+  competition:
+    raw_file: 学科竞赛.xlsx
+    ods_file: ods_competition.parquet
+    domain: study
+    subject: supplement
+    description: 学科竞赛获奖记录
+  status_change:
+    raw_file: 学籍异动.xlsx
+    ods_file: ods_status_change.parquet
+    domain: study
+    subject: l0_base
+    description: 学籍异动记录
+  comprehensive_eval:
+    raw_file: 本科生综合测评.xlsx
+    ods_file: ods_comprehensive_eval.parquet
+    domain: study
+    subject: supplement
+    description: 本科生综合测评
+  graduation:
+    raw_file: 毕业去向.xlsx
+    ods_file: ods_graduation.parquet
+    domain: study
+    subject: supplement
+    description: 毕业去向
+  online_activity:
+    raw_file: 线上学习（综合表现）.xlsx
+    ods_file: ods_online_activity.parquet
+    domain: study
+    subject: l7_online_activity
+    description: 智课线上学习综合表现
+  attendance_summary:
+    raw_file: 考勤汇总.xlsx
+    ods_file: ods_attendance_summary.parquet
+    domain: study
+    subject: l3_attendance
+    description: 考勤汇总
+  exam_quiz:
+    raw_file: 考试提交记录.xlsx
+    ods_file: ods_exam_quiz.parquet
+    domain: study
+    subject: l6_exam_quiz
+    description: 考试/测验提交记录
+  class_task:
+    raw_file: 课堂任务参与.xlsx
+    ods_file: ods_class_task.parquet
+    domain: study
+    subject: l4_class_task
+    description: 课堂任务参与明细
+  course_info:
+    raw_file: 课程信息.xlsx
+    ods_file: ods_course_info.parquet
+    domain: study
+    subject: l2_course_load
+    description: 课程基础信息
+

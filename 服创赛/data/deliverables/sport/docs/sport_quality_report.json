@@ -1,0 +1,12 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "domain": "sport",
+  "status": "success",
+  "summary": {
+    "rows": 9751,
+    "columns": 61,
+    "missing_ratio": 0.152944
+  },
+  "warnings": [],
+  "generated_at": "2026-04-21T16:02:30"
+}

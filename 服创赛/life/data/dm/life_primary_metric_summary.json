@@ -1,0 +1,14 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "display_auc_same_sample_clean_holdout": 0.8628567091681845,
+  "display_auc_strict_comparable": 0.8628567091681845,
+  "display_auc_temporal_generalization": 0.8632350795272142,
+  "recommended_primary_auc": 0.8632350795272142,
+  "recommended_primary_source": "temporal_generalization",
+  "best_case_auc": 0.8632350795272142,
+  "robust_auc": 0.8632350795272142,
+  "gap": 0.0,
+  "interpretation": "temporal generalization AUC is the most robust measure of out-of-time stability; same-sample clean holdout AUC reflects in-distribution performance but may overestimate real-world capability; strict comparable AUC ensures fair comparison against baseline on identical universe.",
+  "target_met": true
+}

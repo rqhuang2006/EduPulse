@@ -1,0 +1,3452 @@
+{
+  "run_type": "multi_domain",
+  "domain_results": {
+    "study": {
+      "domain_name": "study",
+      "status": "completed_with_hold",
+      "final_decision": "",
+      "policy_decision": "",
+      "execution_mode": "",
+      "decision_stage_reached": "floor_gate",
+      "metrics": {
+        "harness_final_decision": "keep_baseline",
+        "harness_reason_codes": [
+          "baseline_auc_regression"
+        ],
+        "harness_execution_mode": "dry_run",
+        "harness_policy_decision": "keep_baseline",
+        "harness_stage_count": 5,
+        "auc": 0.8324450440706692,
+        "f1": 0.540837336993823,
+        "recall": 0.7255985267034991,
+        "eval_scope": "publish_gate_metric",
+        "task_scope": "study_layered_enhanced_serving",
+        "study_data_mode": "mixed_overall_with_subgroups",
+        "row_level_study_data_mode": "mixed_overall_with_subgroups"
+      },
+      "metric_context": {
+        "run_id": "study_harness_v1_d4e5fd5a9b4d",
+        "pipeline_name": "study_harness_v1",
+        "run_record_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\study\\data\\harness\\runs\\study_harness_v1_d4e5fd5a9b4d.json",
+        "final_decision": "keep_baseline",
+        "policy_decision": "keep_baseline",
+        "decision_reason_codes": [
+          "baseline_auc_regression"
+        ],
+        "decision_stage_reached": "floor_gate",
+        "gate_name": "error_validation",
+        "execution_mode": "dry_run",
+        "collected_warnings": [],
+        "eval_scope": "publish_gate_metric",
+        "task_scope": "study_layered_enhanced_serving",
+        "study_data_mode": "mixed_overall_with_subgroups",
+        "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+        "label_definition": "LABEL",
+        "baseline_version_id": "study_candidate_20260418220843",
+        "anchor_baseline_version_id": "study_v1",
+        "comparison_mode": "study_best_model_v1",
+        "candidate_metrics": {
+          "auc": 0.8324450440706692,
+          "f1": 0.540837336993823,
+          "recall": 0.7255985267034991
+        },
+        "baseline_metrics": {
+          "auc": 0.8418693263972741,
+          "f1": 0.6672019269369731,
+          "recall": 0.7373558118899733,
+          "precision": 0.6092375366568915,
+          "coverage": 0.9995448856525202,
+          "degraded_proxy": 0.00029582432586187094,
+          "robustness_score": 0.8088200942654948
+        },
+        "metric_context": {
+          "eval_scope": "publish_gate_metric",
+          "task_scope": "study_layered_enhanced_serving",
+          "study_data_mode": "mixed_overall_with_subgroups",
+          "row_level_study_data_mode": "mixed_overall_with_subgroups",
+          "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+          "label_definition": "LABEL",
+          "baseline_version_id": "study_candidate_20260418220843",
+          "anchor_baseline_version_id": "study_v1",
+          "comparison_mode": "study_best_model_v1",
+          "decision_stage_reached": "floor_gate"
+        },
+        "execution_status": "success"
+      },
+      "domain_context": {},
+      "domain_audit": {},
+      "validation_summary": [],
+      "warning_summary": [],
+      "artifact_ref": null,
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "StudyAgentAdapter",
+        "execution_path": "orchestrator -> adapter.run_domain_pipeline -> study_agent",
+        "domain_pipeline_called": true,
+        "request_domain": "study"
+      },
+      "raw_result": {
+        "domain": "study",
+        "status": "completed_with_hold",
+        "final_decision": "",
+        "policy_decision": "",
+        "execution_mode": "",
+        "reason_codes": [
+          "baseline_auc_regression"
+        ],
+        "decision_stage_reached": "floor_gate",
+        "summary_metrics": {
+          "harness_final_decision": "keep_baseline",
+          "harness_reason_codes": [
+            "baseline_auc_regression"
+          ],
+          "harness_execution_mode": "dry_run",
+          "harness_policy_decision": "keep_baseline",
+          "harness_stage_count": 5,
+          "auc": 0.8324450440706692,
+          "f1": 0.540837336993823,
+          "recall": 0.7255985267034991,
+          "eval_scope": "publish_gate_metric",
+          "task_scope": "study_layered_enhanced_serving",
+          "study_data_mode": "mixed_overall_with_subgroups",
+          "row_level_study_data_mode": "mixed_overall_with_subgroups"
+        },
+        "metric_context": {
+          "run_id": "study_harness_v1_d4e5fd5a9b4d",
+          "pipeline_name": "study_harness_v1",
+          "run_record_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\study\\data\\harness\\runs\\study_harness_v1_d4e5fd5a9b4d.json",
+          "final_decision": "keep_baseline",
+          "policy_decision": "keep_baseline",
+          "decision_reason_codes": [
+            "baseline_auc_regression"
+          ],
+          "decision_stage_reached": "floor_gate",
+          "gate_name": "error_validation",
+          "execution_mode": "dry_run",
+          "collected_warnings": [],
+          "eval_scope": "publish_gate_metric",
+          "task_scope": "study_layered_enhanced_serving",
+          "study_data_mode": "mixed_overall_with_subgroups",
+          "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+          "label_definition": "LABEL",
+          "baseline_version_id": "study_candidate_20260418220843",
+          "anchor_baseline_version_id": "study_v1",
+          "comparison_mode": "study_best_model_v1",
+          "candidate_metrics": {
+            "auc": 0.8324450440706692,
+            "f1": 0.540837336993823,
+            "recall": 0.7255985267034991
+          },
+          "baseline_metrics": {
+            "auc": 0.8418693263972741,
+            "f1": 0.6672019269369731,
+            "recall": 0.7373558118899733,
+            "precision": 0.6092375366568915,
+            "coverage": 0.9995448856525202,
+            "degraded_proxy": 0.00029582432586187094,
+            "robustness_score": 0.8088200942654948
+          },
+          "metric_context": {
+            "eval_scope": "publish_gate_metric",
+            "task_scope": "study_layered_enhanced_serving",
+            "study_data_mode": "mixed_overall_with_subgroups",
+            "row_level_study_data_mode": "mixed_overall_with_subgroups",
+            "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+            "label_definition": "LABEL",
+            "baseline_version_id": "study_candidate_20260418220843",
+            "anchor_baseline_version_id": "study_v1",
+            "comparison_mode": "study_best_model_v1",
+            "decision_stage_reached": "floor_gate"
+          },
+          "execution_status": "success"
+        },
+        "domain_context": {},
+        "domain_audit": {},
+        "warnings": [],
+        "deliverables": {},
+        "harness_v1": {
+          "run_id": "study_harness_v1_d4e5fd5a9b4d",
+          "pipeline_name": "study_harness_v1",
+          "run_record_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\study\\data\\harness\\runs\\study_harness_v1_d4e5fd5a9b4d.json",
+          "final_decision": "keep_baseline",
+          "policy_decision": "keep_baseline",
+          "decision_reason_codes": [
+            "baseline_auc_regression"
+          ],
+          "decision_stage_reached": "floor_gate",
+          "gate_name": "error_validation",
+          "execution_mode": "dry_run",
+          "collected_warnings": [],
+          "eval_scope": "publish_gate_metric",
+          "task_scope": "study_layered_enhanced_serving",
+          "study_data_mode": "mixed_overall_with_subgroups",
+          "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+          "label_definition": "LABEL",
+          "baseline_version_id": "study_candidate_20260418220843",
+          "anchor_baseline_version_id": "study_v1",
+          "comparison_mode": "study_best_model_v1",
+          "candidate_metrics": {
+            "auc": 0.8324450440706692,
+            "f1": 0.540837336993823,
+            "recall": 0.7255985267034991
+          },
+          "baseline_metrics": {
+            "auc": 0.8418693263972741,
+            "f1": 0.6672019269369731,
+            "recall": 0.7373558118899733,
+            "precision": 0.6092375366568915,
+            "coverage": 0.9995448856525202,
+            "degraded_proxy": 0.00029582432586187094,
+            "robustness_score": 0.8088200942654948
+          },
+          "metric_context": {
+            "eval_scope": "publish_gate_metric",
+            "task_scope": "study_layered_enhanced_serving",
+            "study_data_mode": "mixed_overall_with_subgroups",
+            "row_level_study_data_mode": "mixed_overall_with_subgroups",
+            "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+            "label_definition": "LABEL",
+            "baseline_version_id": "study_candidate_20260418220843",
+            "anchor_baseline_version_id": "study_v1",
+            "comparison_mode": "study_best_model_v1",
+            "decision_stage_reached": "floor_gate"
+          },
+          "execution_status": "success"
+        },
+        "fusion_input": {}
+      }
+    },
+    "life": {
+      "domain_name": "life",
+      "status": "success",
+      "system_status": "multi_domain_ready",
+      "final_decision": "eligible_for_comparison",
+      "policy_decision": "eligible_for_comparison",
+      "reason": "clean_eval_enabled,frozen_baseline_compare_available,trust_score_ok",
+      "execution_mode": "dry_run",
+      "decision_stage_reached": "active_baseline_comparison",
+      "metrics": {
+        "rows": 255,
+        "positive_rate": 0.282353,
+        "auc": 0.8632350795272142,
+        "f1": 0.741176,
+        "precision": 0.677419,
+        "recall": 0.818182,
+        "coverage": 1.0,
+        "degraded_ratio": 0.0,
+        "mean_infer_risk_score": 0.401833,
+        "high_risk_rate": 0.25098,
+        "experiment_name": "temporal_generalization_mainline"
+      },
+      "metric_context": {
+        "eval_scope": "student_hash_holdout_fixed_windows",
+        "task_scope": "life_clean_behavior_risk",
+        "feature_contract_hash": "89f765935193bedac884d9f9a0a1a9ec8d4453bb",
+        "label_definition": "life_label_clean",
+        "baseline_version_id": "life_v1_clean",
+        "anchor_baseline_version_id": "life_v1_clean",
+        "comparison_mode": "strict_same_universe_compare",
+        "primary_compare_source": "strict_same_universe_compare",
+        "frozen_baseline_compare_available": true,
+        "comparability": {
+          "comparable": true,
+          "severity": "info",
+          "mismatches": [],
+          "recommended_action": "strict_rebuild",
+          "comparison_role": "primary",
+          "required_keys": [
+            "eval_scope",
+            "sample_universe",
+            "split_strategy",
+            "label_definition",
+            "feature_contract_hash",
+            "task_scope"
+          ],
+          "conclusion": "candidate and baseline are strictly comparable"
+        },
+        "sample_count": 255,
+        "label_source_features": [
+          "late_internet_mean",
+          "late_gate_ratio",
+          "late_library_mean",
+          "late_club_mean"
+        ],
+        "training_feature_columns": [
+          "XB",
+          "MZMC",
+          "ZZMMMC",
+          "JG",
+          "XSM",
+          "ZYM",
+          "internet_early_trend",
+          "internet_early_volatility",
+          "internet_early_continuity",
+          "internet_early_deviation",
+          "internet_early_cv",
+          "club_early_trend",
+          "club_early_continuity",
+          "library_early_trend",
+          "library_early_volatility",
+          "library_early_continuity",
+          "library_early_weekend_ratio",
+          "gate_early_trend",
+          "gate_early_volatility",
+          "gate_early_continuity",
+          "gate_early_weekend_ratio",
+          "behavior_rhythm_gap",
+          "internet_library_interaction",
+          "late_gate_internet_interaction",
+          "club_library_balance"
+        ],
+        "label_feature_overlap": [],
+        "same_dataset_overlap": [
+          "club_early_continuity",
+          "club_early_trend",
+          "club_library_balance",
+          "gate_early_continuity",
+          "gate_early_trend",
+          "gate_early_volatility",
+          "gate_early_weekend_ratio",
+          "internet_early_continuity",
+          "internet_early_cv",
+          "internet_early_deviation",
+          "internet_early_trend",
+          "internet_early_volatility",
+          "internet_library_interaction",
+          "late_gate_internet_interaction",
+          "library_early_continuity",
+          "library_early_trend",
+          "library_early_volatility",
+          "library_early_weekend_ratio"
+        ],
+        "circularity_detected": false,
+        "life_data_mode": "clean_temporal_behavior_enhanced",
+        "split_strategy": "student_hash_three_bucket (train/valid/holdout)",
+        "temporal_generalization_gap": 0.000229,
+        "future_window_auc": 0.8632350795272142,
+        "trust_score": 1.0,
+        "leakage_risk": false,
+        "subgroup_variance": 0.10098242195428886,
+        "instability_best_candidate": {
+          "label_version": "instability_future_v2",
+          "feature_bundle": "regularity+volatility+coupling",
+          "split_version": "purged_temporal_split",
+          "candidate_role": "temporal_generalization_mainline",
+          "status": "completed",
+          "auc": 0.8632350795272142,
+          "f1": 0.741176,
+          "precision": 0.677419,
+          "recall": 0.818182,
+          "rows": 255
+        },
+        "primary_metric": {
+          "recommended_primary_auc": 0.8632350795272142,
+          "recommended_primary_source": "temporal_generalization",
+          "robust_auc": 0.8632350795272142
+        }
+      },
+      "domain_context": {
+        "domain": "life",
+        "source_datasets": [
+          "student_profile",
+          "internet",
+          "club",
+          "library",
+          "gate"
+        ],
+        "label_source": "future_window_proxy",
+        "request_domain": "life",
+        "maturity_stage": "clean_eval_candidate"
+      },
+      "domain_audit": {
+        "bootstrap_mode": false,
+        "baseline_compare_available": true,
+        "label_source": "future_window_proxy",
+        "predictive_validity": "clean_proxy_with_time_decoupling_but_still_unverified",
+        "not_releaseable_for_prod": true,
+        "boundary_status": "life_only",
+        "dataset_summary": {
+          "source_dataset_keys": [
+            "student_profile",
+            "internet",
+            "club",
+            "library",
+            "gate"
+          ],
+          "note": "sport-related datasets intentionally excluded from life domain",
+          "row_counts": {
+            "student_profile": 2500,
+            "internet": 16868,
+            "club": 16239,
+            "library": 205494,
+            "gate": 22112
+          },
+          "all_months": [
+            "2020-09",
+            "2020-10",
+            "2020-11",
+            "2020-12",
+            "2021-01",
+            "2021-02",
+            "2021-03",
+            "2021-04",
+            "2021-05",
+            "2021-06",
+            "2021-07",
+            "2021-08",
+            "2021-09",
+            "2021-10",
+            "2021-11",
+            "2021-12",
+            "2022-02",
+            "2022-03",
+            "2022-04",
+            "2022-05",
+            "2022-06",
+            "2022-07",
+            "2022-08",
+            "2022-09",
+            "2022-10",
+            "2022-11",
+            "2022-12",
+            "2023-01",
+            "2023-02",
+            "2023-03",
+            "2023-04",
+            "2023-05",
+            "2023-06",
+            "2023-07",
+            "2023-08",
+            "2023-09",
+            "2023-10",
+            "2023-11",
+            "2023-12",
+            "2024-01",
+            "2024-02",
+            "2024-03",
+            "2024-04",
+            "2024-05",
+            "2024-06",
+            "2024-07",
+            "2024-08",
+            "2024-09",
+            "2024-10",
+            "2024-11",
+            "2024-12",
+            "2025-01",
+            "2025-02",
+            "2025-03",
+            "2025-04",
+            "2025-05",
+            "2025-06",
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01"
+          ],
+          "clean_eval_window": {
+            "early_months": [
+              "2020-09",
+              "2020-10",
+              "2020-11",
+              "2020-12",
+              "2021-01",
+              "2021-02",
+              "2021-03",
+              "2021-04",
+              "2021-05",
+              "2021-06",
+              "2021-07",
+              "2021-08",
+              "2021-09",
+              "2021-10",
+              "2021-11",
+              "2021-12",
+              "2022-02",
+              "2022-03",
+              "2022-04",
+              "2022-05",
+              "2022-06",
+              "2022-07",
+              "2022-08",
+              "2022-09",
+              "2022-10",
+              "2022-11",
+              "2022-12",
+              "2023-01",
+              "2023-02",
+              "2023-03",
+              "2023-04",
+              "2023-05"
+            ],
+            "late_months": [
+              "2023-06",
+              "2023-07",
+              "2023-08",
+              "2023-09",
+              "2023-10",
+              "2023-11",
+              "2023-12",
+              "2024-01",
+              "2024-02",
+              "2024-03",
+              "2024-04",
+              "2024-05",
+              "2024-06",
+              "2024-07",
+              "2024-08",
+              "2024-09",
+              "2024-10",
+              "2024-11",
+              "2024-12",
+              "2025-01",
+              "2025-02",
+              "2025-03",
+              "2025-04",
+              "2025-05",
+              "2025-06",
+              "2025-07",
+              "2025-08",
+              "2025-09",
+              "2025-10",
+              "2025-11",
+              "2025-12",
+              "2026-01"
+            ],
+            "label_definition": "future_window_proxy_from_late_internet_gate_library_club",
+            "label_target_positive_share": 0.3
+          }
+        },
+        "label_source_features": [
+          "late_internet_mean",
+          "late_gate_ratio",
+          "late_library_mean",
+          "late_club_mean"
+        ],
+        "training_feature_columns": [
+          "XB",
+          "MZMC",
+          "ZZMMMC",
+          "JG",
+          "XSM",
+          "ZYM",
+          "internet_early_trend",
+          "internet_early_volatility",
+          "internet_early_continuity",
+          "internet_early_deviation",
+          "internet_early_cv",
+          "club_early_trend",
+          "club_early_continuity",
+          "library_early_trend",
+          "library_early_volatility",
+          "library_early_continuity",
+          "library_early_weekend_ratio",
+          "gate_early_trend",
+          "gate_early_volatility",
+          "gate_early_continuity",
+          "gate_early_weekend_ratio",
+          "behavior_rhythm_gap",
+          "internet_library_interaction",
+          "late_gate_internet_interaction",
+          "club_library_balance"
+        ],
+        "label_feature_overlap": [],
+        "same_dataset_overlap": [
+          "club_early_continuity",
+          "club_early_trend",
+          "club_library_balance",
+          "gate_early_continuity",
+          "gate_early_trend",
+          "gate_early_volatility",
+          "gate_early_weekend_ratio",
+          "internet_early_continuity",
+          "internet_early_cv",
+          "internet_early_deviation",
+          "internet_early_trend",
+          "internet_early_volatility",
+          "internet_library_interaction",
+          "late_gate_internet_interaction",
+          "library_early_continuity",
+          "library_early_trend",
+          "library_early_volatility",
+          "library_early_weekend_ratio"
+        ],
+        "circularity_detected": false,
+        "subgroup_metrics_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_subgroup_metrics.csv",
+        "confidence_zone_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_confidence_zone_report.csv",
+        "label_audit_detail_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_label_audit_detail.json",
+        "selected_features_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_selected_features_report.csv",
+        "feature_layer_summary_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_feature_layer_summary.json",
+        "temporal_integrity_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_temporal_integrity_report.json",
+        "split_integrity_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_split_integrity_report.json",
+        "proxy_stress_test_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_proxy_stress_test_report.json",
+        "feature_ablation_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_feature_ablation_report.json",
+        "temporal_generalization_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_temporal_generalization_report.json"
+      },
+      "validation_summary": {
+        "fusion_payload_semantics_ok": true,
+        "risk_score_source": "mean_infer_predicted_probability",
+        "quality_metric_source": "clean_holdout_eval_metrics",
+        "snapshot_contract_complete": true
+      },
+      "warning_summary": [
+        "label_source = future_window_proxy",
+        "predictive_validity = clean_proxy_with_time_decoupling_but_still_unverified",
+        "not_releaseable_for_prod = true",
+        "sport-related datasets intentionally excluded from life domain",
+        "proxy_stress_test_skipped_3_experiments_due_to_single_class"
+      ],
+      "artifact_ref": {
+        "prediction_output": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\data\\prediction_output.csv",
+        "eval_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_eval_report.json",
+        "model_config": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\model\\model_config.json",
+        "subgroup_metrics": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_subgroup_metrics.csv",
+        "confidence_zone_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_confidence_zone_report.csv"
+      },
+      "harness_v1": {
+        "run_id": "life_harness_v1_20260421105959",
+        "pipeline_name": "life_harness_v1",
+        "candidate_version_id": "life_candidate_clean_20260421105959",
+        "baseline_version_id": "life_v1_clean",
+        "anchor_baseline_version_id": "life_v1_clean",
+        "final_decision": "eligible_for_comparison",
+        "policy_decision": "eligible_for_comparison",
+        "execution_mode": "dry_run",
+        "reason_codes": [
+          "clean_eval_enabled",
+          "frozen_baseline_compare_available",
+          "trust_score_ok"
+        ],
+        "decision_stage_reached": "active_baseline_comparison",
+        "eval_scope": "student_hash_holdout_fixed_windows",
+        "task_scope": "life_clean_behavior_risk",
+        "feature_contract_hash": "89f765935193bedac884d9f9a0a1a9ec8d4453bb",
+        "label_definition": "life_label_clean",
+        "comparison_mode": "strict_same_universe_compare",
+        "metric_context": {
+          "eval_scope": "student_hash_holdout_fixed_windows",
+          "task_scope": "life_clean_behavior_risk",
+          "feature_contract_hash": "89f765935193bedac884d9f9a0a1a9ec8d4453bb",
+          "label_definition": "life_label_clean",
+          "baseline_version_id": "life_v1_clean",
+          "anchor_baseline_version_id": "life_v1_clean",
+          "comparison_mode": "strict_same_universe_compare",
+          "primary_compare_source": "strict_same_universe_compare",
+          "frozen_baseline_compare_available": true,
+          "comparability": {
+            "comparable": true,
+            "severity": "info",
+            "mismatches": [],
+            "recommended_action": "strict_rebuild",
+            "comparison_role": "primary",
+            "required_keys": [
+              "eval_scope",
+              "sample_universe",
+              "split_strategy",
+              "label_definition",
+              "feature_contract_hash",
+              "task_scope"
+            ],
+            "conclusion": "candidate and baseline are strictly comparable"
+          },
+          "sample_count": 255,
+          "label_source_features": [
+            "late_internet_mean",
+            "late_gate_ratio",
+            "late_library_mean",
+            "late_club_mean"
+          ],
+          "training_feature_columns": [
+            "XB",
+            "MZMC",
+            "ZZMMMC",
+            "JG",
+            "XSM",
+            "ZYM",
+            "internet_early_trend",
+            "internet_early_volatility",
+            "internet_early_continuity",
+            "internet_early_deviation",
+            "internet_early_cv",
+            "club_early_trend",
+            "club_early_continuity",
+            "library_early_trend",
+            "library_early_volatility",
+            "library_early_continuity",
+            "library_early_weekend_ratio",
+            "gate_early_trend",
+            "gate_early_volatility",
+            "gate_early_continuity",
+            "gate_early_weekend_ratio",
+            "behavior_rhythm_gap",
+            "internet_library_interaction",
+            "late_gate_internet_interaction",
+            "club_library_balance"
+          ],
+          "label_feature_overlap": [],
+          "same_dataset_overlap": [
+            "club_early_continuity",
+            "club_early_trend",
+            "club_library_balance",
+            "gate_early_continuity",
+            "gate_early_trend",
+            "gate_early_volatility",
+            "gate_early_weekend_ratio",
+            "internet_early_continuity",
+            "internet_early_cv",
+            "internet_early_deviation",
+            "internet_early_trend",
+            "internet_early_volatility",
+            "internet_library_interaction",
+            "late_gate_internet_interaction",
+            "library_early_continuity",
+            "library_early_trend",
+            "library_early_volatility",
+            "library_early_weekend_ratio"
+          ],
+          "circularity_detected": false,
+          "life_data_mode": "clean_temporal_behavior_enhanced",
+          "split_strategy": "student_hash_three_bucket (train/valid/holdout)",
+          "temporal_generalization_gap": 0.000229,
+          "future_window_auc": 0.8632350795272142,
+          "trust_score": 1.0,
+          "leakage_risk": false,
+          "subgroup_variance": 0.10098242195428886,
+          "instability_best_candidate": {
+            "label_version": "instability_future_v2",
+            "feature_bundle": "regularity+volatility+coupling",
+            "split_version": "purged_temporal_split",
+            "candidate_role": "temporal_generalization_mainline",
+            "status": "completed",
+            "auc": 0.8632350795272142,
+            "f1": 0.741176,
+            "precision": 0.677419,
+            "recall": 0.818182,
+            "rows": 255
+          },
+          "primary_metric": {
+            "recommended_primary_auc": 0.8632350795272142,
+            "recommended_primary_source": "temporal_generalization",
+            "robust_auc": 0.8632350795272142
+          }
+        },
+        "contract_context": {
+          "architecture_version": "life_clean_temporal_v2",
+          "task_scope": "life_clean_behavior_risk",
+          "label_definition": "future_window_proxy_from_late_life_behavior",
+          "eval_scope": "student_hash_holdout_fixed_windows",
+          "comparison_mode": "frozen_baseline_compare",
+          "eval_split": "hash_mod_5_holdout",
+          "sample_scope": "students_with_life_window_coverage"
+        },
+        "local_gain_signals": {
+          "clean_candidate_auc_improved": false
+        },
+        "baseline_summary": {
+          "metrics": {
+            "rows": 490,
+            "positive_rate": 0.808163,
+            "auc": 0.9547066408768538,
+            "f1": 0.973451,
+            "precision": 0.974684,
+            "recall": 0.972222,
+            "coverage": 1.0,
+            "degraded_ratio": 0.0,
+            "mean_infer_risk_score": 0.730505,
+            "high_risk_rate": 0.791837
+          },
+          "anchor_metrics": {
+            "rows": 490,
+            "positive_rate": 0.808163,
+            "auc": 0.9547066408768538,
+            "f1": 0.973451,
+            "precision": 0.974684,
+            "recall": 0.972222,
+            "coverage": 1.0,
+            "degraded_ratio": 0.0,
+            "mean_infer_risk_score": 0.730505,
+            "high_risk_rate": 0.791837
+          },
+          "snapshot_manifest": {
+            "model_config.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\model_config.json",
+            "feature_config.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\feature_config.json",
+            "contract_context.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\contract_context.json",
+            "domain_audit.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\domain_audit.json",
+            "metrics.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\metrics.json"
+          },
+          "baseline_compare_available": true,
+          "bootstrap_mode": false
+        },
+        "candidate_snapshot_manifest": {
+          "model_config.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\model_config.json",
+          "feature_config.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\feature_config.json",
+          "contract_context.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\contract_context.json",
+          "domain_audit.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\domain_audit.json",
+          "metrics.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\metrics.json"
+        },
+        "candidate_vs_baseline": {
+          "candidate_version_id": "life_candidate_clean_20260421105959",
+          "baseline_version_id": "life_v1_clean",
+          "anchor_baseline_version_id": "life_v1_clean",
+          "comparison_mode": "frozen_baseline_compare",
+          "primary_metric": "auc",
+          "candidate_metrics": {
+            "rows": 255,
+            "positive_rate": 0.282353,
+            "auc": 0.8628567091681845,
+            "f1": 0.751773,
+            "precision": 0.768116,
+            "recall": 0.736111,
+            "coverage": 1.0,
+            "degraded_ratio": 0.0,
+            "mean_infer_risk_score": 0.401833,
+            "high_risk_rate": 0.25098,
+            "decision_threshold": 0.55
+          },
+          "baseline_metrics": {
+            "rows": 490,
+            "positive_rate": 0.808163,
+            "auc": 0.9547066408768538,
+            "f1": 0.973451,
+            "precision": 0.974684,
+            "recall": 0.972222,
+            "coverage": 1.0,
+            "degraded_ratio": 0.0,
+            "mean_infer_risk_score": 0.730505,
+            "high_risk_rate": 0.791837
+          },
+          "anchor_metrics": {
+            "rows": 490,
+            "positive_rate": 0.808163,
+            "auc": 0.9547066408768538,
+            "f1": 0.973451,
+            "precision": 0.974684,
+            "recall": 0.972222,
+            "coverage": 1.0,
+            "degraded_ratio": 0.0,
+            "mean_infer_risk_score": 0.730505,
+            "high_risk_rate": 0.791837
+          },
+          "metric_deltas": {
+            "auc_delta": -0.09185,
+            "f1_delta": -0.221678,
+            "precision_delta": -0.206568,
+            "recall_delta": -0.236111
+          },
+          "comparability": {
+            "comparable": false,
+            "severity": "warning",
+            "mismatches": [
+              "feature_contract_hash: candidate='89f765935193bedac884d9f9a0a1a9ec8d4453bb' baseline='121efe120ac3bcd85643012bc3b3228621f34a96'"
+            ],
+            "recommended_action": "reference_only",
+            "comparison_role": "reference_only",
+            "required_keys": [
+              "eval_scope",
+              "sample_universe",
+              "split_strategy",
+              "label_definition",
+              "feature_contract_hash",
+              "task_scope"
+            ],
+            "conclusion": "candidate and baseline are NOT strictly comparable"
+          }
+        },
+        "label_type": "proxy",
+        "releaseable": false,
+        "task_type": "future_window_prediction",
+        "future_window_prediction": true,
+        "comparable": true,
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "next_optimization_target": "improve_future_window_auc",
+        "releaseability_reason": "trust_score_ok",
+        "future_window_auc": 0.8632350795272142,
+        "suspicious_high_auc": false,
+        "search_contract": {
+          "allowed_actions": [
+            "label_version",
+            "time_window",
+            "target_population",
+            "structure_version"
+          ],
+          "forbidden_actions": [
+            "change_output_contract",
+            "change_study_domain_logic"
+          ],
+          "domain_policy_profile": "life_authenticity_first",
+          "optimize_priority": "authenticity",
+          "round_goal": "de_fake_then_raise",
+          "selection_policy": "filter_suspicious_then_select_best"
+        },
+        "trust_score": 1.0,
+        "trust_diagnostics": {
+          "temporal_gap": 0.0003783703590297671,
+          "leakage": false,
+          "subgroup_variance": 0.10098242195428886
+        },
+        "proxy_track": {
+          "label_type": "proxy",
+          "releaseable": false,
+          "track_role": "reference_only",
+          "decision": "reference_only",
+          "reason": "proxy_track_not_for_release"
+        },
+        "instability_track": {
+          "track_role": "primary_decision",
+          "future_window_auc": 0.8632350795272142,
+          "temporal_gap": 0.0003783703590297671,
+          "leakage": false,
+          "subgroup_variance": 0.10098242195428886,
+          "trust_score": 1.0,
+          "decision": "eligible_for_comparison"
+        },
+        "instability_best_candidate": {
+          "label_version": "instability_future_v2",
+          "feature_bundle": "regularity+volatility+coupling",
+          "split_version": "purged_temporal_split",
+          "candidate_role": "temporal_generalization_mainline",
+          "status": "completed",
+          "auc": 0.8632350795272142,
+          "f1": 0.741176,
+          "precision": 0.677419,
+          "recall": 0.818182,
+          "rows": 255
+        },
+        "trusted_mainline": {
+          "label_version": "instability_future_v2",
+          "feature_bundle": "regularity+volatility+coupling",
+          "split_version": "purged_temporal_split",
+          "candidate_role": "temporal_generalization_mainline",
+          "status": "completed",
+          "auc": 0.8632350795272142,
+          "f1": 0.741176,
+          "precision": 0.677419,
+          "recall": 0.818182,
+          "rows": 255
+        },
+        "mainline_frozen": true,
+        "agent_protocol": {
+          "domain": "life",
+          "protocol_version": "agent_protocol_v1",
+          "diagnosis": {
+            "task_type": "future_window_prediction",
+            "failure_types": [
+              "none"
+            ],
+            "proxy_label": true,
+            "track_role": {
+              "proxy_track": "reference_only",
+              "instability_track": "primary_decision"
+            },
+            "temporal_gap": 0.0003783703590297671,
+            "leakage_risk": false,
+            "future_window_auc": 0.8632350795272142
+          },
+          "proposal": {
+            "dual_track": [
+              "proxy_track",
+              "instability_track"
+            ],
+            "task_reconstruction": {
+              "switch_label_version": "instability_future_v2",
+              "switch_time_window": "1w",
+              "switch_target_population": "all",
+              "switch_structure_version": "temporal_split"
+            },
+            "instability_label_version": "instability_future_v2",
+            "feature_bundle": "regularity+volatility+coupling",
+            "trust_score": 1.0,
+            "next_optimization_target": "improve_future_window_auc"
+          },
+          "comparison": {
+            "baseline_auc": 0.9547066408768538,
+            "candidate_auc": 0.8632350795272142,
+            "auc_delta": -0.091472,
+            "future_window_auc": 0.8632350795272142,
+            "is_future_window": true,
+            "same_source_risk": "low",
+            "subgroup_stable": true,
+            "temporal_holdout_stable": true,
+            "more_real_than_baseline": true
+          },
+          "recommendation": {
+            "decision": "eligible_for_comparison",
+            "reason": "trust_score_ok",
+            "track_role": "instability_primary",
+            "best_mainline_candidate": {
+              "label_version": "instability_future_v2",
+              "feature_bundle": "regularity+volatility+coupling",
+              "split_version": "purged_temporal_split",
+              "candidate_role": "temporal_generalization_mainline",
+              "status": "completed",
+              "auc": 0.8632350795272142,
+              "f1": 0.741176,
+              "precision": 0.677419,
+              "recall": 0.818182,
+              "rows": 255
+            },
+            "high_score_but_untrusted": false,
+            "real_but_weak": false,
+            "next_priority_route": "authenticity_first_search"
+          }
+        }
+      },
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "LifeAgentAdapter",
+        "execution_path": "orchestrator -> adapter.run_domain_pipeline -> life_agent",
+        "domain_pipeline_called": true,
+        "request_domain": "life"
+      },
+      "raw_result": {
+        "domain": "life",
+        "status": "success",
+        "final_decision": "eligible_for_comparison",
+        "policy_decision": "eligible_for_comparison",
+        "execution_mode": "dry_run",
+        "reason_codes": [
+          "clean_eval_enabled",
+          "frozen_baseline_compare_available",
+          "trust_score_ok"
+        ],
+        "decision_stage_reached": "active_baseline_comparison",
+        "summary_metrics": {
+          "rows": 255,
+          "positive_rate": 0.282353,
+          "auc": 0.8632350795272142,
+          "f1": 0.741176,
+          "precision": 0.677419,
+          "recall": 0.818182,
+          "coverage": 1.0,
+          "degraded_ratio": 0.0,
+          "mean_infer_risk_score": 0.401833,
+          "high_risk_rate": 0.25098,
+          "experiment_name": "temporal_generalization_mainline"
+        },
+        "metric_context": {
+          "eval_scope": "student_hash_holdout_fixed_windows",
+          "task_scope": "life_clean_behavior_risk",
+          "feature_contract_hash": "89f765935193bedac884d9f9a0a1a9ec8d4453bb",
+          "label_definition": "life_label_clean",
+          "baseline_version_id": "life_v1_clean",
+          "anchor_baseline_version_id": "life_v1_clean",
+          "comparison_mode": "strict_same_universe_compare",
+          "primary_compare_source": "strict_same_universe_compare",
+          "frozen_baseline_compare_available": true,
+          "comparability": {
+            "comparable": true,
+            "severity": "info",
+            "mismatches": [],
+            "recommended_action": "strict_rebuild",
+            "comparison_role": "primary",
+            "required_keys": [
+              "eval_scope",
+              "sample_universe",
+              "split_strategy",
+              "label_definition",
+              "feature_contract_hash",
+              "task_scope"
+            ],
+            "conclusion": "candidate and baseline are strictly comparable"
+          },
+          "sample_count": 255,
+          "label_source_features": [
+            "late_internet_mean",
+            "late_gate_ratio",
+            "late_library_mean",
+            "late_club_mean"
+          ],
+          "training_feature_columns": [
+            "XB",
+            "MZMC",
+            "ZZMMMC",
+            "JG",
+            "XSM",
+            "ZYM",
+            "internet_early_trend",
+            "internet_early_volatility",
+            "internet_early_continuity",
+            "internet_early_deviation",
+            "internet_early_cv",
+            "club_early_trend",
+            "club_early_continuity",
+            "library_early_trend",
+            "library_early_volatility",
+            "library_early_continuity",
+            "library_early_weekend_ratio",
+            "gate_early_trend",
+            "gate_early_volatility",
+            "gate_early_continuity",
+            "gate_early_weekend_ratio",
+            "behavior_rhythm_gap",
+            "internet_library_interaction",
+            "late_gate_internet_interaction",
+            "club_library_balance"
+          ],
+          "label_feature_overlap": [],
+          "same_dataset_overlap": [
+            "club_early_continuity",
+            "club_early_trend",
+            "club_library_balance",
+            "gate_early_continuity",
+            "gate_early_trend",
+            "gate_early_volatility",
+            "gate_early_weekend_ratio",
+            "internet_early_continuity",
+            "internet_early_cv",
+            "internet_early_deviation",
+            "internet_early_trend",
+            "internet_early_volatility",
+            "internet_library_interaction",
+            "late_gate_internet_interaction",
+            "library_early_continuity",
+            "library_early_trend",
+            "library_early_volatility",
+            "library_early_weekend_ratio"
+          ],
+          "circularity_detected": false,
+          "life_data_mode": "clean_temporal_behavior_enhanced",
+          "split_strategy": "student_hash_three_bucket (train/valid/holdout)",
+          "temporal_generalization_gap": 0.000229,
+          "future_window_auc": 0.8632350795272142,
+          "trust_score": 1.0,
+          "leakage_risk": false,
+          "subgroup_variance": 0.10098242195428886,
+          "instability_best_candidate": {
+            "label_version": "instability_future_v2",
+            "feature_bundle": "regularity+volatility+coupling",
+            "split_version": "purged_temporal_split",
+            "candidate_role": "temporal_generalization_mainline",
+            "status": "completed",
+            "auc": 0.8632350795272142,
+            "f1": 0.741176,
+            "precision": 0.677419,
+            "recall": 0.818182,
+            "rows": 255
+          },
+          "primary_metric": {
+            "recommended_primary_auc": 0.8632350795272142,
+            "recommended_primary_source": "temporal_generalization",
+            "robust_auc": 0.8632350795272142
+          }
+        },
+        "domain_context": {
+          "domain": "life",
+          "source_datasets": [
+            "student_profile",
+            "internet",
+            "club",
+            "library",
+            "gate"
+          ],
+          "label_source": "future_window_proxy",
+          "request_domain": "life",
+          "maturity_stage": "clean_eval_candidate"
+        },
+        "domain_audit": {
+          "bootstrap_mode": false,
+          "baseline_compare_available": true,
+          "label_source": "future_window_proxy",
+          "predictive_validity": "clean_proxy_with_time_decoupling_but_still_unverified",
+          "not_releaseable_for_prod": true,
+          "boundary_status": "life_only",
+          "dataset_summary": {
+            "source_dataset_keys": [
+              "student_profile",
+              "internet",
+              "club",
+              "library",
+              "gate"
+            ],
+            "note": "sport-related datasets intentionally excluded from life domain",
+            "row_counts": {
+              "student_profile": 2500,
+              "internet": 16868,
+              "club": 16239,
+              "library": 205494,
+              "gate": 22112
+            },
+            "all_months": [
+              "2020-09",
+              "2020-10",
+              "2020-11",
+              "2020-12",
+              "2021-01",
+              "2021-02",
+              "2021-03",
+              "2021-04",
+              "2021-05",
+              "2021-06",
+              "2021-07",
+              "2021-08",
+              "2021-09",
+              "2021-10",
+              "2021-11",
+              "2021-12",
+              "2022-02",
+              "2022-03",
+              "2022-04",
+              "2022-05",
+              "2022-06",
+              "2022-07",
+              "2022-08",
+              "2022-09",
+              "2022-10",
+              "2022-11",
+              "2022-12",
+              "2023-01",
+              "2023-02",
+              "2023-03",
+              "2023-04",
+              "2023-05",
+              "2023-06",
+              "2023-07",
+              "2023-08",
+              "2023-09",
+              "2023-10",
+              "2023-11",
+              "2023-12",
+              "2024-01",
+              "2024-02",
+              "2024-03",
+              "2024-04",
+              "2024-05",
+              "2024-06",
+              "2024-07",
+              "2024-08",
+              "2024-09",
+              "2024-10",
+              "2024-11",
+              "2024-12",
+              "2025-01",
+              "2025-02",
+              "2025-03",
+              "2025-04",
+              "2025-05",
+              "2025-06",
+              "2025-07",
+              "2025-08",
+              "2025-09",
+              "2025-10",
+              "2025-11",
+              "2025-12",
+              "2026-01"
+            ],
+            "clean_eval_window": {
+              "early_months": [
+                "2020-09",
+                "2020-10",
+                "2020-11",
+                "2020-12",
+                "2021-01",
+                "2021-02",
+                "2021-03",
+                "2021-04",
+                "2021-05",
+                "2021-06",
+                "2021-07",
+                "2021-08",
+                "2021-09",
+                "2021-10",
+                "2021-11",
+                "2021-12",
+                "2022-02",
+                "2022-03",
+                "2022-04",
+                "2022-05",
+                "2022-06",
+                "2022-07",
+                "2022-08",
+                "2022-09",
+                "2022-10",
+                "2022-11",
+                "2022-12",
+                "2023-01",
+                "2023-02",
+                "2023-03",
+                "2023-04",
+                "2023-05"
+              ],
+              "late_months": [
+                "2023-06",
+                "2023-07",
+                "2023-08",
+                "2023-09",
+                "2023-10",
+                "2023-11",
+                "2023-12",
+                "2024-01",
+                "2024-02",
+                "2024-03",
+                "2024-04",
+                "2024-05",
+                "2024-06",
+                "2024-07",
+                "2024-08",
+                "2024-09",
+                "2024-10",
+                "2024-11",
+                "2024-12",
+                "2025-01",
+                "2025-02",
+                "2025-03",
+                "2025-04",
+                "2025-05",
+                "2025-06",
+                "2025-07",
+                "2025-08",
+                "2025-09",
+                "2025-10",
+                "2025-11",
+                "2025-12",
+                "2026-01"
+              ],
+              "label_definition": "future_window_proxy_from_late_internet_gate_library_club",
+              "label_target_positive_share": 0.3
+            }
+          },
+          "label_source_features": [
+            "late_internet_mean",
+            "late_gate_ratio",
+            "late_library_mean",
+            "late_club_mean"
+          ],
+          "training_feature_columns": [
+            "XB",
+            "MZMC",
+            "ZZMMMC",
+            "JG",
+            "XSM",
+            "ZYM",
+            "internet_early_trend",
+            "internet_early_volatility",
+            "internet_early_continuity",
+            "internet_early_deviation",
+            "internet_early_cv",
+            "club_early_trend",
+            "club_early_continuity",
+            "library_early_trend",
+            "library_early_volatility",
+            "library_early_continuity",
+            "library_early_weekend_ratio",
+            "gate_early_trend",
+            "gate_early_volatility",
+            "gate_early_continuity",
+            "gate_early_weekend_ratio",
+            "behavior_rhythm_gap",
+            "internet_library_interaction",
+            "late_gate_internet_interaction",
+            "club_library_balance"
+          ],
+          "label_feature_overlap": [],
+          "same_dataset_overlap": [
+            "club_early_continuity",
+            "club_early_trend",
+            "club_library_balance",
+            "gate_early_continuity",
+            "gate_early_trend",
+            "gate_early_volatility",
+            "gate_early_weekend_ratio",
+            "internet_early_continuity",
+            "internet_early_cv",
+            "internet_early_deviation",
+            "internet_early_trend",
+            "internet_early_volatility",
+            "internet_library_interaction",
+            "late_gate_internet_interaction",
+            "library_early_continuity",
+            "library_early_trend",
+            "library_early_volatility",
+            "library_early_weekend_ratio"
+          ],
+          "circularity_detected": false,
+          "subgroup_metrics_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_subgroup_metrics.csv",
+          "confidence_zone_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_confidence_zone_report.csv",
+          "label_audit_detail_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_label_audit_detail.json",
+          "selected_features_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_selected_features_report.csv",
+          "feature_layer_summary_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_feature_layer_summary.json",
+          "temporal_integrity_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_temporal_integrity_report.json",
+          "split_integrity_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_split_integrity_report.json",
+          "proxy_stress_test_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_proxy_stress_test_report.json",
+          "feature_ablation_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_feature_ablation_report.json",
+          "temporal_generalization_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_temporal_generalization_report.json"
+        },
+        "warnings": [
+          "label_source = future_window_proxy",
+          "predictive_validity = clean_proxy_with_time_decoupling_but_still_unverified",
+          "not_releaseable_for_prod = true",
+          "sport-related datasets intentionally excluded from life domain",
+          "proxy_stress_test_skipped_3_experiments_due_to_single_class"
+        ],
+        "deliverables": {
+          "train_table": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\data\\train_table.csv",
+          "infer_table": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\data\\infer_table.csv",
+          "prediction_output": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\data\\prediction_output.csv",
+          "quality_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\docs\\quality_report.json",
+          "validation_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\docs\\validation_report.json",
+          "feature_dictionary": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\docs\\feature_dictionary.csv",
+          "model_file": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\model\\model.pkl",
+          "model_config": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\model\\model_config.json",
+          "model_metrics": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\model\\model_metrics.json"
+        },
+        "harness_v1": {
+          "run_id": "life_harness_v1_20260421105959",
+          "pipeline_name": "life_harness_v1",
+          "candidate_version_id": "life_candidate_clean_20260421105959",
+          "baseline_version_id": "life_v1_clean",
+          "anchor_baseline_version_id": "life_v1_clean",
+          "final_decision": "eligible_for_comparison",
+          "policy_decision": "eligible_for_comparison",
+          "execution_mode": "dry_run",
+          "reason_codes": [
+            "clean_eval_enabled",
+            "frozen_baseline_compare_available",
+            "trust_score_ok"
+          ],
+          "decision_stage_reached": "active_baseline_comparison",
+          "eval_scope": "student_hash_holdout_fixed_windows",
+          "task_scope": "life_clean_behavior_risk",
+          "feature_contract_hash": "89f765935193bedac884d9f9a0a1a9ec8d4453bb",
+          "label_definition": "life_label_clean",
+          "comparison_mode": "strict_same_universe_compare",
+          "metric_context": {
+            "eval_scope": "student_hash_holdout_fixed_windows",
+            "task_scope": "life_clean_behavior_risk",
+            "feature_contract_hash": "89f765935193bedac884d9f9a0a1a9ec8d4453bb",
+            "label_definition": "life_label_clean",
+            "baseline_version_id": "life_v1_clean",
+            "anchor_baseline_version_id": "life_v1_clean",
+            "comparison_mode": "strict_same_universe_compare",
+            "primary_compare_source": "strict_same_universe_compare",
+            "frozen_baseline_compare_available": true,
+            "comparability": {
+              "comparable": true,
+              "severity": "info",
+              "mismatches": [],
+              "recommended_action": "strict_rebuild",
+              "comparison_role": "primary",
+              "required_keys": [
+                "eval_scope",
+                "sample_universe",
+                "split_strategy",
+                "label_definition",
+                "feature_contract_hash",
+                "task_scope"
+              ],
+              "conclusion": "candidate and baseline are strictly comparable"
+            },
+            "sample_count": 255,
+            "label_source_features": [
+              "late_internet_mean",
+              "late_gate_ratio",
+              "late_library_mean",
+              "late_club_mean"
+            ],
+            "training_feature_columns": [
+              "XB",
+              "MZMC",
+              "ZZMMMC",
+              "JG",
+              "XSM",
+              "ZYM",
+              "internet_early_trend",
+              "internet_early_volatility",
+              "internet_early_continuity",
+              "internet_early_deviation",
+              "internet_early_cv",
+              "club_early_trend",
+              "club_early_continuity",
+              "library_early_trend",
+              "library_early_volatility",
+              "library_early_continuity",
+              "library_early_weekend_ratio",
+              "gate_early_trend",
+              "gate_early_volatility",
+              "gate_early_continuity",
+              "gate_early_weekend_ratio",
+              "behavior_rhythm_gap",
+              "internet_library_interaction",
+              "late_gate_internet_interaction",
+              "club_library_balance"
+            ],
+            "label_feature_overlap": [],
+            "same_dataset_overlap": [
+              "club_early_continuity",
+              "club_early_trend",
+              "club_library_balance",
+              "gate_early_continuity",
+              "gate_early_trend",
+              "gate_early_volatility",
+              "gate_early_weekend_ratio",
+              "internet_early_continuity",
+              "internet_early_cv",
+              "internet_early_deviation",
+              "internet_early_trend",
+              "internet_early_volatility",
+              "internet_library_interaction",
+              "late_gate_internet_interaction",
+              "library_early_continuity",
+              "library_early_trend",
+              "library_early_volatility",
+              "library_early_weekend_ratio"
+            ],
+            "circularity_detected": false,
+            "life_data_mode": "clean_temporal_behavior_enhanced",
+            "split_strategy": "student_hash_three_bucket (train/valid/holdout)",
+            "temporal_generalization_gap": 0.000229,
+            "future_window_auc": 0.8632350795272142,
+            "trust_score": 1.0,
+            "leakage_risk": false,
+            "subgroup_variance": 0.10098242195428886,
+            "instability_best_candidate": {
+              "label_version": "instability_future_v2",
+              "feature_bundle": "regularity+volatility+coupling",
+              "split_version": "purged_temporal_split",
+              "candidate_role": "temporal_generalization_mainline",
+              "status": "completed",
+              "auc": 0.8632350795272142,
+              "f1": 0.741176,
+              "precision": 0.677419,
+              "recall": 0.818182,
+              "rows": 255
+            },
+            "primary_metric": {
+              "recommended_primary_auc": 0.8632350795272142,
+              "recommended_primary_source": "temporal_generalization",
+              "robust_auc": 0.8632350795272142
+            }
+          },
+          "contract_context": {
+            "architecture_version": "life_clean_temporal_v2",
+            "task_scope": "life_clean_behavior_risk",
+            "label_definition": "future_window_proxy_from_late_life_behavior",
+            "eval_scope": "student_hash_holdout_fixed_windows",
+            "comparison_mode": "frozen_baseline_compare",
+            "eval_split": "hash_mod_5_holdout",
+            "sample_scope": "students_with_life_window_coverage"
+          },
+          "local_gain_signals": {
+            "clean_candidate_auc_improved": false
+          },
+          "baseline_summary": {
+            "metrics": {
+              "rows": 490,
+              "positive_rate": 0.808163,
+              "auc": 0.9547066408768538,
+              "f1": 0.973451,
+              "precision": 0.974684,
+              "recall": 0.972222,
+              "coverage": 1.0,
+              "degraded_ratio": 0.0,
+              "mean_infer_risk_score": 0.730505,
+              "high_risk_rate": 0.791837
+            },
+            "anchor_metrics": {
+              "rows": 490,
+              "positive_rate": 0.808163,
+              "auc": 0.9547066408768538,
+              "f1": 0.973451,
+              "precision": 0.974684,
+              "recall": 0.972222,
+              "coverage": 1.0,
+              "degraded_ratio": 0.0,
+              "mean_infer_risk_score": 0.730505,
+              "high_risk_rate": 0.791837
+            },
+            "snapshot_manifest": {
+              "model_config.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\model_config.json",
+              "feature_config.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\feature_config.json",
+              "contract_context.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\contract_context.json",
+              "domain_audit.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\domain_audit.json",
+              "metrics.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_v1_clean\\metrics.json"
+            },
+            "baseline_compare_available": true,
+            "bootstrap_mode": false
+          },
+          "candidate_snapshot_manifest": {
+            "model_config.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\model_config.json",
+            "feature_config.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\feature_config.json",
+            "contract_context.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\contract_context.json",
+            "domain_audit.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\domain_audit.json",
+            "metrics.json": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\registry\\life\\life_candidate_clean_20260421105959\\metrics.json"
+          },
+          "candidate_vs_baseline": {
+            "candidate_version_id": "life_candidate_clean_20260421105959",
+            "baseline_version_id": "life_v1_clean",
+            "anchor_baseline_version_id": "life_v1_clean",
+            "comparison_mode": "frozen_baseline_compare",
+            "primary_metric": "auc",
+            "candidate_metrics": {
+              "rows": 255,
+              "positive_rate": 0.282353,
+              "auc": 0.8628567091681845,
+              "f1": 0.751773,
+              "precision": 0.768116,
+              "recall": 0.736111,
+              "coverage": 1.0,
+              "degraded_ratio": 0.0,
+              "mean_infer_risk_score": 0.401833,
+              "high_risk_rate": 0.25098,
+              "decision_threshold": 0.55
+            },
+            "baseline_metrics": {
+              "rows": 490,
+              "positive_rate": 0.808163,
+              "auc": 0.9547066408768538,
+              "f1": 0.973451,
+              "precision": 0.974684,
+              "recall": 0.972222,
+              "coverage": 1.0,
+              "degraded_ratio": 0.0,
+              "mean_infer_risk_score": 0.730505,
+              "high_risk_rate": 0.791837
+            },
+            "anchor_metrics": {
+              "rows": 490,
+              "positive_rate": 0.808163,
+              "auc": 0.9547066408768538,
+              "f1": 0.973451,
+              "precision": 0.974684,
+              "recall": 0.972222,
+              "coverage": 1.0,
+              "degraded_ratio": 0.0,
+              "mean_infer_risk_score": 0.730505,
+              "high_risk_rate": 0.791837
+            },
+            "metric_deltas": {
+              "auc_delta": -0.09185,
+              "f1_delta": -0.221678,
+              "precision_delta": -0.206568,
+              "recall_delta": -0.236111
+            },
+            "comparability": {
+              "comparable": false,
+              "severity": "warning",
+              "mismatches": [
+                "feature_contract_hash: candidate='89f765935193bedac884d9f9a0a1a9ec8d4453bb' baseline='121efe120ac3bcd85643012bc3b3228621f34a96'"
+              ],
+              "recommended_action": "reference_only",
+              "comparison_role": "reference_only",
+              "required_keys": [
+                "eval_scope",
+                "sample_universe",
+                "split_strategy",
+                "label_definition",
+                "feature_contract_hash",
+                "task_scope"
+              ],
+              "conclusion": "candidate and baseline are NOT strictly comparable"
+            }
+          },
+          "label_type": "proxy",
+          "releaseable": false,
+          "task_type": "future_window_prediction",
+          "future_window_prediction": true,
+          "comparable": true,
+          "mainline_validity": true,
+          "blocking_reason": "",
+          "next_optimization_target": "improve_future_window_auc",
+          "releaseability_reason": "trust_score_ok",
+          "future_window_auc": 0.8632350795272142,
+          "suspicious_high_auc": false,
+          "search_contract": {
+            "allowed_actions": [
+              "label_version",
+              "time_window",
+              "target_population",
+              "structure_version"
+            ],
+            "forbidden_actions": [
+              "change_output_contract",
+              "change_study_domain_logic"
+            ],
+            "domain_policy_profile": "life_authenticity_first",
+            "optimize_priority": "authenticity",
+            "round_goal": "de_fake_then_raise",
+            "selection_policy": "filter_suspicious_then_select_best"
+          },
+          "trust_score": 1.0,
+          "trust_diagnostics": {
+            "temporal_gap": 0.0003783703590297671,
+            "leakage": false,
+            "subgroup_variance": 0.10098242195428886
+          },
+          "proxy_track": {
+            "label_type": "proxy",
+            "releaseable": false,
+            "track_role": "reference_only",
+            "decision": "reference_only",
+            "reason": "proxy_track_not_for_release"
+          },
+          "instability_track": {
+            "track_role": "primary_decision",
+            "future_window_auc": 0.8632350795272142,
+            "temporal_gap": 0.0003783703590297671,
+            "leakage": false,
+            "subgroup_variance": 0.10098242195428886,
+            "trust_score": 1.0,
+            "decision": "eligible_for_comparison"
+          },
+          "instability_best_candidate": {
+            "label_version": "instability_future_v2",
+            "feature_bundle": "regularity+volatility+coupling",
+            "split_version": "purged_temporal_split",
+            "candidate_role": "temporal_generalization_mainline",
+            "status": "completed",
+            "auc": 0.8632350795272142,
+            "f1": 0.741176,
+            "precision": 0.677419,
+            "recall": 0.818182,
+            "rows": 255
+          },
+          "trusted_mainline": {
+            "label_version": "instability_future_v2",
+            "feature_bundle": "regularity+volatility+coupling",
+            "split_version": "purged_temporal_split",
+            "candidate_role": "temporal_generalization_mainline",
+            "status": "completed",
+            "auc": 0.8632350795272142,
+            "f1": 0.741176,
+            "precision": 0.677419,
+            "recall": 0.818182,
+            "rows": 255
+          },
+          "mainline_frozen": true,
+          "agent_protocol": {
+            "domain": "life",
+            "protocol_version": "agent_protocol_v1",
+            "diagnosis": {
+              "task_type": "future_window_prediction",
+              "failure_types": [
+                "none"
+              ],
+              "proxy_label": true,
+              "track_role": {
+                "proxy_track": "reference_only",
+                "instability_track": "primary_decision"
+              },
+              "temporal_gap": 0.0003783703590297671,
+              "leakage_risk": false,
+              "future_window_auc": 0.8632350795272142
+            },
+            "proposal": {
+              "dual_track": [
+                "proxy_track",
+                "instability_track"
+              ],
+              "task_reconstruction": {
+                "switch_label_version": "instability_future_v2",
+                "switch_time_window": "1w",
+                "switch_target_population": "all",
+                "switch_structure_version": "temporal_split"
+              },
+              "instability_label_version": "instability_future_v2",
+              "feature_bundle": "regularity+volatility+coupling",
+              "trust_score": 1.0,
+              "next_optimization_target": "improve_future_window_auc"
+            },
+            "comparison": {
+              "baseline_auc": 0.9547066408768538,
+              "candidate_auc": 0.8632350795272142,
+              "auc_delta": -0.091472,
+              "future_window_auc": 0.8632350795272142,
+              "is_future_window": true,
+              "same_source_risk": "low",
+              "subgroup_stable": true,
+              "temporal_holdout_stable": true,
+              "more_real_than_baseline": true
+            },
+            "recommendation": {
+              "decision": "eligible_for_comparison",
+              "reason": "trust_score_ok",
+              "track_role": "instability_primary",
+              "best_mainline_candidate": {
+                "label_version": "instability_future_v2",
+                "feature_bundle": "regularity+volatility+coupling",
+                "split_version": "purged_temporal_split",
+                "candidate_role": "temporal_generalization_mainline",
+                "status": "completed",
+                "auc": 0.8632350795272142,
+                "f1": 0.741176,
+                "precision": 0.677419,
+                "recall": 0.818182,
+                "rows": 255
+              },
+              "high_score_but_untrusted": false,
+              "real_but_weak": false,
+              "next_priority_route": "authenticity_first_search"
+            }
+          }
+        },
+        "fusion_input": {
+          "domain_name": "life",
+          "candidate_version_id": "life_candidate_clean_20260421105959",
+          "risk_score": 0.401833,
+          "risk_level": "medium",
+          "confidence": 0.7265,
+          "top_features": [
+            {
+              "feature": "XB",
+              "weight_rank": 1
+            },
+            {
+              "feature": "MZMC",
+              "weight_rank": 2
+            },
+            {
+              "feature": "ZZMMMC",
+              "weight_rank": 3
+            },
+            {
+              "feature": "JG",
+              "weight_rank": 4
+            },
+            {
+              "feature": "XSM",
+              "weight_rank": 5
+            }
+          ],
+          "explanations": [
+            {
+              "summary": "honest life candidate uses drop-nearest-proxy-source-group features under strict comparable clean holdout"
+            }
+          ],
+          "quality_metrics": {
+            "auc": 0.8632350795272142,
+            "f1": 0.741176,
+            "precision": 0.677419,
+            "recall": 0.818182,
+            "positive_rate": 0.282353,
+            "robust_auc": 0.8632350795272142,
+            "reported_primary_auc": 0.8632350795272142
+          },
+          "metric_context": {
+            "eval_scope": "student_hash_holdout_fixed_windows",
+            "task_scope": "life_clean_behavior_risk",
+            "feature_contract_hash": "89f765935193bedac884d9f9a0a1a9ec8d4453bb",
+            "label_definition": "life_label_clean",
+            "baseline_version_id": "life_v1_clean",
+            "anchor_baseline_version_id": "life_v1_clean",
+            "comparison_mode": "strict_same_universe_compare",
+            "primary_compare_source": "strict_same_universe_compare",
+            "frozen_baseline_compare_available": true,
+            "comparability": {
+              "comparable": true,
+              "severity": "info",
+              "mismatches": [],
+              "recommended_action": "strict_rebuild",
+              "comparison_role": "primary",
+              "required_keys": [
+                "eval_scope",
+                "sample_universe",
+                "split_strategy",
+                "label_definition",
+                "feature_contract_hash",
+                "task_scope"
+              ],
+              "conclusion": "candidate and baseline are strictly comparable"
+            },
+            "sample_count": 255,
+            "label_source_features": [
+              "late_internet_mean",
+              "late_gate_ratio",
+              "late_library_mean",
+              "late_club_mean"
+            ],
+            "training_feature_columns": [
+              "XB",
+              "MZMC",
+              "ZZMMMC",
+              "JG",
+              "XSM",
+              "ZYM",
+              "internet_early_trend",
+              "internet_early_volatility",
+              "internet_early_continuity",
+              "internet_early_deviation",
+              "internet_early_cv",
+              "club_early_trend",
+              "club_early_continuity",
+              "library_early_trend",
+              "library_early_volatility",
+              "library_early_continuity",
+              "library_early_weekend_ratio",
+              "gate_early_trend",
+              "gate_early_volatility",
+              "gate_early_continuity",
+              "gate_early_weekend_ratio",
+              "behavior_rhythm_gap",
+              "internet_library_interaction",
+              "late_gate_internet_interaction",
+              "club_library_balance"
+            ],
+            "label_feature_overlap": [],
+            "same_dataset_overlap": [
+              "club_early_continuity",
+              "club_early_trend",
+              "club_library_balance",
+              "gate_early_continuity",
+              "gate_early_trend",
+              "gate_early_volatility",
+              "gate_early_weekend_ratio",
+              "internet_early_continuity",
+              "internet_early_cv",
+              "internet_early_deviation",
+              "internet_early_trend",
+              "internet_early_volatility",
+              "internet_library_interaction",
+              "late_gate_internet_interaction",
+              "library_early_continuity",
+              "library_early_trend",
+              "library_early_volatility",
+              "library_early_weekend_ratio"
+            ],
+            "circularity_detected": false,
+            "life_data_mode": "clean_temporal_behavior_enhanced",
+            "split_strategy": "student_hash_three_bucket (train/valid/holdout)",
+            "temporal_generalization_gap": 0.000229,
+            "future_window_auc": 0.8632350795272142,
+            "trust_score": 1.0,
+            "leakage_risk": false,
+            "subgroup_variance": 0.10098242195428886,
+            "instability_best_candidate": {
+              "label_version": "instability_future_v2",
+              "feature_bundle": "regularity+volatility+coupling",
+              "split_version": "purged_temporal_split",
+              "candidate_role": "temporal_generalization_mainline",
+              "status": "completed",
+              "auc": 0.8632350795272142,
+              "f1": 0.741176,
+              "precision": 0.677419,
+              "recall": 0.818182,
+              "rows": 255
+            },
+            "primary_metric": {
+              "recommended_primary_auc": 0.8632350795272142,
+              "recommended_primary_source": "temporal_generalization",
+              "robust_auc": 0.8632350795272142
+            }
+          },
+          "validation_summary": {
+            "fusion_payload_semantics_ok": true,
+            "risk_score_source": "mean_infer_predicted_probability",
+            "quality_metric_source": "clean_holdout_eval_metrics",
+            "snapshot_contract_complete": true
+          },
+          "warning_summary": [
+            "label_source = future_window_proxy",
+            "predictive_validity = clean_proxy_with_time_decoupling_but_still_unverified",
+            "not_releaseable_for_prod = true",
+            "sport-related datasets intentionally excluded from life domain",
+            "proxy_stress_test_skipped_3_experiments_due_to_single_class"
+          ],
+          "artifact_ref": {
+            "prediction_output": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\data\\prediction_output.csv",
+            "eval_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_eval_report.json",
+            "model_config": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\model\\model_config.json",
+            "subgroup_metrics": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_subgroup_metrics.csv",
+            "confidence_zone_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_confidence_zone_report.csv"
+          },
+          "raw_payload": {
+            "domain_context": {
+              "domain": "life",
+              "source_datasets": [
+                "student_profile",
+                "internet",
+                "club",
+                "library",
+                "gate"
+              ],
+              "label_source": "future_window_proxy",
+              "request_domain": "life",
+              "maturity_stage": "clean_eval_candidate"
+            },
+            "domain_audit": {
+              "bootstrap_mode": false,
+              "baseline_compare_available": true,
+              "label_source": "future_window_proxy",
+              "predictive_validity": "clean_proxy_with_time_decoupling_but_still_unverified",
+              "not_releaseable_for_prod": true,
+              "boundary_status": "life_only",
+              "dataset_summary": {
+                "source_dataset_keys": [
+                  "student_profile",
+                  "internet",
+                  "club",
+                  "library",
+                  "gate"
+                ],
+                "note": "sport-related datasets intentionally excluded from life domain",
+                "row_counts": {
+                  "student_profile": 2500,
+                  "internet": 16868,
+                  "club": 16239,
+                  "library": 205494,
+                  "gate": 22112
+                },
+                "all_months": [
+                  "2020-09",
+                  "2020-10",
+                  "2020-11",
+                  "2020-12",
+                  "2021-01",
+                  "2021-02",
+                  "2021-03",
+                  "2021-04",
+                  "2021-05",
+                  "2021-06",
+                  "2021-07",
+                  "2021-08",
+                  "2021-09",
+                  "2021-10",
+                  "2021-11",
+                  "2021-12",
+                  "2022-02",
+                  "2022-03",
+                  "2022-04",
+                  "2022-05",
+                  "2022-06",
+                  "2022-07",
+                  "2022-08",
+                  "2022-09",
+                  "2022-10",
+                  "2022-11",
+                  "2022-12",
+                  "2023-01",
+                  "2023-02",
+                  "2023-03",
+                  "2023-04",
+                  "2023-05",
+                  "2023-06",
+                  "2023-07",
+                  "2023-08",
+                  "2023-09",
+                  "2023-10",
+                  "2023-11",
+                  "2023-12",
+                  "2024-01",
+                  "2024-02",
+                  "2024-03",
+                  "2024-04",
+                  "2024-05",
+                  "2024-06",
+                  "2024-07",
+                  "2024-08",
+                  "2024-09",
+                  "2024-10",
+                  "2024-11",
+                  "2024-12",
+                  "2025-01",
+                  "2025-02",
+                  "2025-03",
+                  "2025-04",
+                  "2025-05",
+                  "2025-06",
+                  "2025-07",
+                  "2025-08",
+                  "2025-09",
+                  "2025-10",
+                  "2025-11",
+                  "2025-12",
+                  "2026-01"
+                ],
+                "clean_eval_window": {
+                  "early_months": [
+                    "2020-09",
+                    "2020-10",
+                    "2020-11",
+                    "2020-12",
+                    "2021-01",
+                    "2021-02",
+                    "2021-03",
+                    "2021-04",
+                    "2021-05",
+                    "2021-06",
+                    "2021-07",
+                    "2021-08",
+                    "2021-09",
+                    "2021-10",
+                    "2021-11",
+                    "2021-12",
+                    "2022-02",
+                    "2022-03",
+                    "2022-04",
+                    "2022-05",
+                    "2022-06",
+                    "2022-07",
+                    "2022-08",
+                    "2022-09",
+                    "2022-10",
+                    "2022-11",
+                    "2022-12",
+                    "2023-01",
+                    "2023-02",
+                    "2023-03",
+                    "2023-04",
+                    "2023-05"
+                  ],
+                  "late_months": [
+                    "2023-06",
+                    "2023-07",
+                    "2023-08",
+                    "2023-09",
+                    "2023-10",
+                    "2023-11",
+                    "2023-12",
+                    "2024-01",
+                    "2024-02",
+                    "2024-03",
+                    "2024-04",
+                    "2024-05",
+                    "2024-06",
+                    "2024-07",
+                    "2024-08",
+                    "2024-09",
+                    "2024-10",
+                    "2024-11",
+                    "2024-12",
+                    "2025-01",
+                    "2025-02",
+                    "2025-03",
+                    "2025-04",
+                    "2025-05",
+                    "2025-06",
+                    "2025-07",
+                    "2025-08",
+                    "2025-09",
+                    "2025-10",
+                    "2025-11",
+                    "2025-12",
+                    "2026-01"
+                  ],
+                  "label_definition": "future_window_proxy_from_late_internet_gate_library_club",
+                  "label_target_positive_share": 0.3
+                }
+              },
+              "label_source_features": [
+                "late_internet_mean",
+                "late_gate_ratio",
+                "late_library_mean",
+                "late_club_mean"
+              ],
+              "training_feature_columns": [
+                "XB",
+                "MZMC",
+                "ZZMMMC",
+                "JG",
+                "XSM",
+                "ZYM",
+                "internet_early_trend",
+                "internet_early_volatility",
+                "internet_early_continuity",
+                "internet_early_deviation",
+                "internet_early_cv",
+                "club_early_trend",
+                "club_early_continuity",
+                "library_early_trend",
+                "library_early_volatility",
+                "library_early_continuity",
+                "library_early_weekend_ratio",
+                "gate_early_trend",
+                "gate_early_volatility",
+                "gate_early_continuity",
+                "gate_early_weekend_ratio",
+                "behavior_rhythm_gap",
+                "internet_library_interaction",
+                "late_gate_internet_interaction",
+                "club_library_balance"
+              ],
+              "label_feature_overlap": [],
+              "same_dataset_overlap": [
+                "club_early_continuity",
+                "club_early_trend",
+                "club_library_balance",
+                "gate_early_continuity",
+                "gate_early_trend",
+                "gate_early_volatility",
+                "gate_early_weekend_ratio",
+                "internet_early_continuity",
+                "internet_early_cv",
+                "internet_early_deviation",
+                "internet_early_trend",
+                "internet_early_volatility",
+                "internet_library_interaction",
+                "late_gate_internet_interaction",
+                "library_early_continuity",
+                "library_early_trend",
+                "library_early_volatility",
+                "library_early_weekend_ratio"
+              ],
+              "circularity_detected": false,
+              "subgroup_metrics_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_subgroup_metrics.csv",
+              "confidence_zone_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_confidence_zone_report.csv",
+              "label_audit_detail_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_label_audit_detail.json",
+              "selected_features_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_selected_features_report.csv",
+              "feature_layer_summary_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_feature_layer_summary.json",
+              "temporal_integrity_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_temporal_integrity_report.json",
+              "split_integrity_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_split_integrity_report.json",
+              "proxy_stress_test_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_proxy_stress_test_report.json",
+              "feature_ablation_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_feature_ablation_report.json",
+              "temporal_generalization_report_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_temporal_generalization_report.json"
+            }
+          }
+        },
+        "request_id": "study_review_qwen_request",
+        "mode": "review",
+        "label_type": "proxy",
+        "releaseable": false,
+        "track_role": {
+          "proxy_track": "reference_only",
+          "instability_track": "primary_decision"
+        },
+        "future_window_auc": 0.8632350795272142,
+        "trust_score": 1.0,
+        "suspicious_high_auc": false,
+        "releaseability_reason": "trust_score_ok",
+        "diagnostics": {
+          "temporal_gap": 0.0003783703590297671,
+          "leakage": false,
+          "subgroup_variance": 0.10098242195428886
+        },
+        "proxy_track": {
+          "label_type": "proxy",
+          "releaseable": false,
+          "track_role": "reference_only",
+          "decision": "reference_only",
+          "reason": "proxy_track_not_for_release"
+        },
+        "instability_track": {
+          "track_role": "primary_decision",
+          "future_window_auc": 0.8632350795272142,
+          "temporal_gap": 0.0003783703590297671,
+          "leakage": false,
+          "subgroup_variance": 0.10098242195428886,
+          "trust_score": 1.0,
+          "decision": "eligible_for_comparison"
+        },
+        "instability_best_candidate": {
+          "label_version": "instability_future_v2",
+          "feature_bundle": "regularity+volatility+coupling",
+          "split_version": "purged_temporal_split",
+          "candidate_role": "temporal_generalization_mainline",
+          "status": "completed",
+          "auc": 0.8632350795272142,
+          "f1": 0.741176,
+          "precision": 0.677419,
+          "recall": 0.818182,
+          "rows": 255
+        },
+        "agent_protocol": {
+          "domain": "life",
+          "protocol_version": "agent_protocol_v1",
+          "diagnosis": {
+            "task_type": "future_window_prediction",
+            "failure_types": [
+              "none"
+            ],
+            "proxy_label": true,
+            "track_role": {
+              "proxy_track": "reference_only",
+              "instability_track": "primary_decision"
+            },
+            "temporal_gap": 0.0003783703590297671,
+            "leakage_risk": false,
+            "future_window_auc": 0.8632350795272142
+          },
+          "proposal": {
+            "dual_track": [
+              "proxy_track",
+              "instability_track"
+            ],
+            "task_reconstruction": {
+              "switch_label_version": "instability_future_v2",
+              "switch_time_window": "1w",
+              "switch_target_population": "all",
+              "switch_structure_version": "temporal_split"
+            },
+            "instability_label_version": "instability_future_v2",
+            "feature_bundle": "regularity+volatility+coupling",
+            "trust_score": 1.0,
+            "next_optimization_target": "improve_future_window_auc"
+          },
+          "comparison": {
+            "baseline_auc": 0.9547066408768538,
+            "candidate_auc": 0.8632350795272142,
+            "auc_delta": -0.091472,
+            "future_window_auc": 0.8632350795272142,
+            "is_future_window": true,
+            "same_source_risk": "low",
+            "subgroup_stable": true,
+            "temporal_holdout_stable": true,
+            "more_real_than_baseline": true
+          },
+          "recommendation": {
+            "decision": "eligible_for_comparison",
+            "reason": "trust_score_ok",
+            "track_role": "instability_primary",
+            "best_mainline_candidate": {
+              "label_version": "instability_future_v2",
+              "feature_bundle": "regularity+volatility+coupling",
+              "split_version": "purged_temporal_split",
+              "candidate_role": "temporal_generalization_mainline",
+              "status": "completed",
+              "auc": 0.8632350795272142,
+              "f1": 0.741176,
+              "precision": 0.677419,
+              "recall": 0.818182,
+              "rows": 255
+            },
+            "high_score_but_untrusted": false,
+            "real_but_weak": false,
+            "next_priority_route": "authenticity_first_search"
+          }
+        },
+        "label_source_features": [
+          "late_internet_mean",
+          "late_gate_ratio",
+          "late_library_mean",
+          "late_club_mean"
+        ],
+        "training_feature_columns": [
+          "XB",
+          "MZMC",
+          "ZZMMMC",
+          "JG",
+          "XSM",
+          "ZYM",
+          "internet_early_trend",
+          "internet_early_volatility",
+          "internet_early_continuity",
+          "internet_early_deviation",
+          "internet_early_cv",
+          "club_early_trend",
+          "club_early_continuity",
+          "library_early_trend",
+          "library_early_volatility",
+          "library_early_continuity",
+          "library_early_weekend_ratio",
+          "gate_early_trend",
+          "gate_early_volatility",
+          "gate_early_continuity",
+          "gate_early_weekend_ratio",
+          "behavior_rhythm_gap",
+          "internet_library_interaction",
+          "late_gate_internet_interaction",
+          "club_library_balance"
+        ],
+        "label_feature_overlap": [],
+        "same_dataset_overlap": [
+          "club_early_continuity",
+          "club_early_trend",
+          "club_library_balance",
+          "gate_early_continuity",
+          "gate_early_trend",
+          "gate_early_volatility",
+          "gate_early_weekend_ratio",
+          "internet_early_continuity",
+          "internet_early_cv",
+          "internet_early_deviation",
+          "internet_early_trend",
+          "internet_early_volatility",
+          "internet_library_interaction",
+          "late_gate_internet_interaction",
+          "library_early_continuity",
+          "library_early_trend",
+          "library_early_volatility",
+          "library_early_weekend_ratio"
+        ],
+        "circularity_detected": false,
+        "reported_metrics_reference": {
+          "trusted_mainline_metrics": {
+            "rows": 255,
+            "positive_rate": 0.282353,
+            "auc": 0.8632350795272142,
+            "f1": 0.741176,
+            "precision": 0.677419,
+            "recall": 0.818182,
+            "coverage": 1.0,
+            "degraded_ratio": 0.0,
+            "mean_infer_risk_score": 0.401833,
+            "high_risk_rate": 0.25098,
+            "experiment_name": "temporal_generalization_mainline"
+          }
+        },
+        "contract_context": {
+          "architecture_version": "life_clean_temporal_v2",
+          "task_scope": "life_clean_behavior_risk",
+          "label_definition": "future_window_proxy_from_late_life_behavior",
+          "eval_scope": "student_hash_holdout_fixed_windows",
+          "comparison_mode": "frozen_baseline_compare",
+          "eval_split": "hash_mod_5_holdout",
+          "sample_scope": "students_with_life_window_coverage"
+        }
+      }
+    },
+    "sport": {
+      "domain_name": "sport",
+      "status": "completed",
+      "final_decision": "keep_baseline",
+      "policy_decision": "keep_baseline",
+      "decision": "keep_baseline",
+      "comparable": true,
+      "execution_mode": "review",
+      "decision_stage_reached": "active_baseline_comparison",
+      "metrics": {
+        "auc": 0.8505509045419554,
+        "f1": 0.3193717277486911,
+        "precision": 0.23282442748091603,
+        "recall": 0.5083333333333333,
+        "rows": 3545,
+        "eval_rows": 1852,
+        "positive_count": 120,
+        "future_window_auc": 0.8505509045419554
+      },
+      "metric_context": {
+        "domain": "sport",
+        "status": "completed",
+        "decision": "keep_baseline",
+        "comparable": true,
+        "metrics": {
+          "auc": 0.8505509045419554,
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "future_window_auc": 0.8505509045419554
+        },
+        "artifacts": {
+          "baseline_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "candidate_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "candidate_classification_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_classification_model.joblib"
+        },
+        "task_type": "future_window_prediction",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "next_optimization_target": "improve_future_window_auc",
+        "tautology_risk": "low",
+        "suspicious_high_auc": false,
+        "baseline_version_id": "sport_baseline_v1",
+        "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "hardest_subgroup": {
+          "group": "zf_grade:E",
+          "rows": 2235,
+          "error_rate": 0.10738255033557047
+        },
+        "trusted_mainline": {
+          "auc": 0.8505509045419554,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "evaluated_terms": [
+            20221,
+            20231
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "best_threshold": 0.35000000000000003,
+          "state_thresholds": {
+            "borderline": 0.35000000000000003,
+            "low_participation": 0.37000000000000005,
+            "stable": 0.32000000000000006
+          },
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "mainline_frozen": true,
+        "agent_protocol": {
+          "domain": "sport",
+          "protocol_version": "agent_protocol_v1",
+          "diagnosis": {
+            "task_type": "future_window_prediction",
+            "failure_types": [
+              "none"
+            ],
+            "label_versions": [
+              "zf_grade",
+              "zf_label_v2",
+              "zf_label_v3",
+              "sport_label_future_v1",
+              "sport_label_future_v2",
+              "sport_label_future_v3"
+            ],
+            "label_version": "future_v3",
+            "feature_bundle": "baseline+deviation+trend",
+            "structure_version": "two_stage",
+            "population_version": "recoverable",
+            "future_window": "1-2 terms",
+            "trend_bundle_enabled": true,
+            "tautology_risk": "low",
+            "trust_flags": {
+              "suspicious_high_auc": false
+            }
+          },
+          "proposal": {
+            "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+            "task_reconstruction": {
+              "switch_label_version": "future_v3",
+              "switch_time_window": "short_window_1_2_terms",
+              "switch_target_population": "recoverable",
+              "switch_structure_version": "two_stage"
+            },
+            "next_optimization_target": "improve_future_window_auc"
+          },
+          "comparison": {
+            "baseline_auc": null,
+            "candidate_auc": 0.8505509045419554,
+            "delta_auc": null,
+            "future_window_auc": 0.8505509045419554,
+            "is_future_window": true,
+            "same_source_risk": "low",
+            "subgroup_stable": true,
+            "temporal_holdout_stable": true,
+            "more_real_than_baseline": true,
+            "ablation_summary": {
+              "trend_drop_auc": 0.001503560431100781,
+              "by_bundle": {
+                "baseline_only": 0.7920996920708238,
+                "baseline+deviation": 0.8490473441108546,
+                "baseline+deviation+trend": 0.8505509045419554
+              }
+            }
+          },
+          "recommendation": {
+            "decision": "keep_baseline",
+            "comparable": true,
+            "best_mainline_candidate": {
+              "auc": 0.8505509045419554,
+              "rows": 3545,
+              "eval_rows": 1852,
+              "positive_count": 120,
+              "evaluated_terms": [
+                20221,
+                20231
+              ],
+              "label_version": "future_v3",
+              "feature_bundle": "baseline+deviation+trend",
+              "structure_version": "two_stage",
+              "population_version": "recoverable",
+              "f1": 0.3193717277486911,
+              "precision": 0.23282442748091603,
+              "recall": 0.5083333333333333,
+              "best_threshold": 0.35000000000000003,
+              "state_thresholds": {
+                "borderline": 0.35000000000000003,
+                "low_participation": 0.37000000000000005,
+                "stable": 0.32000000000000006
+              },
+              "ablation_summary": {
+                "trend_drop_auc": 0.001503560431100781,
+                "by_bundle": {
+                  "baseline_only": 0.7920996920708238,
+                  "baseline+deviation": 0.8490473441108546,
+                  "baseline+deviation+trend": 0.8505509045419554
+                }
+              }
+            },
+            "high_score_but_untrusted": false,
+            "real_but_weak": false,
+            "next_priority_route": "target_population_and_future_transition_search",
+            "blocking_reason": ""
+          }
+        }
+      },
+      "domain_context": {},
+      "domain_audit": {},
+      "validation_summary": [],
+      "warning_summary": [],
+      "artifact_ref": null,
+      "harness_v1": {
+        "domain": "sport",
+        "status": "completed",
+        "decision": "keep_baseline",
+        "comparable": true,
+        "metrics": {
+          "auc": 0.8505509045419554,
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "future_window_auc": 0.8505509045419554
+        },
+        "artifacts": {
+          "baseline_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "candidate_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "candidate_classification_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_classification_model.joblib"
+        },
+        "task_type": "future_window_prediction",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "next_optimization_target": "improve_future_window_auc",
+        "tautology_risk": "low",
+        "suspicious_high_auc": false,
+        "baseline_version_id": "sport_baseline_v1",
+        "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "hardest_subgroup": {
+          "group": "zf_grade:E",
+          "rows": 2235,
+          "error_rate": 0.10738255033557047
+        },
+        "trusted_mainline": {
+          "auc": 0.8505509045419554,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "evaluated_terms": [
+            20221,
+            20231
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "best_threshold": 0.35000000000000003,
+          "state_thresholds": {
+            "borderline": 0.35000000000000003,
+            "low_participation": 0.37000000000000005,
+            "stable": 0.32000000000000006
+          },
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "mainline_frozen": true,
+        "agent_protocol": {
+          "domain": "sport",
+          "protocol_version": "agent_protocol_v1",
+          "diagnosis": {
+            "task_type": "future_window_prediction",
+            "failure_types": [
+              "none"
+            ],
+            "label_versions": [
+              "zf_grade",
+              "zf_label_v2",
+              "zf_label_v3",
+              "sport_label_future_v1",
+              "sport_label_future_v2",
+              "sport_label_future_v3"
+            ],
+            "label_version": "future_v3",
+            "feature_bundle": "baseline+deviation+trend",
+            "structure_version": "two_stage",
+            "population_version": "recoverable",
+            "future_window": "1-2 terms",
+            "trend_bundle_enabled": true,
+            "tautology_risk": "low",
+            "trust_flags": {
+              "suspicious_high_auc": false
+            }
+          },
+          "proposal": {
+            "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+            "task_reconstruction": {
+              "switch_label_version": "future_v3",
+              "switch_time_window": "short_window_1_2_terms",
+              "switch_target_population": "recoverable",
+              "switch_structure_version": "two_stage"
+            },
+            "next_optimization_target": "improve_future_window_auc"
+          },
+          "comparison": {
+            "baseline_auc": null,
+            "candidate_auc": 0.8505509045419554,
+            "delta_auc": null,
+            "future_window_auc": 0.8505509045419554,
+            "is_future_window": true,
+            "same_source_risk": "low",
+            "subgroup_stable": true,
+            "temporal_holdout_stable": true,
+            "more_real_than_baseline": true,
+            "ablation_summary": {
+              "trend_drop_auc": 0.001503560431100781,
+              "by_bundle": {
+                "baseline_only": 0.7920996920708238,
+                "baseline+deviation": 0.8490473441108546,
+                "baseline+deviation+trend": 0.8505509045419554
+              }
+            }
+          },
+          "recommendation": {
+            "decision": "keep_baseline",
+            "comparable": true,
+            "best_mainline_candidate": {
+              "auc": 0.8505509045419554,
+              "rows": 3545,
+              "eval_rows": 1852,
+              "positive_count": 120,
+              "evaluated_terms": [
+                20221,
+                20231
+              ],
+              "label_version": "future_v3",
+              "feature_bundle": "baseline+deviation+trend",
+              "structure_version": "two_stage",
+              "population_version": "recoverable",
+              "f1": 0.3193717277486911,
+              "precision": 0.23282442748091603,
+              "recall": 0.5083333333333333,
+              "best_threshold": 0.35000000000000003,
+              "state_thresholds": {
+                "borderline": 0.35000000000000003,
+                "low_participation": 0.37000000000000005,
+                "stable": 0.32000000000000006
+              },
+              "ablation_summary": {
+                "trend_drop_auc": 0.001503560431100781,
+                "by_bundle": {
+                  "baseline_only": 0.7920996920708238,
+                  "baseline+deviation": 0.8490473441108546,
+                  "baseline+deviation+trend": 0.8505509045419554
+                }
+              }
+            },
+            "high_score_but_untrusted": false,
+            "real_but_weak": false,
+            "next_priority_route": "target_population_and_future_transition_search",
+            "blocking_reason": ""
+          }
+        }
+      },
+      "agent_trace": {
+        "invoked_via_harness": true,
+        "adapter_name": "SportAgentAdapter",
+        "execution_path": "orchestrator -> adapter.run_domain_pipeline -> sport_agent",
+        "domain_pipeline_called": true,
+        "request_domain": "sport"
+      },
+      "raw_result": {
+        "domain": "sport",
+        "status": "success",
+        "final_decision": "keep_baseline",
+        "policy_decision": "keep_baseline",
+        "execution_mode": "review",
+        "reason_codes": [],
+        "decision_stage_reached": "active_baseline_comparison",
+        "summary_metrics": {
+          "auc": 0.8505509045419554,
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "future_window_auc": 0.8505509045419554
+        },
+        "metric_context": {},
+        "domain_context": {},
+        "domain_audit": {},
+        "warnings": [],
+        "deliverables": {},
+        "harness_v1": {
+          "domain": "sport",
+          "status": "completed",
+          "decision": "keep_baseline",
+          "comparable": true,
+          "metrics": {
+            "auc": 0.8505509045419554,
+            "f1": 0.3193717277486911,
+            "precision": 0.23282442748091603,
+            "recall": 0.5083333333333333,
+            "rows": 3545,
+            "eval_rows": 1852,
+            "positive_count": 120,
+            "future_window_auc": 0.8505509045419554
+          },
+          "artifacts": {
+            "baseline_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+            "candidate_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+            "candidate_classification_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_classification_model.joblib"
+          },
+          "task_type": "future_window_prediction",
+          "mainline_validity": true,
+          "blocking_reason": "",
+          "next_optimization_target": "improve_future_window_auc",
+          "tautology_risk": "low",
+          "suspicious_high_auc": false,
+          "baseline_version_id": "sport_baseline_v1",
+          "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "hardest_subgroup": {
+            "group": "zf_grade:E",
+            "rows": 2235,
+            "error_rate": 0.10738255033557047
+          },
+          "trusted_mainline": {
+            "auc": 0.8505509045419554,
+            "rows": 3545,
+            "eval_rows": 1852,
+            "positive_count": 120,
+            "evaluated_terms": [
+              20221,
+              20231
+            ],
+            "label_version": "future_v3",
+            "feature_bundle": "baseline+deviation+trend",
+            "structure_version": "two_stage",
+            "population_version": "recoverable",
+            "f1": 0.3193717277486911,
+            "precision": 0.23282442748091603,
+            "recall": 0.5083333333333333,
+            "best_threshold": 0.35000000000000003,
+            "state_thresholds": {
+              "borderline": 0.35000000000000003,
+              "low_participation": 0.37000000000000005,
+              "stable": 0.32000000000000006
+            },
+            "ablation_summary": {
+              "trend_drop_auc": 0.001503560431100781,
+              "by_bundle": {
+                "baseline_only": 0.7920996920708238,
+                "baseline+deviation": 0.8490473441108546,
+                "baseline+deviation+trend": 0.8505509045419554
+              }
+            }
+          },
+          "mainline_frozen": true,
+          "agent_protocol": {
+            "domain": "sport",
+            "protocol_version": "agent_protocol_v1",
+            "diagnosis": {
+              "task_type": "future_window_prediction",
+              "failure_types": [
+                "none"
+              ],
+              "label_versions": [
+                "zf_grade",
+                "zf_label_v2",
+                "zf_label_v3",
+                "sport_label_future_v1",
+                "sport_label_future_v2",
+                "sport_label_future_v3"
+              ],
+              "label_version": "future_v3",
+              "feature_bundle": "baseline+deviation+trend",
+              "structure_version": "two_stage",
+              "population_version": "recoverable",
+              "future_window": "1-2 terms",
+              "trend_bundle_enabled": true,
+              "tautology_risk": "low",
+              "trust_flags": {
+                "suspicious_high_auc": false
+              }
+            },
+            "proposal": {
+              "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+              "task_reconstruction": {
+                "switch_label_version": "future_v3",
+                "switch_time_window": "short_window_1_2_terms",
+                "switch_target_population": "recoverable",
+                "switch_structure_version": "two_stage"
+              },
+              "next_optimization_target": "improve_future_window_auc"
+            },
+            "comparison": {
+              "baseline_auc": null,
+              "candidate_auc": 0.8505509045419554,
+              "delta_auc": null,
+              "future_window_auc": 0.8505509045419554,
+              "is_future_window": true,
+              "same_source_risk": "low",
+              "subgroup_stable": true,
+              "temporal_holdout_stable": true,
+              "more_real_than_baseline": true,
+              "ablation_summary": {
+                "trend_drop_auc": 0.001503560431100781,
+                "by_bundle": {
+                  "baseline_only": 0.7920996920708238,
+                  "baseline+deviation": 0.8490473441108546,
+                  "baseline+deviation+trend": 0.8505509045419554
+                }
+              }
+            },
+            "recommendation": {
+              "decision": "keep_baseline",
+              "comparable": true,
+              "best_mainline_candidate": {
+                "auc": 0.8505509045419554,
+                "rows": 3545,
+                "eval_rows": 1852,
+                "positive_count": 120,
+                "evaluated_terms": [
+                  20221,
+                  20231
+                ],
+                "label_version": "future_v3",
+                "feature_bundle": "baseline+deviation+trend",
+                "structure_version": "two_stage",
+                "population_version": "recoverable",
+                "f1": 0.3193717277486911,
+                "precision": 0.23282442748091603,
+                "recall": 0.5083333333333333,
+                "best_threshold": 0.35000000000000003,
+                "state_thresholds": {
+                  "borderline": 0.35000000000000003,
+                  "low_participation": 0.37000000000000005,
+                  "stable": 0.32000000000000006
+                },
+                "ablation_summary": {
+                  "trend_drop_auc": 0.001503560431100781,
+                  "by_bundle": {
+                    "baseline_only": 0.7920996920708238,
+                    "baseline+deviation": 0.8490473441108546,
+                    "baseline+deviation+trend": 0.8505509045419554
+                  }
+                }
+              },
+              "high_score_but_untrusted": false,
+              "real_but_weak": false,
+              "next_priority_route": "target_population_and_future_transition_search",
+              "blocking_reason": ""
+            }
+          }
+        },
+        "fusion_input": {}
+      }
+    }
+  },
+  "fusion_inputs": [
+    {
+      "domain_name": "study",
+      "risk_score": null,
+      "risk_level": null,
+      "confidence": null,
+      "top_features": [],
+      "explanations": [],
+      "artifact_ref": null,
+      "metric_context": {
+        "run_id": "study_harness_v1_d4e5fd5a9b4d",
+        "pipeline_name": "study_harness_v1",
+        "run_record_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\study\\data\\harness\\runs\\study_harness_v1_d4e5fd5a9b4d.json",
+        "final_decision": "keep_baseline",
+        "policy_decision": "keep_baseline",
+        "decision_reason_codes": [
+          "baseline_auc_regression"
+        ],
+        "decision_stage_reached": "floor_gate",
+        "gate_name": "error_validation",
+        "execution_mode": "dry_run",
+        "collected_warnings": [],
+        "eval_scope": "publish_gate_metric",
+        "task_scope": "study_layered_enhanced_serving",
+        "study_data_mode": "mixed_overall_with_subgroups",
+        "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+        "label_definition": "LABEL",
+        "baseline_version_id": "study_candidate_20260418220843",
+        "anchor_baseline_version_id": "study_v1",
+        "comparison_mode": "study_best_model_v1",
+        "candidate_metrics": {
+          "auc": 0.8324450440706692,
+          "f1": 0.540837336993823,
+          "recall": 0.7255985267034991
+        },
+        "baseline_metrics": {
+          "auc": 0.8418693263972741,
+          "f1": 0.6672019269369731,
+          "recall": 0.7373558118899733,
+          "precision": 0.6092375366568915,
+          "coverage": 0.9995448856525202,
+          "degraded_proxy": 0.00029582432586187094,
+          "robustness_score": 0.8088200942654948
+        },
+        "metric_context": {
+          "eval_scope": "publish_gate_metric",
+          "task_scope": "study_layered_enhanced_serving",
+          "study_data_mode": "mixed_overall_with_subgroups",
+          "row_level_study_data_mode": "mixed_overall_with_subgroups",
+          "feature_contract_hash": "3dfdbb5386bfebee2ed50c5bff161eb9ea0d025e",
+          "label_definition": "LABEL",
+          "baseline_version_id": "study_candidate_20260418220843",
+          "anchor_baseline_version_id": "study_v1",
+          "comparison_mode": "study_best_model_v1",
+          "decision_stage_reached": "floor_gate"
+        },
+        "execution_status": "success"
+      },
+      "validation_summary": [],
+      "warning_summary": []
+    },
+    {
+      "domain_name": "life",
+      "risk_score": null,
+      "risk_level": null,
+      "confidence": null,
+      "top_features": [],
+      "explanations": [],
+      "artifact_ref": {
+        "prediction_output": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\data\\prediction_output.csv",
+        "eval_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_eval_report.json",
+        "model_config": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\deliverables\\life\\model\\model_config.json",
+        "subgroup_metrics": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_subgroup_metrics.csv",
+        "confidence_zone_report": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\life\\data\\dm\\life_confidence_zone_report.csv"
+      },
+      "metric_context": {
+        "eval_scope": "student_hash_holdout_fixed_windows",
+        "task_scope": "life_clean_behavior_risk",
+        "feature_contract_hash": "89f765935193bedac884d9f9a0a1a9ec8d4453bb",
+        "label_definition": "life_label_clean",
+        "baseline_version_id": "life_v1_clean",
+        "anchor_baseline_version_id": "life_v1_clean",
+        "comparison_mode": "strict_same_universe_compare",
+        "primary_compare_source": "strict_same_universe_compare",
+        "frozen_baseline_compare_available": true,
+        "comparability": {
+          "comparable": true,
+          "severity": "info",
+          "mismatches": [],
+          "recommended_action": "strict_rebuild",
+          "comparison_role": "primary",
+          "required_keys": [
+            "eval_scope",
+            "sample_universe",
+            "split_strategy",
+            "label_definition",
+            "feature_contract_hash",
+            "task_scope"
+          ],
+          "conclusion": "candidate and baseline are strictly comparable"
+        },
+        "sample_count": 255,
+        "label_source_features": [
+          "late_internet_mean",
+          "late_gate_ratio",
+          "late_library_mean",
+          "late_club_mean"
+        ],
+        "training_feature_columns": [
+          "XB",
+          "MZMC",
+          "ZZMMMC",
+          "JG",
+          "XSM",
+          "ZYM",
+          "internet_early_trend",
+          "internet_early_volatility",
+          "internet_early_continuity",
+          "internet_early_deviation",
+          "internet_early_cv",
+          "club_early_trend",
+          "club_early_continuity",
+          "library_early_trend",
+          "library_early_volatility",
+          "library_early_continuity",
+          "library_early_weekend_ratio",
+          "gate_early_trend",
+          "gate_early_volatility",
+          "gate_early_continuity",
+          "gate_early_weekend_ratio",
+          "behavior_rhythm_gap",
+          "internet_library_interaction",
+          "late_gate_internet_interaction",
+          "club_library_balance"
+        ],
+        "label_feature_overlap": [],
+        "same_dataset_overlap": [
+          "club_early_continuity",
+          "club_early_trend",
+          "club_library_balance",
+          "gate_early_continuity",
+          "gate_early_trend",
+          "gate_early_volatility",
+          "gate_early_weekend_ratio",
+          "internet_early_continuity",
+          "internet_early_cv",
+          "internet_early_deviation",
+          "internet_early_trend",
+          "internet_early_volatility",
+          "internet_library_interaction",
+          "late_gate_internet_interaction",
+          "library_early_continuity",
+          "library_early_trend",
+          "library_early_volatility",
+          "library_early_weekend_ratio"
+        ],
+        "circularity_detected": false,
+        "life_data_mode": "clean_temporal_behavior_enhanced",
+        "split_strategy": "student_hash_three_bucket (train/valid/holdout)",
+        "temporal_generalization_gap": 0.000229,
+        "future_window_auc": 0.8632350795272142,
+        "trust_score": 1.0,
+        "leakage_risk": false,
+        "subgroup_variance": 0.10098242195428886,
+        "instability_best_candidate": {
+          "label_version": "instability_future_v2",
+          "feature_bundle": "regularity+volatility+coupling",
+          "split_version": "purged_temporal_split",
+          "candidate_role": "temporal_generalization_mainline",
+          "status": "completed",
+          "auc": 0.8632350795272142,
+          "f1": 0.741176,
+          "precision": 0.677419,
+          "recall": 0.818182,
+          "rows": 255
+        },
+        "primary_metric": {
+          "recommended_primary_auc": 0.8632350795272142,
+          "recommended_primary_source": "temporal_generalization",
+          "robust_auc": 0.8632350795272142
+        }
+      },
+      "validation_summary": {
+        "fusion_payload_semantics_ok": true,
+        "risk_score_source": "mean_infer_predicted_probability",
+        "quality_metric_source": "clean_holdout_eval_metrics",
+        "snapshot_contract_complete": true
+      },
+      "warning_summary": [
+        "label_source = future_window_proxy",
+        "predictive_validity = clean_proxy_with_time_decoupling_but_still_unverified",
+        "not_releaseable_for_prod = true",
+        "sport-related datasets intentionally excluded from life domain",
+        "proxy_stress_test_skipped_3_experiments_due_to_single_class"
+      ]
+    },
+    {
+      "domain_name": "sport",
+      "risk_score": null,
+      "risk_level": "completed",
+      "confidence": null,
+      "top_features": [],
+      "explanations": [],
+      "artifact_ref": null,
+      "metric_context": {
+        "domain": "sport",
+        "status": "completed",
+        "decision": "keep_baseline",
+        "comparable": true,
+        "metrics": {
+          "auc": 0.8505509045419554,
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "future_window_auc": 0.8505509045419554
+        },
+        "artifacts": {
+          "baseline_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "candidate_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+          "candidate_classification_model": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_classification_model.joblib"
+        },
+        "task_type": "future_window_prediction",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "next_optimization_target": "improve_future_window_auc",
+        "tautology_risk": "low",
+        "suspicious_high_auc": false,
+        "baseline_version_id": "sport_baseline_v1",
+        "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+        "hardest_subgroup": {
+          "group": "zf_grade:E",
+          "rows": 2235,
+          "error_rate": 0.10738255033557047
+        },
+        "trusted_mainline": {
+          "auc": 0.8505509045419554,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "evaluated_terms": [
+            20221,
+            20231
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "best_threshold": 0.35000000000000003,
+          "state_thresholds": {
+            "borderline": 0.35000000000000003,
+            "low_participation": 0.37000000000000005,
+            "stable": 0.32000000000000006
+          },
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "mainline_frozen": true,
+        "agent_protocol": {
+          "domain": "sport",
+          "protocol_version": "agent_protocol_v1",
+          "diagnosis": {
+            "task_type": "future_window_prediction",
+            "failure_types": [
+              "none"
+            ],
+            "label_versions": [
+              "zf_grade",
+              "zf_label_v2",
+              "zf_label_v3",
+              "sport_label_future_v1",
+              "sport_label_future_v2",
+              "sport_label_future_v3"
+            ],
+            "label_version": "future_v3",
+            "feature_bundle": "baseline+deviation+trend",
+            "structure_version": "two_stage",
+            "population_version": "recoverable",
+            "future_window": "1-2 terms",
+            "trend_bundle_enabled": true,
+            "tautology_risk": "low",
+            "trust_flags": {
+              "suspicious_high_auc": false
+            }
+          },
+          "proposal": {
+            "candidate_model_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\deliverables\\sport\\model\\sport_regression_model.joblib",
+            "task_reconstruction": {
+              "switch_label_version": "future_v3",
+              "switch_time_window": "short_window_1_2_terms",
+              "switch_target_population": "recoverable",
+              "switch_structure_version": "two_stage"
+            },
+            "next_optimization_target": "improve_future_window_auc"
+          },
+          "comparison": {
+            "baseline_auc": null,
+            "candidate_auc": 0.8505509045419554,
+            "delta_auc": null,
+            "future_window_auc": 0.8505509045419554,
+            "is_future_window": true,
+            "same_source_risk": "low",
+            "subgroup_stable": true,
+            "temporal_holdout_stable": true,
+            "more_real_than_baseline": true,
+            "ablation_summary": {
+              "trend_drop_auc": 0.001503560431100781,
+              "by_bundle": {
+                "baseline_only": 0.7920996920708238,
+                "baseline+deviation": 0.8490473441108546,
+                "baseline+deviation+trend": 0.8505509045419554
+              }
+            }
+          },
+          "recommendation": {
+            "decision": "keep_baseline",
+            "comparable": true,
+            "best_mainline_candidate": {
+              "auc": 0.8505509045419554,
+              "rows": 3545,
+              "eval_rows": 1852,
+              "positive_count": 120,
+              "evaluated_terms": [
+                20221,
+                20231
+              ],
+              "label_version": "future_v3",
+              "feature_bundle": "baseline+deviation+trend",
+              "structure_version": "two_stage",
+              "population_version": "recoverable",
+              "f1": 0.3193717277486911,
+              "precision": 0.23282442748091603,
+              "recall": 0.5083333333333333,
+              "best_threshold": 0.35000000000000003,
+              "state_thresholds": {
+                "borderline": 0.35000000000000003,
+                "low_participation": 0.37000000000000005,
+                "stable": 0.32000000000000006
+              },
+              "ablation_summary": {
+                "trend_drop_auc": 0.001503560431100781,
+                "by_bundle": {
+                  "baseline_only": 0.7920996920708238,
+                  "baseline+deviation": 0.8490473441108546,
+                  "baseline+deviation+trend": 0.8505509045419554
+                }
+              }
+            },
+            "high_score_but_untrusted": false,
+            "real_but_weak": false,
+            "next_priority_route": "target_population_and_future_transition_search",
+            "blocking_reason": ""
+          }
+        }
+      },
+      "validation_summary": [],
+      "warning_summary": []
+    }
+  ],
+  "final_decision": {
+    "decision": "multi_domain_completed",
+    "summary": "All requested domains completed.",
+    "system_status": "multi_domain_ready",
+    "decision_vocabulary": {
+      "promote_candidate": "trusted mainline beats baseline enough to replace the current baseline",
+      "keep_baseline": "trusted mainline is valid and comparable, but the current serving choice remains baseline",
+      "eligible_for_comparison": "trusted mainline passes authenticity gates and can enter cross-domain comparison",
+      "hold_for_review": "candidate exists but authenticity or validity gates failed and review is required"
+    },
+    "stub_domains": [],
+    "ready_domains": [
+      "study",
+      "life",
+      "sport"
+    ],
+    "domains": {
+      "study": {
+        "status": "completed_with_hold",
+        "decision": "keep_baseline",
+        "decision_semantics": "trusted_but_baseline_kept",
+        "comparable": false,
+        "mainline_task_type": "same_window_classification",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "trusted_mainline": {},
+        "mainline_frozen": false,
+        "next_optimization_target": ""
+      },
+      "life": {
+        "status": "success",
+        "decision": "eligible_for_comparison",
+        "decision_semantics": "trusted_and_ready_for_comparison",
+        "comparable": true,
+        "mainline_task_type": "future_window_prediction",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "trusted_mainline": {
+          "label_version": "instability_future_v2",
+          "feature_bundle": "regularity+volatility+coupling",
+          "split_version": "purged_temporal_split",
+          "candidate_role": "temporal_generalization_mainline",
+          "status": "completed",
+          "auc": 0.8632350795272142,
+          "f1": 0.741176,
+          "precision": 0.677419,
+          "recall": 0.818182,
+          "rows": 255
+        },
+        "mainline_frozen": true,
+        "next_optimization_target": "improve_future_window_auc"
+      },
+      "sport": {
+        "status": "completed",
+        "decision": "keep_baseline",
+        "decision_semantics": "trusted_but_baseline_kept",
+        "comparable": true,
+        "mainline_task_type": "future_window_prediction",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "trusted_mainline": {
+          "auc": 0.8505509045419554,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "evaluated_terms": [
+            20221,
+            20231
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "best_threshold": 0.35000000000000003,
+          "state_thresholds": {
+            "borderline": 0.35000000000000003,
+            "low_participation": 0.37000000000000005,
+            "stable": 0.32000000000000006
+          },
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "mainline_frozen": true,
+        "next_optimization_target": "improve_future_window_auc"
+      }
+    },
+    "domain_decisions": {
+      "study": "keep_baseline",
+      "life": "eligible_for_comparison",
+      "sport": "keep_baseline"
+    }
+  },
+  "warnings": [
+    "label_source = future_window_proxy",
+    "predictive_validity = clean_proxy_with_time_decoupling_but_still_unverified",
+    "not_releaseable_for_prod = true",
+    "sport-related datasets intentionally excluded from life domain",
+    "proxy_stress_test_skipped_3_experiments_due_to_single_class"
+  ],
+  "validations": [
+    "fusion_payload_semantics_ok",
+    "risk_score_source",
+    "quality_metric_source",
+    "snapshot_contract_complete"
+  ],
+  "status": "success",
+  "system_status": "multi_domain_ready",
+  "domain_timings": {
+    "study": 3.602907657623291,
+    "life": 48.202778816223145,
+    "sport": 177.60218977928162
+  },
+  "domain_start_order": [
+    "study",
+    "life",
+    "sport"
+  ],
+  "domain_end_order": [
+    "study",
+    "life",
+    "sport"
+  ],
+  "adapter_names": {
+    "study": "StudyAgentAdapter",
+    "life": "LifeAgentAdapter",
+    "sport": "SportAgentAdapter"
+  },
+  "domain_statuses": {
+    "study": "completed_with_hold",
+    "life": "success",
+    "sport": "completed"
+  },
+  "slowest_domain": "sport",
+  "agent_trace": {
+    "invoked_via_harness": true,
+    "adapter_name": "HarnessOrchestrator",
+    "execution_path": "orchestrator -> adapter.run_domain_pipeline",
+    "domain_pipeline_called": true,
+    "request_domain": "study"
+  }
+}

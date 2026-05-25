@@ -1,0 +1,50 @@
+{
+  "experiment_A": {
+    "experiment": "A",
+    "feature_set": "core_8",
+    "feature_count": 8,
+    "model_class": "LightGBMClassifier",
+    "holdout_size": 3516,
+    "holdout_positive_rate": 0.32053469852104666,
+    "holdout_auc": 0.8427649946906165,
+    "holdout_accuracy": 0.7929465301478953,
+    "holdout_f1": 0.6212278876170656,
+    "holdout_recall": 0.5297249334516415,
+    "holdout_precision": 0.7509433962264151
+  },
+  "experiment_B": {
+    "experiment": "B",
+    "feature_set": "core_plus_clean",
+    "feature_count": 34,
+    "model_class": "LightGBMClassifier",
+    "holdout_size": 3516,
+    "holdout_positive_rate": 0.32053469852104666,
+    "holdout_auc": 0.838763364919739,
+    "holdout_accuracy": 0.7818543799772468,
+    "holdout_f1": 0.6414212248714353,
+    "holdout_recall": 0.6086956521739131,
+    "holdout_precision": 0.6778656126482213
+  },
+  "experiment_C": {
+    "experiment": "C",
+    "feature_set": "light_serving_all_clean",
+    "feature_count": 129,
+    "model_class": "LightGBMClassifier",
+    "holdout_size": 3516,
+    "holdout_positive_rate": 0.32053469852104666,
+    "holdout_auc": 0.8394441693906892,
+    "holdout_accuracy": 0.7852673492605233,
+    "holdout_f1": 0.6457062412013139,
+    "holdout_recall": 0.6104702750665484,
+    "holdout_precision": 0.6852589641434262
+  },
+  "unified_framework": {
+    "random_state": 42,
+    "test_size": 0.2,
+    "model_class": "LightGBMClassifier",
+    "feature_engineering_order": "after_split",
+    "population": "all_labeled",
+    "train_ids_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\study_final_experiment_ids.json",
+    "holdout_ids_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\study_final_experiment_ids.json"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "label_type": "proxy",
+  "label_definition": "future_window_proxy_from_late_life_behavior",
+  "proxy_reconstruction_risk": "medium",
+  "external_truth_available": false,
+  "release_block_reason": "no externally validated business target; label is derived from same-dataset future window proxy",
+  "proxy_stress_test_risk": "medium",
+  "temporal_generalization_risk": "low",
+  "source_group_ablation_risk": "medium",
+  "overlap_check_result": {
+    "label_feature_overlap": [],
+    "same_dataset_overlap": [
+      "club_early_continuity",
+      "club_early_trend",
+      "club_library_balance",
+      "gate_early_continuity",
+      "gate_early_trend",
+      "gate_early_volatility",
+      "gate_early_weekend_ratio",
+      "internet_early_continuity",
+      "internet_early_cv",
+      "internet_early_deviation",
+      "internet_early_trend",
+      "internet_early_volatility",
+      "internet_library_interaction",
+      "late_gate_internet_interaction",
+      "library_early_continuity",
+      "library_early_trend",
+      "library_early_volatility",
+      "library_early_weekend_ratio"
+    ],
+    "circularity_detected": false
+  },
+  "predictive_validity_level": "clean_proxy_with_time_decoupling_but_still_unverified",
+  "production_readiness_level": "not_releaseable_for_prod",
+  "truth_gap_checklist": [
+    {
+      "item": "external_truth_label",
+      "status": "missing",
+      "description": "Need an externally validated business target (e.g. official university risk flag, counselor assessment) that is not derived from the same behavioral dataset",
+      "priority": "critical"
+    },
+    {
+      "item": "temporal_stability_auc_gte_0_8",
+      "status": "met",
+      "description": "Temporal generalization AUC should remain >= 0.8 on held-out time periods",
+      "priority": "high"
+    },
+    {
+      "item": "cross_domain_consistency",
+      "status": "pending",
+      "description": "Life risk scores should correlate meaningfully with study domain risk indicators for same students",
+      "priority": "medium"
+    },
+    {
+      "item": "prospective_validation",
+      "status": "missing",
+      "description": "Model should be tested on a future cohort not used in any label construction or feature engineering",
+      "priority": "high"
+    }
+  ]
+}

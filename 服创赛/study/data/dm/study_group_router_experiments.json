@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-04-18T22:14:12.460699",
+  "package_a_router_stoploss": [
+    {
+      "score_version": "core_only_score",
+      "auc": 0.6065835730265261
+    },
+    {
+      "score_version": "current_blended_score",
+      "auc": 0.6013902205177373
+    },
+    {
+      "score_version": "routed_score",
+      "auc": 0.6250399488654523
+    }
+  ],
+  "package_b_core_plus_behavior_subgroup": [
+    {
+      "experiment_name": "baseline_subgroup_model",
+      "rows": 687,
+      "positives": 79,
+      "feature_count": 46,
+      "auc": 0.8610093271152565,
+      "pr_auc": 0.5910091310871937,
+      "recall_at_precision_0_70": 0.4050632911392405,
+      "f1": 0.4811320754716981,
+      "recall": 0.6455696202531646,
+      "precision": 0.38345864661654133
+    },
+    {
+      "experiment_name": "targeted_subgroup_model",
+      "rows": 687,
+      "positives": 79,
+      "feature_count": 52,
+      "auc": 0.8638095436375749,
+      "pr_auc": 0.5990873556409433,
+      "recall_at_precision_0_70": 0.4177215189873418,
+      "f1": 0.5,
+      "recall": 0.6582278481012658,
+      "precision": 0.40310077519379844
+    },
+    {
+      "experiment_name": "targeted_subgroup_linear",
+      "rows": 687,
+      "positives": 79,
+      "feature_count": 52,
+      "auc": 0.8343396069287142,
+      "pr_auc": 0.5124766402931741,
+      "recall_at_precision_0_70": 0.3037974683544304,
+      "f1": 0.40718562874251496,
+      "recall": 0.8607594936708861,
+      "precision": 0.26666666666666666
+    }
+  ],
+  "package_c_targeted_feature_count": 26,
+  "package_c_targeted_feature_catalog_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\study_targeted_feature_catalog.csv"
+}

@@ -1,0 +1,61 @@
+{
+  "experiment_name": "exp_A_baseline_rebuild",
+  "generated_at": "2026-04-19T08:56:08",
+  "goal": "rebuild the strongest historical baseline under fixed core-only configuration",
+  "historical_reference_auc": 0.852089926589149,
+  "data_source": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\study_train_table.csv",
+  "subset_definition": {
+    "population": "core_only",
+    "rule": "behavior feature non-null count < 2",
+    "rows": 14810,
+    "positive_rows": 4520,
+    "negative_rows": 10290
+  },
+  "split_definition": {
+    "method": "train_test_split",
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": "LABEL",
+    "train_rows": 11848,
+    "holdout_rows": 2962,
+    "train_ids_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\exp_A_baseline_rebuild_train_ids.csv",
+    "holdout_ids_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\exp_A_baseline_rebuild_holdout_ids.csv"
+  },
+  "feature_config": {
+    "feature_count": 8,
+    "feature_list": [
+      "FEATURE_GRADE_COURSE_COUNT",
+      "FEATURE_GRADE_AVG_SCORE",
+      "FEATURE_GRADE_MIN_SCORE",
+      "FEATURE_GRADE_FAIL_COUNT",
+      "FEATURE_GRADE_CREDIT_SUM",
+      "FEATURE_COURSE_SELECTED_COUNT",
+      "FEATURE_COURSE_CREDIT_SUM",
+      "FEATURE_COURSE_RETAKE_COUNT"
+    ]
+  },
+  "model_config": {
+    "model_name": "LightGBMClassifier",
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "min_child_samples": 20,
+      "learning_rate": 0.05,
+      "feature_fraction": 0.8,
+      "bagging_fraction": 0.8,
+      "bagging_freq": 5,
+      "lambda_l1": 0.1,
+      "lambda_l2": 0.1,
+      "scale_pos_weight": 1.0,
+      "random_state": 42,
+      "verbose": -1
+    },
+    "threshold_note": "AUC experiment only; threshold intentionally not optimized"
+  },
+  "results": {
+    "holdout_auc": 0.8526928154321147,
+    "recovered_to_target_band": true,
+    "interpretation": "strong baseline recovered"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "request_id": "study_rollback_dry_run_request",
+  "domain": "study",
+  "mode": "rollback",
+  "status": "success",
+  "fallback_used": false,
+  "model_version": "study_v1",
+  "feature_version": "study_feature_v1",
+  "study_data_mode": "core_only",
+  "study_quality_flag": "core_stable",
+  "prediction_output_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\data\\study_prediction_output.csv",
+  "explanation_output_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\data\\study_explanation_output.csv",
+  "quality_report_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\dm\\study_quality_report.json",
+  "validation_report_path": "C:\\Users\\39527\\Documents\\Playground\\study\\data\\deliverables\\study\\docs\\study_validation_report.json",
+  "available_layers": [],
+  "recoverable_behavior_layers": [],
+  "unavailable_behavior_layers": [],
+  "summary_metrics": {
+    "release_action_status": "dry_run",
+    "auc": 0.8391384956939032,
+    "f1": 0.5344694035631293,
+    "recall": 0.6353591160220995
+  },
+  "warnings": [],
+  "release_action": {
+    "request_id": "study_rollback_dry_run_request",
+    "action": "rollback",
+    "target_version_id": "study_v1",
+    "dry_run": true,
+    "status": "dry_run",
+    "target": {
+      "version_id": "study_v1",
+      "model_name": "LightGBMClassifier",
+      "feature_group": "formal_study_v1",
+      "threshold_strategy": "formal_config",
+      "fusion_strategy": "none",
+      "metrics": {
+        "rows": 3516,
+        "accuracy": 0.858646188850967,
+        "f1": 0.5763000852514919,
+        "recall": 0.6224677716390423,
+        "auc": 0.852089926589149
+      },
+      "created_at": "2026-04-17 05:08:36",
+      "promoted_at": "2026-04-17T12:39:31",
+      "rolled_back_at": null,
+      "status": "published",
+      "artifact_paths": {
+        "model_config": "E:\\AAA\\data\\deliverables\\study\\model\\study_model_config.json",
+        "model_file": "E:\\AAA\\data\\deliverables\\study\\model\\study_model.pkl"
+      }
+    },
+    "created_at": "2026-04-18T17:05:47"
+  }
+}

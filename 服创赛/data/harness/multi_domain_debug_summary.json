@@ -1,0 +1,152 @@
+{
+  "run_record_path": "C:\\Users\\39527\\Documents\\Playground\\服创赛\\data\\harness\\runs\\multi_domain_study_life_sport.json",
+  "requested_domains": [
+    "study",
+    "life",
+    "sport"
+  ],
+  "system_status": "multi_domain_ready",
+  "final_decision": {
+    "decision": "multi_domain_completed",
+    "summary": "All requested domains completed.",
+    "system_status": "multi_domain_ready",
+    "decision_vocabulary": {
+      "promote_candidate": "trusted mainline beats baseline enough to replace the current baseline",
+      "keep_baseline": "trusted mainline is valid and comparable, but the current serving choice remains baseline",
+      "eligible_for_comparison": "trusted mainline passes authenticity gates and can enter cross-domain comparison",
+      "hold_for_review": "candidate exists but authenticity or validity gates failed and review is required"
+    },
+    "stub_domains": [],
+    "ready_domains": [
+      "study",
+      "life",
+      "sport"
+    ],
+    "domains": {
+      "study": {
+        "status": "completed_with_hold",
+        "decision": "keep_baseline",
+        "decision_semantics": "trusted_but_baseline_kept",
+        "comparable": false,
+        "mainline_task_type": "same_window_classification",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "trusted_mainline": {},
+        "mainline_frozen": false,
+        "next_optimization_target": ""
+      },
+      "life": {
+        "status": "success",
+        "decision": "eligible_for_comparison",
+        "decision_semantics": "trusted_and_ready_for_comparison",
+        "comparable": true,
+        "mainline_task_type": "future_window_prediction",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "trusted_mainline": {
+          "label_version": "instability_future_v2",
+          "feature_bundle": "regularity+volatility+coupling",
+          "split_version": "purged_temporal_split",
+          "candidate_role": "temporal_generalization_mainline",
+          "status": "completed",
+          "auc": 0.8632350795272142,
+          "f1": 0.741176,
+          "precision": 0.677419,
+          "recall": 0.818182,
+          "rows": 255
+        },
+        "mainline_frozen": true,
+        "next_optimization_target": "improve_future_window_auc"
+      },
+      "sport": {
+        "status": "completed",
+        "decision": "keep_baseline",
+        "decision_semantics": "trusted_but_baseline_kept",
+        "comparable": true,
+        "mainline_task_type": "future_window_prediction",
+        "mainline_validity": true,
+        "blocking_reason": "",
+        "trusted_mainline": {
+          "auc": 0.8505509045419554,
+          "rows": 3545,
+          "eval_rows": 1852,
+          "positive_count": 120,
+          "evaluated_terms": [
+            20221,
+            20231
+          ],
+          "label_version": "future_v3",
+          "feature_bundle": "baseline+deviation+trend",
+          "structure_version": "two_stage",
+          "population_version": "recoverable",
+          "f1": 0.3193717277486911,
+          "precision": 0.23282442748091603,
+          "recall": 0.5083333333333333,
+          "best_threshold": 0.35000000000000003,
+          "state_thresholds": {
+            "borderline": 0.35000000000000003,
+            "low_participation": 0.37000000000000005,
+            "stable": 0.32000000000000006
+          },
+          "ablation_summary": {
+            "trend_drop_auc": 0.001503560431100781,
+            "by_bundle": {
+              "baseline_only": 0.7920996920708238,
+              "baseline+deviation": 0.8490473441108546,
+              "baseline+deviation+trend": 0.8505509045419554
+            }
+          }
+        },
+        "mainline_frozen": true,
+        "next_optimization_target": "improve_future_window_auc"
+      }
+    },
+    "domain_decisions": {
+      "study": "keep_baseline",
+      "life": "eligible_for_comparison",
+      "sport": "keep_baseline"
+    }
+  },
+  "domain_statuses": {
+    "study": {
+      "status": "completed_with_hold",
+      "final_decision": "",
+      "adapter_name": "StudyAgentAdapter"
+    },
+    "life": {
+      "status": "success",
+      "final_decision": "eligible_for_comparison",
+      "adapter_name": "LifeAgentAdapter"
+    },
+    "sport": {
+      "status": "completed",
+      "final_decision": "keep_baseline",
+      "adapter_name": "SportAgentAdapter"
+    }
+  },
+  "domain_timings": {
+    "study": 3.602907657623291,
+    "life": 48.202778816223145,
+    "sport": 177.60218977928162
+  },
+  "domain_start_order": [
+    "study",
+    "life",
+    "sport"
+  ],
+  "domain_end_order": [
+    "study",
+    "life",
+    "sport"
+  ],
+  "adapter_names": {
+    "study": "StudyAgentAdapter",
+    "life": "LifeAgentAdapter",
+    "sport": "SportAgentAdapter"
+  },
+  "slowest_domain": "sport",
+  "sport_adapter_active": true,
+  "study_adapter_active": true,
+  "life_adapter_active": true,
+  "sport_stub_tolerated": false
+}

@@ -1,0 +1,50 @@
+{
+  "domain": "life",
+  "rows": 2500,
+  "missing_rate": 3.2e-05,
+  "label_positive_rate": 0.282353,
+  "feature_layer_summary": {
+    "counts": {
+      "core": 6,
+      "behavior": 2,
+      "temporal": 13,
+      "interaction": 4
+    },
+    "columns": {
+      "core": [
+        "XB",
+        "MZMC",
+        "ZZMMMC",
+        "JG",
+        "XSM",
+        "ZYM"
+      ],
+      "behavior": [
+        "library_early_weekend_ratio",
+        "gate_early_weekend_ratio"
+      ],
+      "temporal": [
+        "internet_early_trend",
+        "internet_early_volatility",
+        "internet_early_continuity",
+        "internet_early_deviation",
+        "internet_early_cv",
+        "club_early_trend",
+        "club_early_continuity",
+        "library_early_trend",
+        "library_early_volatility",
+        "library_early_continuity",
+        "gate_early_trend",
+        "gate_early_volatility",
+        "gate_early_continuity"
+      ],
+      "interaction": [
+        "behavior_rhythm_gap",
+        "internet_library_interaction",
+        "late_gate_internet_interaction",
+        "club_library_balance"
+      ]
+    },
+    "life_data_mode": "clean_temporal_behavior_enhanced"
+  }
+}

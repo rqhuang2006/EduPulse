@@ -1,0 +1,17 @@
+{
+  "request_id": "frontend_run_20260421155924",
+  "generated_at": "2026-04-21T16:02:28",
+  "current_clean_auc_gte_0_8": true,
+  "current_clean_auc": 0.8628567091681845,
+  "recommended_primary_auc": 0.8632350795272142,
+  "recommended_primary_source": "temporal_generalization",
+  "explicit_leakage_detected": false,
+  "implicit_circularity_risk": true,
+  "proxy_stress_test_status": "completed",
+  "split_strictly_student_isolated": true,
+  "temporal_generalization_stable": true,
+  "life_can_be_mature_for_harness_integration": true,
+  "life_still_dry_run_only": true,
+  "next_priority": "label_authenticity",
+  "conclusion": "High clean holdout AUC survives explicit leakage checks, but proxy stress tests and temporal extrapolation still limit how confidently it can be presented as a final business score."
+}

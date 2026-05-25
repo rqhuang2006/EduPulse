@@ -1,0 +1,6 @@
+domain,task,best_model,primary_metric,metric_value
+learning,regression(avg_score),RandomForest,r2,-0.39522499692285984
+learning,classification(fail_flag),LightGBM,f1,0.32432432432432434
+life,classification(club_active_flag),RandomForest,f1,0.44970414201183434
+sport,regression(zf_score),RandomForest,r2,0.29345592545550236
+sport,classification(zf_grade),RandomForest,macro_f1,0.3519745525579431

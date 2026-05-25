@@ -1,0 +1,19 @@
+{
+  "best_model": "RandomForest",
+  "accuracy": 0.5581395348837209,
+  "macro_f1": 0.3571646644985731,
+  "samples": 86,
+  "labels": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "test_label_distribution": {
+    "E": 56,
+    "D": 19,
+    "C": 9,
+    "B": 2
+  }
+}

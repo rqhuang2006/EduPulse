@@ -1,0 +1,3 @@
+model,val_r2
+RandomForest,0.9502501249270099
+XGBoost,0.9188087125113669

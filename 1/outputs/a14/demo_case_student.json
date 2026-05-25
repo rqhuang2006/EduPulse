@@ -1,0 +1,41 @@
+{
+  "student_id": "pjxyqwbj673",
+  "chain": {
+    "submodel_risk": {
+      "life_risk": 0.96,
+      "study_risk": 0.9237,
+      "sport_risk": 0.4206
+    },
+    "fusion": {
+      "total_risk": 0.7681,
+      "risk_level": "高风险",
+      "dominant_dimension": "生活"
+    },
+    "shap": {
+      "life": [
+        "",
+        "",
+        ""
+      ],
+      "study": [
+        "",
+        "",
+        ""
+      ],
+      "sport": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "map": {
+      "M_score": 0.0,
+      "A_score": 0.0,
+      "P_score": 0.0,
+      "dominant_MAP": "提示"
+    },
+    "pattern": "多维叠加高风险型",
+    "profile_text": "该学生综合风险为高风险，主要由生活维度驱动。行为上表现为：暂无显著行为特征。从机制上看，问题主要集中在提示。在群体中，该学生属于多维叠加高风险型。建议优先从提示干预入手。",
+    "intervention_text": "建议采用分阶段干预方案，先解决生活主导问题，再以行为提醒、外部约束与环境触发优化联动其他维度。"
+  }
+}

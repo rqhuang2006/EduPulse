@@ -1,0 +1,12 @@
+domain: life
+package_version: life_minimal_v1
+deliverables:
+  - data/train_table.csv
+  - data/infer_table.csv
+  - data/prediction_output.csv
+  - docs/quality_report.json
+  - docs/validation_report.json
+  - docs/feature_dictionary.csv
+  - model/model.pkl
+  - model/model_config.json
+  - model/model_metrics.json

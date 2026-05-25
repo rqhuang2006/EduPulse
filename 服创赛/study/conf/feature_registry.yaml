@@ -1,0 +1,62 @@
+domain: study
+feature_version: study_feature_v1
+id_columns:
+  - XH
+  - TERM_ID
+feature_prefix: FEATURE_
+subjects:
+  l1_grade:
+    output_course: study_l1_grade_course.parquet
+    output_term: study_l1_grade_term.parquet
+    features:
+      FEATURE_GRADE_COURSE_COUNT: {type: numeric, description: 当前学期有成绩课程数}
+      FEATURE_GRADE_AVG_SCORE: {type: numeric, description: 当前学期平均课程成绩}
+      FEATURE_GRADE_MIN_SCORE: {type: numeric, description: 当前学期最低课程成绩}
+      FEATURE_GRADE_FAIL_COUNT: {type: numeric, description: 当前学期不及格课程数}
+      FEATURE_GRADE_CREDIT_SUM: {type: numeric, description: 当前学期课程学分总和}
+      FEATURE_CET_SCORE_MAX: {type: numeric, description: 四六级最高分}
+  l2_course_load:
+    output_course: study_l2_course_load_course.parquet
+    output_term: study_l2_course_load_term.parquet
+    features:
+      FEATURE_COURSE_SELECTED_COUNT: {type: numeric, description: 当前学期选课门数}
+      FEATURE_COURSE_CREDIT_SUM: {type: numeric, description: 当前学期选课学分总和}
+      FEATURE_COURSE_RETAKE_COUNT: {type: numeric, description: 重修/重选课程数}
+  l3_attendance:
+    output_event: study_l3_attendance_event.parquet
+    output_term: study_l3_attendance_term.parquet
+    features:
+      FEATURE_ATTENDANCE_EVENT_COUNT: {type: numeric, description: 当前学期考勤/签到事件数}
+      FEATURE_ATTENDANCE_ABNORMAL_COUNT: {type: numeric, description: 当前学期异常考勤次数}
+      FEATURE_ATTENDANCE_ABNORMAL_RATE: {type: numeric, description: 当前学期异常考勤比例}
+      FEATURE_CLASS_HEAD_UP_RATE_AVG: {type: numeric, description: 课堂抬头率均值}
+      FEATURE_CLASS_FRONT_ROW_RATE_AVG: {type: numeric, description: 前排率均值}
+  l4_class_task:
+    output_event: study_l4_class_task_event.parquet
+    output_term: study_l4_class_task_term.parquet
+    features:
+      FEATURE_CLASS_TASK_COUNT: {type: numeric, description: 当前学期课堂任务记录数}
+      FEATURE_CLASS_TASK_RATE_AVG: {type: numeric, description: 当前学期课堂任务完成率均值}
+      FEATURE_CLASS_VIDEO_RATE_AVG: {type: numeric, description: 当前学期视频任务完成率均值}
+  l5_assignment:
+    output_event: study_l5_assignment_event.parquet
+    output_term: study_l5_assignment_term.parquet
+    features:
+      FEATURE_ASSIGNMENT_COUNT: {type: numeric, description: 当前学期作业记录数}
+      FEATURE_ASSIGNMENT_SCORE_AVG: {type: numeric, description: 当前学期作业平均分}
+      FEATURE_ASSIGNMENT_MISSING_COUNT: {type: numeric, description: 当前学期未提交/异常作业数}
+      FEATURE_ASSIGNMENT_SUBMIT_RATE: {type: numeric, description: 当前学期作业提交率}
+  l6_exam_quiz:
+    output_event: study_l6_exam_quiz_event.parquet
+    output_term: study_l6_exam_quiz_term.parquet
+    features:
+      FEATURE_EXAM_COUNT: {type: numeric, description: 当前学期考试/测验记录数}
+      FEATURE_EXAM_SCORE_AVG: {type: numeric, description: 当前学期考试/测验平均分}
+      FEATURE_EXAM_MISSING_COUNT: {type: numeric, description: 当前学期未提交/异常考试数}
+  l7_online_activity:
+    output_event: study_l7_online_activity_event.parquet
+    output_term: study_l7_online_activity_term.parquet
+    features:
+      FEATURE_ONLINE_ACTIVITY_SCORE_AVG: {type: numeric, description: 线上学习表现均值}
+      FEATURE_LIBRARY_VISIT_COUNT: {type: numeric, description: 图书馆打卡次数}
+

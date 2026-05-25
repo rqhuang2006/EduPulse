@@ -1,0 +1,507 @@
+{
+  "generated_at": "2026-04-19T09:23:23",
+  "input_feature_count": 49,
+  "kept_feature_count": 47,
+  "dropped_feature_count": 2,
+  "kept_counts_by_layer": {
+    "core": 4,
+    "behavior": 2,
+    "temporal": 33,
+    "interaction": 8
+  },
+  "dropped_counts_by_reason": {
+    "dropped_train_constant": 2
+  },
+  "rows": [
+    {
+      "feature_name": "FEATURE_LIBRARY_VISIT_COUNT",
+      "feature_layer": "behavior",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 292,
+      "infer_unique": 121,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "consecutive_decline_grade_avg_score",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 6,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "dist_from_worst_grade_avg_score",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2585,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "recovery_grade_avg_score",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "consecutive_decline_grade_fail_count",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 5,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "dist_from_worst_grade_fail_count",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 91,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "recovery_grade_fail_count",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "dist_from_worst_attendance_abnormal_rate",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "consecutive_decline_library_visit_count",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 6,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "dist_from_worst_library_visit_count",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 1926,
+      "infer_unique": 2,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "recovery_library_visit_count",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "cross__feature_grade_avg_score__x__feature_course_selected_count",
+      "feature_layer": "interaction",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2097,
+      "infer_unique": 203,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "cross__feature_assignment_score_avg__x__feature_exam_score_avg",
+      "feature_layer": "interaction",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 430,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "cross__feature_library_visit_count__x__feature_grade_avg_score",
+      "feature_layer": "interaction",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2991,
+      "infer_unique": 412,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "cross__delta_grade_avg_score__x__feature_course_selected_count",
+      "feature_layer": "interaction",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2556,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "discordance_attendance_grade",
+      "feature_layer": "interaction",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 1809,
+      "infer_unique": 136,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "discordance_effort_result",
+      "feature_layer": "interaction",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 272,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "workload_stress",
+      "feature_layer": "interaction",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2215,
+      "infer_unique": 202,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "trend_decline_count_grade_avg",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 3,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "trend_below_hist_grade_avg",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "trend_drawdown_grade_avg",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 3053,
+      "infer_unique": 409,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "personal_gap_grade_avg",
+      "feature_layer": "core",
+      "train_nonnull_rate": 0.8488219895287958,
+      "infer_nonnull_rate": 0.0,
+      "train_unique": 2589,
+      "infer_unique": 0,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "trend_decline_count_exam_score",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 1,
+      "infer_unique": 1,
+      "kept": false,
+      "decision_reason": "dropped_train_constant"
+    },
+    {
+      "feature_name": "trend_below_hist_exam_score",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 1,
+      "infer_unique": 1,
+      "kept": false,
+      "decision_reason": "dropped_train_constant"
+    },
+    {
+      "feature_name": "trend_decline_count_library_visit",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 3,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "trend_below_hist_library_visit",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "feature_behavior_coverage_count",
+      "feature_layer": "core",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 5,
+      "infer_unique": 2,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "feature_temporal_coverage_count",
+      "feature_layer": "core",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 11,
+      "infer_unique": 3,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "feature_behavior_missing_ratio",
+      "feature_layer": "core",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 5,
+      "infer_unique": 2,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "feature_has_complete_recent_windows",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 2,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "imbalance_attendance_stable_study_drop",
+      "feature_layer": "behavior",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_min_score",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 88,
+      "infer_unique": 17,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_avg_min_gap",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2084,
+      "infer_unique": 161,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_fail_count",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 14,
+      "infer_unique": 4,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_distance_to_60",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 1804,
+      "infer_unique": 133,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_min_distance_to_60",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 88,
+      "infer_unique": 17,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_near_fail",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 2,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_marginal_pass_count",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 12,
+      "infer_unique": 2,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_multi_course_danger",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 2,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_dispersion",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2360,
+      "infer_unique": 161,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_dispersion_coef",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2740,
+      "infer_unique": 179,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_score_variance",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2363,
+      "infer_unique": 161,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_weakest_gap_to_60",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 88,
+      "infer_unique": 17,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_weakest_gap_to_70",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 88,
+      "infer_unique": 17,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_bottleneck_severity",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2084,
+      "infer_unique": 161,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_bottleneck_ratio",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2636,
+      "infer_unique": 179,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_fail_rate",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 124,
+      "infer_unique": 7,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "discordance_library_grade",
+      "feature_layer": "interaction",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 2,
+      "kept": true,
+      "decision_reason": "kept"
+    },
+    {
+      "feature_name": "course_risk_consecutive_decline",
+      "feature_layer": "temporal",
+      "train_nonnull_rate": 1.0,
+      "infer_nonnull_rate": 1.0,
+      "train_unique": 2,
+      "infer_unique": 1,
+      "kept": true,
+      "decision_reason": "kept"
+    }
+  ]
+}

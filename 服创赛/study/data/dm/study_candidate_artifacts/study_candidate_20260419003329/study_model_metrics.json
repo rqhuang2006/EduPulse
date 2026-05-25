@@ -1,0 +1,31 @@
+{
+  "core_model": {
+    "train": {},
+    "valid": {
+      "auc": 0.8418693263972741,
+      "f1": 0.6672019269369731,
+      "recall": 0.7373558118899733,
+      "precision": 0.6092375366568915,
+      "coverage": 0.9995448856525202,
+      "degraded_proxy": 0.00029582432586187094,
+      "robustness_score": 0.8088200942654948
+    }
+  },
+  "behavior_module": {
+    "train": {},
+    "valid": {}
+  },
+  "subgroup_expert": {
+    "train": {},
+    "valid": {}
+  },
+  "legacy_primary_valid": {
+    "auc": 0.8418693263972741,
+    "f1": 0.6672019269369731,
+    "recall": 0.7373558118899733,
+    "precision": 0.6092375366568915,
+    "coverage": 0.9995448856525202,
+    "degraded_proxy": 0.00029582432586187094,
+    "robustness_score": 0.8088200942654948
+  }
+}

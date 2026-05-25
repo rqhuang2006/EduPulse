@@ -1,0 +1,33 @@
+{
+  "z_score_leakage": {
+    "Leaky Z": 0.6723976685511048,
+    "Clean Z": 0.5481384101859936
+  },
+  "label_proxy": {
+    "high_corr_features": []
+  },
+  "rare_combinations": {
+    "rare_combos": [
+      {
+        "column": "FEATURE_GRADE_COURSE_COUNT",
+        "pure_positive_values": 3,
+        "pure_negative_values": 0
+      },
+      {
+        "column": "FEATURE_COURSE_SELECTED_COUNT",
+        "pure_positive_values": 2,
+        "pure_negative_values": 0
+      },
+      {
+        "column": "FEATURE_COURSE_CREDIT_SUM",
+        "pure_positive_values": 23,
+        "pure_negative_values": 17
+      },
+      {
+        "column": "FEATURE_CLASS_TASK_COUNT",
+        "pure_positive_values": 15,
+        "pure_negative_values": 21
+      }
+    ]
+  }
+}

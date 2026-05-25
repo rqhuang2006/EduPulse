@@ -1,0 +1,5 @@
+schema_version: sport_release_policy_v1
+baseline_comparison:
+  primary_metric: auc
+  comparison_mode: sport_stub
+  allow_equal_to_baseline: true

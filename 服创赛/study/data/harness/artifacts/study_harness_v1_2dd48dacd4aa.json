@@ -1,0 +1,58 @@
+[
+  {
+    "name": "eval_report",
+    "kind": "metrics_report",
+    "uri": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_eval_report.json",
+    "version": null,
+    "metadata": {}
+  },
+  {
+    "name": "subgroup_metrics",
+    "kind": "metrics_report",
+    "uri": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_subgroup_metrics.csv",
+    "version": null,
+    "metadata": {}
+  },
+  {
+    "name": "confidence_zone_report",
+    "kind": "metrics_report",
+    "uri": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_confidence_zone_report.csv",
+    "version": null,
+    "metadata": {}
+  },
+  {
+    "name": "diagnostic_summary",
+    "kind": "diagnostic_report",
+    "uri": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_feature_screening_report.json",
+    "version": null,
+    "metadata": {}
+  },
+  {
+    "name": "subgroup_screening",
+    "kind": "diagnostic_report",
+    "uri": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_subgroup_feature_screening_report.json",
+    "version": null,
+    "metadata": {}
+  },
+  {
+    "name": "quality_report",
+    "kind": "diagnostic_report",
+    "uri": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_quality_report.json",
+    "version": null,
+    "metadata": {}
+  },
+  {
+    "name": "publish_dry_run",
+    "kind": "publish_bundle",
+    "uri": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_publish_dry_run_record.json",
+    "version": null,
+    "metadata": {}
+  },
+  {
+    "name": "rollback_dry_run",
+    "kind": "rollback_bundle",
+    "uri": "C:\\Users\\39527\\Documents\\Playground\\connect421\\服创赛\\study\\data\\dm\\study_rollback_dry_run_record.json",
+    "version": null,
+    "metadata": {}
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "request_id": "study_train_evolution_request",
+  "candidate_id": "study_train_evolution_request_topk_selected_RandomForest_best_f1",
+  "threshold": 0.45,
+  "threshold_strategy": "best_f1",
+  "selection_reason": "threshold inherited from selected evolution candidate"
+}

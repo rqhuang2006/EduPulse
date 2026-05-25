@@ -1,0 +1,128 @@
+{
+  "domain": "study",
+  "model_version": "study_candidate_20260419003459",
+  "feature_version": "study_candidate_20260419003459_features",
+  "label_name": "LABEL",
+  "id_columns": [
+    "XH",
+    "TERM_ID"
+  ],
+  "feature_prefix": "FEATURE_",
+  "train_time": "2026-04-19 00:34:59",
+  "primary_model": "RandomForest",
+  "fallback_model": "RandomForest",
+  "note": "study evolution serving candidate promoted from candidate pool",
+  "architecture_version": "study_layered_v2",
+  "feature_columns": [
+    "FEATURE_GRADE_FAIL_COUNT",
+    "FEATURE_GRADE_MIN_SCORE",
+    "FEATURE_GRADE_CREDIT_SUM",
+    "FEATURE_GRADE_COURSE_COUNT",
+    "FEATURE_COURSE_SELECTED_COUNT",
+    "FEATURE_GRADE_AVG_SCORE",
+    "FEATURE_COURSE_CREDIT_SUM"
+  ],
+  "core_feature_columns": [
+    "FEATURE_GRADE_FAIL_COUNT",
+    "FEATURE_GRADE_MIN_SCORE",
+    "FEATURE_GRADE_CREDIT_SUM",
+    "FEATURE_GRADE_COURSE_COUNT",
+    "FEATURE_COURSE_SELECTED_COUNT",
+    "FEATURE_GRADE_AVG_SCORE",
+    "FEATURE_COURSE_CREDIT_SUM"
+  ],
+  "behavior_feature_columns": [],
+  "subgroup_feature_columns": [],
+  "subgroup_targeted_feature_columns": [],
+  "temporal_feature_columns": [],
+  "interaction_feature_columns": [],
+  "core_feature_families": {
+    "grade": [
+      "FEATURE_GRADE_COURSE_COUNT",
+      "FEATURE_GRADE_AVG_SCORE",
+      "FEATURE_GRADE_MIN_SCORE",
+      "FEATURE_GRADE_FAIL_COUNT",
+      "FEATURE_GRADE_CREDIT_SUM"
+    ],
+    "course": [
+      "FEATURE_COURSE_SELECTED_COUNT",
+      "FEATURE_COURSE_CREDIT_SUM"
+    ]
+  },
+  "behavior_feature_families": {
+    "attendance": [],
+    "class_task": [],
+    "assignment": [],
+    "exam": [],
+    "library": [],
+    "online": []
+  },
+  "feature_layer_summary": {
+    "counts": {
+      "core": 7,
+      "behavior": 0,
+      "temporal": 0,
+      "interaction": 0
+    },
+    "columns": {},
+    "study_data_mode": "core_only"
+  },
+  "behavior_layer_status": {
+    "attendance": "unavailable_behavior",
+    "class_task": "unavailable_behavior",
+    "assignment": "unavailable_behavior",
+    "exam": "unavailable_behavior",
+    "library": "unavailable_behavior",
+    "online": "unavailable_behavior"
+  },
+  "behavior_module_enabled": false,
+  "subgroup_expert_enabled": false,
+  "data_mode_rules": {
+    "core_available_requires_families": [
+      "grade",
+      "course"
+    ],
+    "behavior_available_min_family_hits": 1,
+    "core_only": "core model runs and behavior module is unavailable for the row",
+    "core_plus_behavior": "core model runs and behavior module has enough row-level coverage",
+    "degraded_sparse": "core feature families are missing or row-level core coverage is insufficient"
+  },
+  "score_combination": {
+    "core_only_weight": 1.0,
+    "core_plus_behavior_core_weight": 0.7,
+    "core_plus_behavior_behavior_weight": 0.3
+  },
+  "selected_threshold_strategy": "best_f1",
+  "selected_threshold": 0.45,
+  "metrics": {
+    "core_model": {
+      "train": {},
+      "valid": {
+        "auc": 0.8418693263972741,
+        "f1": 0.6672019269369731,
+        "recall": 0.7373558118899733,
+        "precision": 0.6092375366568915,
+        "coverage": 0.9995448856525202,
+        "degraded_proxy": 0.00029582432586187094,
+        "robustness_score": 0.8088200942654948
+      }
+    },
+    "behavior_module": {
+      "train": {},
+      "valid": {}
+    },
+    "subgroup_expert": {
+      "train": {},
+      "valid": {}
+    },
+    "legacy_primary_valid": {
+      "auc": 0.8418693263972741,
+      "f1": 0.6672019269369731,
+      "recall": 0.7373558118899733,
+      "precision": 0.6092375366568915,
+      "coverage": 0.9995448856525202,
+      "degraded_proxy": 0.00029582432586187094,
+      "robustness_score": 0.8088200942654948
+    }
+  }
+}
